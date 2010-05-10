@@ -1,3 +1,9 @@
-<h1>Hello Agilistry</h1>
+<h1>Hello, <%= h @name %></h1>
 
 <p>We have continuous deployment!</p>
+
+<% form_tag do %>
+  <%= label_tag :name, 'Name' %><br/>
+  <%= text_field_tag :name %><br/>
+  <%= submit_tag "Greet" %>
+<% end %>
