@@ -32,3 +32,4 @@ config.gem 'rspec-rails', :version => '= 1.3.2', :lib => false
 config.gem "cucumber", :version => '0.7.2', :lib => false
 config.gem "cucumber-rails", :version => '0.3.1', :lib => false
 config.gem "webrat", :version => '0.7.1', :lib => false
+config.gem "database_cleaner", :version => '0.5.2', :lib => false
