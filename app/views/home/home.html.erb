@@ -1,9 +1,16 @@
-<h1>Hello, <%= h @name %></h1>
+<h1>Alan's Sweet Homophone list</h1>
 
-<p>We have continuous deployment!</p>
+<% grouped_by_first_letter(HOM_LIST).each do |key_letter, homophone_sets| %>
+<h2><%= h key_letter.upcase %></h2>
 
-<% form_tag do %>
-  <%= label_tag :name, 'Name' %><br/>
-  <%= text_field_tag :name %><br/>
-  <%= submit_tag "Greet" %>
+  <% homophone_sets.each do |homophone_set| %>
+    <div class='homophone_set'>
+      <% homophone_set.each do |homophone| %>
+        <div class='homophone'>
+          <span class='name'><%= h homophone.name %></span>
+          <span class='definition'><%= h homophone.definition %></span>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
 <% end %>
