@@ -8,4 +8,6 @@ describe "Our starter suite" do
     end
     suite.should be_awesome
   end
+  
+  it { 1.should == 1 }
 end
