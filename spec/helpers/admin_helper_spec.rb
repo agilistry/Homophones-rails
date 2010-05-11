@@ -2,8 +2,7 @@ require 'spec_helper'
 
 describe AdminHelper, '#authenticate' do
   before(:each) do
-    $admin_username = 'alan'
-    $admin_password = 'password'
+    Login.create! :user_name => 'alan', :password => 'password'
   end
 
   context "successful authentication" do

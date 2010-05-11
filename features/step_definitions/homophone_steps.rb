@@ -15,8 +15,7 @@ Given /^I am not logged in$/ do
 end
 
 Given /^the administrator user name is "(.*)" with password "(.*)"$/ do |username, password|
-  $admin_username = username
-  $admin_password = password
+  Login.create! :user_name => username, :password => password
 end
 
 When /^I log in with "(.*)" \/ "(.*)"$/ do |username, password|
