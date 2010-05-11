@@ -1,5 +1,14 @@
 <h1>Alan's Sweet Homophone list</h1>
 
+<ul id="index_links">
+  <% ('A'..'Z').to_a.each do |index_letter| %>
+    <li><%= link_to_if grouped_by_first_letter(HOM_LIST).keys.include?(index_letter.downcase),
+                       index_letter,
+                       {:anchor => index_letter},
+                       {:class => "index_link"}  %></li>
+  <% end -%>
+</ul>
+
 <% grouped_by_first_letter(HOM_LIST).each do |key_letter, homophone_sets| %>
 <h2><%= h key_letter.upcase %></h2>
 
