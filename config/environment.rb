@@ -41,6 +41,6 @@ Rails::Initializer.run do |config|
 end
 
 require 'ostruct'
-HOM_LIST = JSON.load(File.read("homlist.txt"))['HOMLIST'].
+HOM_LIST = JSON.load(File.read(File.join(Rails.root, "homlist.txt")))['HOMLIST'].
   map {|list| list['PHONES']}.compact.
   map {|group| group.map {|hom| OpenStruct.new(:name => hom['KEY'], :definition => hom['DEF']) } }
