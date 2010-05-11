@@ -1,6 +1,6 @@
 <h2>Login Required</h2>
 <% form_for(:login) do |f| %> 
 <%= f.label :user_name %>: <%= f.text_field :user_name %><br />
-<%= f.label :password %>: <%= f.text_field :password %>
+<%= f.label :password %>: <%= f.password_field :password %>
 <%= submit_tag "Login" %>
 <% end %>
