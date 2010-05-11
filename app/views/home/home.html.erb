@@ -1,16 +1,21 @@
 <h1>Alan's Sweet Homophone list</h1>
 
-<ul id="index_links">
-  <% ('A'..'Z').to_a.each do |index_letter| %>
-    <li><%= link_to_if grouped_by_first_letter(HOM_LIST).keys.include?(index_letter.downcase),
-                       index_letter,
-                       {:anchor => index_letter},
-                       {:class => "index_link"}  %></li>
-  <% end -%>
-</ul>
+<div id="index_links">
+  <ul id="index_links">
+      <% ('A'..'Z').to_a.each do |index_letter| %>
+        <li><%= link_to_if @grouped_hom_list.keys.include?(index_letter.downcase),
+                           index_letter,
+                           {:anchor => index_letter.downcase},
+                           {:class => "index_link"}  %></li>
+      <% end -%>
+      <div class="clearfix"></div>
+    </ul>
+</div>
 
-<% grouped_by_first_letter(HOM_LIST).each do |key_letter, homophone_sets| %>
-<h2><%= h key_letter.upcase %></h2>
+
+<% @grouped_hom_list.each do |key_letter, homophone_sets| %>
+  <a name=<%= key_letter.downcase %>></a>
+  <h2><%= h key_letter.upcase %></h2>
 
   <% homophone_sets.each do |homophone_set| %>
     <div class='homophone_set'>
