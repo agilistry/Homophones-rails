@@ -11,14 +11,16 @@ Feature: Administrator must log in to get to Homophone Maintenance screen
     
   Scenario: Redirected to Maintenance page after login
     Given the administrator user name is "alan" with password "h0m0ph0n3s"
-    When I fill in "login_user_name" with "alan"
-    And I fill in "login_password" with "h0m0ph0n3s"
-    And I press "Submit"
+    And I am on the admin login page
+    When I fill in "User Name" with "alan"
+    And I fill in "Password" with "h0m0ph0n3s"
+    And I press "Login"
     Then I should see "Homophone Administration Page"
     
   Scenario: Still on login page if login failed
     Given the administrator user name is "alan" with password "h0m0ph0n3s"
+    And I am on the admin login page
     When I fill in "User Name" with "alan"
     And I fill in "Password" with "haxordude"
-    And I press "Submit"
+    And I press "Login"
     Then I should see "Login Required"
