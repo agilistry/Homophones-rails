@@ -9,3 +9,15 @@ end
 Then /^I should not see a link called "([^\"]*)"$/ do |link_content|
   response.should_not have_tag("a", link_content)
 end
+
+Given /^I am not logged in$/ do
+  
+end
+
+Given /^the administrator user name is "([^\"]*)" with password "([^\"]*)"$/ do |arg1, arg2|
+  
+end
+
+When /^I log in as "([^\"]*)" with password "([^\"]*)"$/ do |arg1, arg2|
+  
+end

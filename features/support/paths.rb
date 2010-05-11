@@ -12,7 +12,10 @@ module NavigationHelpers
       '/'
     when /the homophone list page/
       '/'
-
+    when /the homophone maintenance page/
+      '/admin/'
+    when /the admin login page/
+      '/admin/login'
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #
