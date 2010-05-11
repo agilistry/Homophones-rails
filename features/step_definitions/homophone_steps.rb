@@ -14,10 +14,13 @@ Given /^I am not logged in$/ do
   
 end
 
-Given /^the administrator user name is "([^\"]*)" with password "([^\"]*)"$/ do |arg1, arg2|
-  
+Given /^the administrator user name is "(.*)" with password "(.*)"$/ do |username, password|
+  $admin_username = username
+  $admin_password = password
 end
 
-When /^I log in as "([^\"]*)" with password "([^\"]*)"$/ do |arg1, arg2|
-  
+When /^I log in with "(.*)" \/ "(.*)"$/ do |username, password|
+  When %(I fill in "User Name" with "#{username}")
+  When %(I fill in "Password" with "#{password}")
+  When %(I press "Login")
 end
