@@ -1,5 +1,7 @@
 <h1>Alan's Sweet Homophone list</h1>
 
+<% @grouped_hom_list = grouped_by_first_letter(HOM_LIST) %>
+
 <div id="index_links">
   <ul id="index_links">
       <% ('A'..'Z').to_a.each do |index_letter| %>
