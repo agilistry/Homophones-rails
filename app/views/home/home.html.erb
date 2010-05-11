@@ -17,7 +17,7 @@
 
 <% @grouped_hom_list.each do |key_letter, homophone_sets| %>
   <a name=<%= key_letter.downcase %>></a>
-  <h2><%= h key_letter.upcase %></h2>
+  <h2 class="key_letter"><%= h key_letter.upcase %></h2>
 
   <% homophone_sets.each do |homophone_set| %>
     <div class='homophone_set'>

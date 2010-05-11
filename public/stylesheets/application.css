@@ -1,3 +1,7 @@
+.wrapper {
+    font-size: 1.2em
+}
+
 #header {
     margin-top: 25px;
 }
@@ -7,6 +11,7 @@
 
 .homophone .name {
   font-weight: bold;
+  padding-right: 5px;
 }
 
 .homophone .definition {
@@ -24,12 +29,10 @@
   margin: 0;
 }
 #index_links li a {
-
+    color: #003399;
 }
 
-.clearfix:after, .container:after {content:".";display:block;height:0;clear:both;visibility:hidden;}
-.clearfix, .container {display:inline-block;}
-* html .clearfix, * html .container {height:1%;}
-.clearfix, .container {display:block;}
-.clear {clear:both;}
-
+h2.key_letter {
+    font-size: 2em;
+    color: #003399;
+}
