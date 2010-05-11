@@ -8,6 +8,14 @@
   </head>
   
   <body>
-    <%= yield %>
+    <div id='wrapper'>
+      <div id='header'>
+        <%= image_tag 'mrhomophone.png' %>
+      </div>
+
+      <div id='primaryContent'>
+        <%= yield %>
+      </div>      
+    </div>
   </body>
 </html>
