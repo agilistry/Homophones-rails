@@ -1,5 +1,9 @@
-Given /^we have a homophone set "([^\"]*)"$/ do |phone_set|
-  HOM_LIST = [phone_set.split(',').map {|hom| OpenStruct.new(:name => hom.strip, :definition => "")}]
+Given /^we have a homophone set:$/ do |table|
+  homophone_set = HomophoneSet.new
+  table.hashes.each do |phone_attrs|
+    homophone_set.homophones.build phone_attrs
+  end
+  homophone_set.save!
 end
 
 Given /^there are no homophone sets$/ do
