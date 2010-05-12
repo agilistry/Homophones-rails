@@ -1,9 +1,29 @@
+body {
+}
+
 .wrapper {
     font-size: 1.2em
 }
-
 #header {
     margin-top: 25px;
+}
+#header span#site_tag_line {
+    display: block;
+    font-size: .7em;
+    text-align: right;
+    padding-right: 200px;
+}
+#header span#site_tag_line a {
+    color: black;
+    text-decoration: none;
+}
+#header span#site_tag_line a:hover {
+    text-decoration: underline;
+}
+#header p.site_description {
+    width: 60%;
+    margin-top: 10px;
+    font-size: .8em;
 }
 .homophone_set {
   padding-bottom: 25px;
@@ -21,11 +41,11 @@
 #index_links ul {
     padding: 0;
     list-style-type: none;
-    margin: 20px 0;
+    margin: 0;
 }
 #index_links li {
   float: left;
-  padding-right: 10px;
+  padding-right: 5px;
   margin: 0;
 }
 #index_links li a {
@@ -35,4 +55,54 @@
 h2.key_letter {
     font-size: 2em;
     color: #003399;
+}
+
+/* Search Box */
+.search_box {
+    color: #474747;    
+}
+.search_box label {
+    font-weight: bold;
+}
+.search_box input#search_term {
+    width: 100px;
+}
+.search_box .search_note {
+    font-size: .7em;
+    line-height: 1.2em;
+}
+/* Site Navigation */
+#site_navigation {
+    list-style-type: none;
+    margin: 10px 0 0 0;
+}
+#site_navigation li {
+    font-size: 1em;
+    margin: 0 0 10px 0;
+    line-height: 1.2em;
+}
+#site_navigation li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #474747;
+}
+
+/* Sidebar */
+#sidebar {
+    font-size: .7em;    
+}
+#sidebar h4 {
+    margin-bottom: 5px
+}
+#sidebar p {
+    margin-top: 10px;
+}
+#sidebar span.note_date {
+    color: gray;
+    padding-right: 10px;
+}
+
+.not_done {
+    min-height: 300px;
+    background-color: #FFDF29;
 }
