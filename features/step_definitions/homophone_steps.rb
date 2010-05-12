@@ -23,6 +23,7 @@ Given /^the administrator user name is "(.*)" with password "(.*)"$/ do |usernam
 end
 
 When /^I log in with "(.*)" \/ "(.*)"$/ do |username, password|
+  visit login_path
   When %(I fill in "User Name" with "#{username}")
   When %(I fill in "Password" with "#{password}")
   When %(I press "Login")

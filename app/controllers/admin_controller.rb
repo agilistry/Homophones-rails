@@ -3,7 +3,7 @@ class AdminController < ApplicationController
   include AdminHelper
 
   def login_required
-    redirect_to(login_path) unless session[:logged_in]
+    redirect_to(login_path) unless logged_in?
   end
   
   def login

@@ -1,6 +1,10 @@
 require 'spec_helper'
 
 describe HomophoneSetsController, 'GET new' do
+  before(:each) do
+    controller.stub(:logged_in?).and_return true
+  end
+
   it "is successful" do
     get :new
     response.should be_success
@@ -19,9 +23,19 @@ describe HomophoneSetsController, 'GET new' do
       response.should be_success
     end
   end
+  
+  it "rejects the user if not logged in" do
+    controller.stub(:logged_in?).and_return false
+    get :new
+    response.should redirect_to(login_path)
+  end
 end
 
 describe HomophoneSetsController, 'POST create' do
+  before(:each) do
+    controller.stub(:logged_in?).and_return true
+  end
+
   def do_post
     post :create, :homophone_set => {:homophones => {
       '1' => {:name => 'a', :definition => 'short little word'},
@@ -49,4 +63,11 @@ describe HomophoneSetsController, 'POST create' do
         '3' => {} }}
     }.to change(Homophone, :count).by(2)
   end
+
+  it "rejects the user if not logged in" do
+    controller.stub(:logged_in?).and_return false
+    post :create
+    response.should redirect_to(login_path)
+  end
+
 end

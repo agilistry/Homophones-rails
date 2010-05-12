@@ -1,4 +1,4 @@
-class HomophoneSetsController < ApplicationController
+class HomophoneSetsController < AdminController
   def new
     @homophone_set = HomophoneSet.new
     8.times { @homophone_set.homophones.build }

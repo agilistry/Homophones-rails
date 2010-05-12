@@ -1,5 +1,8 @@
 @wip
 Feature: Create homophone set
+  Background:
+    Given the administrator user name is "admin" with password "password"
+    And I log in with "admin" / "password"
 
   Scenario: Creating a new homophone set displays set on main list
     Given there are no homophone sets
