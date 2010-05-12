@@ -9,8 +9,26 @@ describe HomophoneSet, 'validations' do
 
   it "is valid with 2 homophones" do
     set = HomophoneSet.new
-    2.times { set.homophones.build }
+    2.times { set.homophones.build(:name => 'asdf') }
     set.should be_valid
+  end
+
+  context "one homophone is invalid" do
+    let(:set) { HomophoneSet.new }
+
+    before(:each) do
+      set.homophones.build :name => 'to', :definition => 'little word'
+      set.homophones.build :name => 'too', :definition => 'also'
+      set.homophones.build :name => '', :definition => '1 more than 1'
+    end
+
+    it "is invalid" do
+      set.should_not be_valid
+    end
+
+    it "should not report errors on .homophones" do
+      set.should have(0).errors_on(:homophones)
+    end
   end
 end
 

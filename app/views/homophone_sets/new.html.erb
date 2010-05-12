@@ -13,6 +13,7 @@
     <% @homophone_set.homophones.each_with_index do |homophone, i| %>
       <% fields_for "homophone_set[homophones][#{i}]", homophone do |h| %>
         <div class='homophone'>
+          <%= error_message_on homophone, :name %>
           <%= h.text_field :name, :class => 'name' %>
           <%= h.text_field :definition, :class => 'definition' %>
         </div>

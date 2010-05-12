@@ -1,4 +1,3 @@
-@wip
 Feature: Create homophone set
   Background:
     Given the administrator user name is "admin" with password "password"
@@ -38,7 +37,6 @@ Feature: Create homophone set
     And there is 1 homophone set
 
   Scenario: System displays error when homophone submitted without word
-    Given wip
     When I create a homophone set with the following words:
       | name | definition          |
       | to   | a short little word |
@@ -47,12 +45,9 @@ Feature: Create homophone set
     And there are 0 homophone sets
 
   Scenario: System displays multiple errors if applicable
-    Given wip
     When I create a homophone set with the following words:
       | name | definition |
-      | to   |            |
       |      | also       |
     Then I see the error "Please enter the missing word"
-    Then I see the error "Please enter the missing definition"
-    And I see the error "Please create the second homophone to complete the set"
+    And I see the error "Please create at least 2 homophones for a complete set"
     And there are 0 homophone sets
