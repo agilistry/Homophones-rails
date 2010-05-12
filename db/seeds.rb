@@ -5,3 +5,12 @@
 #   
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Major.create(:name => 'Daley', :city => cities.first)
+hom_list = JSON.load(File.read(File.join(Rails.root, "homlist.txt")))['HOMLIST'].
+  map {|list| list['PHONES']}.compact.
+  each do |homset|
+    hs = HomophoneSet.new
+    homset.each do |hom|
+      hs.homophones << Homophone.create(:name => hom['KEY'], :definition => hom['DEF'])
+    end
+    hs.save!
+  end
