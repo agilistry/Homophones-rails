@@ -14,6 +14,8946 @@
 "HOMLIST":
 [
   {
+    "PHONES": [
+      {
+        "KEY": "a",
+        "DEF": "very short little insignificant English word"
+      },
+      {
+        "KEY": "eh",
+        "DEF": "an interrogative utterance"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "acts",
+        "DEF": "things done"
+      },
+      {
+        "KEY": "ax",
+        "DEF": "chopping tool"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "ad",
+        "DEF": "short for advertisement"
+      },
+      {
+        "KEY": "add",
+        "DEF": "short for addition"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "adds",
+        "DEF": "performs additions"
+      },
+      {
+        "KEY": "ads",
+        "DEF": "more than one advertisement"
+      },
+      {
+        "KEY": "adze",
+        "DEF": "axe-like tool"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "ade",
+        "DEF": "fruit beverage"
+      },
+      {
+        "KEY": "aid",
+        "DEF": "to assist"
+      },
+      {
+        "KEY": "aide",
+        "DEF": "an assistant"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "aerie",
+        "DEF": "eagle's nest"
+      },
+      {
+        "KEY": "airy",
+        "DEF": "breezy"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "aero",
+        "DEF": "of aircraft"
+      },
+      {
+        "KEY": "arrow",
+        "DEF": "slender, pointed shaft"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "affect",
+        "DEF": "to change"
+      },
+      {
+        "KEY": "effect",
+        "DEF": "result"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "ail",
+        "DEF": "sick"
+      },
+      {
+        "KEY": "ale",
+        "DEF": "beer"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "air",
+        "DEF": "stuff we breathe"
+      },
+      {
+        "KEY": "are",
+        "DEF": "1/100th of a hectare"
+      },
+      {
+        "KEY": "e'er",
+        "DEF": "contraction of \"ever\""
+      },
+      {
+        "KEY": "ere",
+        "DEF": "eventually"
+      },
+      {
+        "KEY": "err",
+        "DEF": "to make a mistake"
+      },
+      {
+        "KEY": "heir",
+        "DEF": "one who will inherit"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "aisle",
+        "DEF": "walkway"
+      },
+      {
+        "KEY": "I'll",
+        "DEF": "contraction of \"I will\""
+      },
+      {
+        "KEY": "isle",
+        "DEF": "island"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "all",
+        "DEF": "everything"
+      },
+      {
+        "KEY": "awl",
+        "DEF": "pointed scriber"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "allowed",
+        "DEF": "permitted"
+      },
+      {
+        "KEY": "aloud",
+        "DEF": "spoken"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "altar",
+        "DEF": "raised center of worship"
+      },
+      {
+        "KEY": "alter",
+        "DEF": "to change"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "an",
+        "DEF": "a single instance"
+      },
+      {
+        "KEY": "Ann",
+        "DEF": "a woman's name"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "ant",
+        "DEF": "insect"
+      },
+      {
+        "KEY": "aunt",
+        "DEF": "parent's sister"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "ante",
+        "DEF": "preliminary bet"
+      },
+      {
+        "KEY": "auntie",
+        "DEF": "sister of a parent"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "arc",
+        "DEF": "portion of a circle"
+      },
+      {
+        "KEY": "ark",
+        "DEF": "vessel"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "ascent",
+        "DEF": "the climb"
+      },
+      {
+        "KEY": "assent",
+        "DEF": "to agree"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "ate",
+        "DEF": "past tense of eat"
+      },
+      {
+        "KEY": "eight",
+        "DEF": "the number base of octal"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "auger",
+        "DEF": "a drill"
+      },
+      {
+        "KEY": "augur",
+        "DEF": "foretell"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "aught",
+        "DEF": "anything"
+      },
+      {
+        "KEY": "ought",
+        "DEF": "should"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "aural",
+        "DEF": "of hearing"
+      },
+      {
+        "KEY": "oral",
+        "DEF": "of the mouth"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "auricle",
+        "DEF": "external part of the ear"
+      },
+      {
+        "KEY": "oracle",
+        "DEF": "seer"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "away",
+        "DEF": "distant"
+      },
+      {
+        "KEY": "aweigh",
+        "DEF": "just clear of the bottom"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "awed",
+        "DEF": "in a state of wonder"
+      },
+      {
+        "KEY": "odd",
+        "DEF": "not usual"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "aweful",
+        "DEF": "filled with awe"
+      },
+      {
+        "KEY": "awful",
+        "DEF": "really bad"
+      },
+      {
+        "KEY": "offal",
+        "DEF": "butchered entrails"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "aye",
+        "DEF": "naval affirmative"
+      },
+      {
+        "KEY": "eye",
+        "DEF": "ocular organ"
+      },
+      {
+        "KEY": "I",
+        "DEF": "oneself"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "bail",
+        "DEF": "bucket handle"
+      },
+      {
+        "KEY": "bale",
+        "DEF": "bundle of hay"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "bailed",
+        "DEF": "pumping water out of a boat"
+      },
+      {
+        "KEY": "baled",
+        "DEF": "to gather into a bale"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "bailee",
+        "DEF": "a person to whom goods are committed for custody or repair"
+      },
+      {
+        "KEY": "bailey",
+        "DEF": "the outer wall of a castle"
+      },
+      {
+        "KEY": "bailie",
+        "DEF": "a municipal officer in Scotland"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "bailer",
+        "DEF": "one who bails (water)"
+      },
+      {
+        "KEY": "bailor",
+        "DEF": "a person that entrusts goods to a bailee"
+      },
+      {
+        "KEY": "baler",
+        "DEF": "one who bales (hay)"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "bailing",
+        "DEF": "pumping water out of a boat"
+      },
+      {
+        "KEY": "baling",
+        "DEF": "wire used to tie bales"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "bait",
+        "DEF": "to torment"
+      },
+      {
+        "KEY": "bate",
+        "DEF": "to lessen"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "baited",
+        "DEF": "past tense of bait"
+      },
+      {
+        "KEY": "bated",
+        "DEF": "past tense of bate"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "baiting",
+        "DEF": "tormenting"
+      },
+      {
+        "KEY": "bating",
+        "DEF": "lessening"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "baize",
+        "DEF": "green felt"
+      },
+      {
+        "KEY": "bays",
+        "DEF": "one or more enclosed arms of the ocean"
+      },
+      {
+        "KEY": "beys",
+        "DEF": "one or more Turkish officials"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "bald",
+        "DEF": "hairless"
+      },
+      {
+        "KEY": "balled",
+        "DEF": "carnal knowledge"
+      },
+      {
+        "KEY": "bawled",
+        "DEF": "cried aloud"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "ball",
+        "DEF": "playful orb"
+      },
+      {
+        "KEY": "bawl",
+        "DEF": "to cry"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "band",
+        "DEF": "a group"
+      },
+      {
+        "KEY": "banned",
+        "DEF": "forbidden"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "bard",
+        "DEF": "a poet"
+      },
+      {
+        "KEY": "barred",
+        "DEF": "enclosed by poles"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "bare",
+        "DEF": "naked"
+      },
+      {
+        "KEY": "bear",
+        "DEF": "wild ursine"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "bark",
+        "DEF": "outer sheath of a tree"
+      },
+      {
+        "KEY": "barque",
+        "DEF": "square-rigged sailing ship"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "baron",
+        "DEF": "minor royalty"
+      },
+      {
+        "KEY": "barren",
+        "DEF": "unable to bear children"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "Barry",
+        "DEF": "a man's name"
+      },
+      {
+        "KEY": "berry",
+        "DEF": "small fruit"
+      },
+      {
+        "KEY": "bury",
+        "DEF": "to take under"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "basal",
+        "DEF": "forming the base"
+      },
+      {
+        "KEY": "basil",
+        "DEF": "an herb"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "base",
+        "DEF": "the bottom support for anything"
+      },
+      {
+        "KEY": "bass",
+        "DEF": "the lowest musical pitch or range"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "based",
+        "DEF": "supported"
+      },
+      {
+        "KEY": "baste",
+        "DEF": "to swab with liquid during cooking"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "bases",
+        "DEF": "what baseball players like to steal"
+      },
+      {
+        "KEY": "basis",
+        "DEF": "principal constituent of anything"
+      },
+      {
+        "KEY": "basses",
+        "DEF": "many four-stringed guitars"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "bask",
+        "DEF": "to warm oneself pleasantly"
+      },
+      {
+        "KEY": "basque",
+        "DEF": "tightfitting bodice or tunic (or, people of the Pyrenees)"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "bat",
+        "DEF": "a blind, flying rodent"
+      },
+      {
+        "KEY": "batt",
+        "DEF": "a flat pad"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "baud",
+        "DEF": "bits per second"
+      },
+      {
+        "KEY": "bawd",
+        "DEF": "brothel manager"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "bay",
+        "DEF": "an enclosed arm of the ocean"
+      },
+      {
+        "KEY": "bey",
+        "DEF": "a Turkish official"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "be",
+        "DEF": "to exist"
+      },
+      {
+        "KEY": "bee",
+        "DEF": "pollinating buzzer"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "beach",
+        "DEF": "where i want to be"
+      },
+      {
+        "KEY": "beech",
+        "DEF": "a type of tree"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "bean",
+        "DEF": "a legume"
+      },
+      {
+        "KEY": "been",
+        "DEF": "past tense of be"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "beat",
+        "DEF": "to hit"
+      },
+      {
+        "KEY": "beet",
+        "DEF": "edible red root"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "beau",
+        "DEF": "male friend"
+      },
+      {
+        "KEY": "bow",
+        "DEF": "a curve or bend; double-slipped reef knot"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "beaut",
+        "DEF": "slang for beauty, beautiful"
+      },
+      {
+        "KEY": "butte",
+        "DEF": "steep sided hill"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "been",
+        "DEF": "past tense of be"
+      },
+      {
+        "KEY": "bin",
+        "DEF": "a box or container"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "beer",
+        "DEF": "universally brewed comfort food"
+      },
+      {
+        "KEY": "bier",
+        "DEF": "a temporary frame for a coffin"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "bel",
+        "DEF": "indian thorn tree"
+      },
+      {
+        "KEY": "Bel",
+        "DEF": "Babylonian god"
+      },
+      {
+        "KEY": "bell",
+        "DEF": "ding ding"
+      },
+      {
+        "KEY": "belle",
+        "DEF": "beautiful woman"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "berth",
+        "DEF": "anchorage"
+      },
+      {
+        "KEY": "birth",
+        "DEF": "your method of arrival"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "besot",
+        "DEF": "to get drunk"
+      },
+      {
+        "KEY": "besought",
+        "DEF": "past tense of beseech"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "better",
+        "DEF": "superior"
+      },
+      {
+        "KEY": "bettor",
+        "DEF": "one who bets"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "bight",
+        "DEF": "middle of a rope"
+      },
+      {
+        "KEY": "bite",
+        "DEF": "a mouthful"
+      },
+      {
+        "KEY": "byte",
+        "DEF": "eight bits"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "billed",
+        "DEF": "has a bill"
+      },
+      {
+        "KEY": "build",
+        "DEF": "to construct"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "bit",
+        "DEF": "past tense of bite"
+      },
+      {
+        "KEY": "bitt",
+        "DEF": "large cleat for tying up ships"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "blew",
+        "DEF": "past tense of blow"
+      },
+      {
+        "KEY": "blue",
+        "DEF": "color of California sky"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "bloc",
+        "DEF": "an alliance"
+      },
+      {
+        "KEY": "block",
+        "DEF": "square object"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "boar",
+        "DEF": "wild pig"
+      },
+      {
+        "KEY": "Boer",
+        "DEF": "a South African of Dutch descent"
+      },
+      {
+        "KEY": "boor",
+        "DEF": "tasteless buffoon"
+      },
+      {
+        "KEY": "bore",
+        "DEF": "not interesting"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "board",
+        "DEF": "a plank"
+      },
+      {
+        "KEY": "bored",
+        "DEF": "not interested"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "boarder",
+        "DEF": "lodger who gets meals, too"
+      },
+      {
+        "KEY": "border",
+        "DEF": "perimeter"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "bode",
+        "DEF": "an omen"
+      },
+      {
+        "KEY": "bowed",
+        "DEF": "curved"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "bold",
+        "DEF": "brave"
+      },
+      {
+        "KEY": "bowled",
+        "DEF": "knocked over"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "bolder",
+        "DEF": "more courageous"
+      },
+      {
+        "KEY": "boulder",
+        "DEF": "large rock"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "bole",
+        "DEF": "trunk"
+      },
+      {
+        "KEY": "boll",
+        "DEF": "round seed pod"
+      },
+      {
+        "KEY": "bowl",
+        "DEF": "dish"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "boos",
+        "DEF": "disparaging sounds from fans"
+      },
+      {
+        "KEY": "booze",
+        "DEF": "whiskey"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "born",
+        "DEF": "brought into life"
+      },
+      {
+        "KEY": "borne",
+        "DEF": "past participle of bear"
+      },
+      {
+        "KEY": "bourn",
+        "DEF": "a small stream or boundary"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "borough",
+        "DEF": "township"
+      },
+      {
+        "KEY": "burrow",
+        "DEF": "dig into the ground"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "bough",
+        "DEF": "tree branch"
+      },
+      {
+        "KEY": "bow",
+        "DEF": "front of a ship; respectful bend"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "bouy",
+        "DEF": "navigational aid"
+      },
+      {
+        "KEY": "boy",
+        "DEF": "male child"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "bra",
+        "DEF": "brassiere"
+      },
+      {
+        "KEY": "braw",
+        "DEF": "well-groomed"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "braid",
+        "DEF": "a weave of three strands"
+      },
+      {
+        "KEY": "brayed",
+        "DEF": "a donkey cried"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "braise",
+        "DEF": "cook with oil and water"
+      },
+      {
+        "KEY": "brays",
+        "DEF": "loud, harsh cry"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "brake",
+        "DEF": "stopping device"
+      },
+      {
+        "KEY": "break",
+        "DEF": "to split apart"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "breach",
+        "DEF": "to break through"
+      },
+      {
+        "KEY": "breech",
+        "DEF": "the back part"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "bread",
+        "DEF": "a loaf"
+      },
+      {
+        "KEY": "bred",
+        "DEF": "past tense of breed"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "brewed",
+        "DEF": "fermented"
+      },
+      {
+        "KEY": "brood",
+        "DEF": "family"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "brews",
+        "DEF": "more than one beer"
+      },
+      {
+        "KEY": "bruise",
+        "DEF": "a contusion"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "bridal",
+        "DEF": "pertaining to brides"
+      },
+      {
+        "KEY": "bridle",
+        "DEF": "horse's headgear"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "broach",
+        "DEF": "to raise a subject"
+      },
+      {
+        "KEY": "brooch",
+        "DEF": "an ornament fastened to clothes"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "brows",
+        "DEF": "multiple foreheads"
+      },
+      {
+        "KEY": "browse",
+        "DEF": "grazing"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "bundt",
+        "DEF": "type of cake"
+      },
+      {
+        "KEY": "bunt",
+        "DEF": "hit a pitch without swinging"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "burger",
+        "DEF": "meat sandwich"
+      },
+      {
+        "KEY": "burgher",
+        "DEF": "merchant"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "bus",
+        "DEF": "large multi-passenger vehicle"
+      },
+      {
+        "KEY": "buss",
+        "DEF": "a kiss"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "bussed",
+        "DEF": "kissed"
+      },
+      {
+        "KEY": "bust",
+        "DEF": "head and shoulders sculpture"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "but",
+        "DEF": "excepting"
+      },
+      {
+        "KEY": "butt",
+        "DEF": "the thick end"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "buy",
+        "DEF": "to purchase"
+      },
+      {
+        "KEY": "by",
+        "DEF": "near"
+      },
+      {
+        "KEY": "bye",
+        "DEF": "farewell"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "buyer",
+        "DEF": "one who purchases"
+      },
+      {
+        "KEY": "byre",
+        "DEF": "a cow barn"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "cache",
+        "DEF": "hidden storage"
+      },
+      {
+        "KEY": "cash",
+        "DEF": "legal tender"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "cached",
+        "DEF": "hidden away"
+      },
+      {
+        "KEY": "cashed",
+        "DEF": "converted to legal tender"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "calendar",
+        "DEF": "chart of days"
+      },
+      {
+        "KEY": "calender",
+        "DEF": "paper press"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "call",
+        "DEF": "to summon"
+      },
+      {
+        "KEY": "caul",
+        "DEF": "amnionic membrane"
+      },
+      {
+        "KEY": "col",
+        "DEF": "a mountain pass"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "caller",
+        "DEF": "one who calls"
+      },
+      {
+        "KEY": "collar",
+        "DEF": "my cat has collar ID"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "can't",
+        "DEF": "contraction of \"can not\""
+      },
+      {
+        "KEY": "cant",
+        "DEF": "a bevel"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "cannon",
+        "DEF": "big gun"
+      },
+      {
+        "KEY": "canon",
+        "DEF": "body of law"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "canter",
+        "DEF": "a moderate gallop"
+      },
+      {
+        "KEY": "cantor",
+        "DEF": "singer"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "canvas",
+        "DEF": "rough cloth"
+      },
+      {
+        "KEY": "canvass",
+        "DEF": "to examine thoroughly"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "capital",
+        "DEF": "most important"
+      },
+      {
+        "KEY": "capitol",
+        "DEF": "center of government"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "carat",
+        "DEF": "unit of weight for precious stones, equal to 200 milligrams"
+      },
+      {
+        "KEY": "caret",
+        "DEF": "proofreader's insertion mark"
+      },
+      {
+        "KEY": "carrot",
+        "DEF": "edible orange root"
+      },
+      {
+        "KEY": "karat",
+        "DEF": "one 24th part of otherwise pure gold"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "carol",
+        "DEF": "Christmas song"
+      },
+      {
+        "KEY": "carrel",
+        "DEF": "study enclosure"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "carpal",
+        "DEF": "a bone of the carpus"
+      },
+      {
+        "KEY": "carpel",
+        "DEF": "a pistil"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "cast",
+        "DEF": "to throw"
+      },
+      {
+        "KEY": "caste",
+        "DEF": "a social class"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "caster",
+        "DEF": "one who throws"
+      },
+      {
+        "KEY": "castor",
+        "DEF": "beaver's smelly gland"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "cause",
+        "DEF": "generative force"
+      },
+      {
+        "KEY": "caws",
+        "DEF": "sounds of crows"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "cay",
+        "DEF": "a low island"
+      },
+      {
+        "KEY": "key",
+        "DEF": "opens locks"
+      },
+      {
+        "KEY": "quay",
+        "DEF": "a wharf"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "cedar",
+        "DEF": "an evergreen tree"
+      },
+      {
+        "KEY": "seeder",
+        "DEF": "one who broadcasts seeds"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "cede",
+        "DEF": "to give"
+      },
+      {
+        "KEY": "seed",
+        "DEF": "part of a plant from which a new one grows"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "ceding",
+        "DEF": "giving"
+      },
+      {
+        "KEY": "seeding",
+        "DEF": "planting"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "ceiling",
+        "DEF": "top of the room"
+      },
+      {
+        "KEY": "sealing",
+        "DEF": "to close a package or envelope"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "cell",
+        "DEF": "a small room"
+      },
+      {
+        "KEY": "sell",
+        "DEF": "to exchange for money"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "cellar",
+        "DEF": "under a house"
+      },
+      {
+        "KEY": "seller",
+        "DEF": "one who sells"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "censer",
+        "DEF": "incense dish"
+      },
+      {
+        "KEY": "censor",
+        "DEF": "bad people who fear knowledge"
+      },
+      {
+        "KEY": "sensor",
+        "DEF": "a device which detects"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "census",
+        "DEF": "numbering"
+      },
+      {
+        "KEY": "senses",
+        "DEF": "faculties"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "cent",
+        "DEF": "one hundredth of a dollar"
+      },
+      {
+        "KEY": "scent",
+        "DEF": "an aroma"
+      },
+      {
+        "KEY": "sent",
+        "DEF": "dispatched"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "cents",
+        "DEF": "hundredths of a dollar"
+      },
+      {
+        "KEY": "scents",
+        "DEF": "many things to smell"
+      },
+      {
+        "KEY": "sense",
+        "DEF": "detection equipment"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "cere",
+        "DEF": "waxy fleshy covering at the base of the upper beak in some birds"
+      },
+      {
+        "KEY": "sear",
+        "DEF": "to scorch"
+      },
+      {
+        "KEY": "seer",
+        "DEF": "a prophet"
+      },
+      {
+        "KEY": "sere",
+        "DEF": "natural succession of plant or animal communities"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "cereal",
+        "DEF": "grains"
+      },
+      {
+        "KEY": "serial",
+        "DEF": "numbers in sequence"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "Ceres",
+        "DEF": "Roman Goddess of agriculture"
+      },
+      {
+        "KEY": "series",
+        "DEF": "a sequence of things"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "cession",
+        "DEF": "giving up"
+      },
+      {
+        "KEY": "session",
+        "DEF": "a group sitting"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "chalk",
+        "DEF": "calcareous earthy substance"
+      },
+      {
+        "KEY": "chock",
+        "DEF": "wedge to keep wheels from rolling"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "chance",
+        "DEF": "happenstance"
+      },
+      {
+        "KEY": "chants",
+        "DEF": "more than one litany"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "chard",
+        "DEF": "spinach-like vegetable"
+      },
+      {
+        "KEY": "charred",
+        "DEF": "burnt"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "chased",
+        "DEF": "quickly followed"
+      },
+      {
+        "KEY": "chaste",
+        "DEF": "virginal"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "check",
+        "DEF": "a tic mark"
+      },
+      {
+        "KEY": "Czech",
+        "DEF": "from Czechoslovakia"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "chews",
+        "DEF": "masticating"
+      },
+      {
+        "KEY": "choose",
+        "DEF": "to select"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "Chile",
+        "DEF": "a South American country"
+      },
+      {
+        "KEY": "chili",
+        "DEF": "dried pod of red pepper"
+      },
+      {
+        "KEY": "chilly",
+        "DEF": "uncomfortably cool"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "choir",
+        "DEF": "church singers"
+      },
+      {
+        "KEY": "quire",
+        "DEF": "the twentieth part of a ream of paper"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "choler",
+        "DEF": "yellow bile"
+      },
+      {
+        "KEY": "collar",
+        "DEF": "around your neck"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "choral",
+        "DEF": "by a chorus"
+      },
+      {
+        "KEY": "coral",
+        "DEF": "marine polyp skeleton"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "chorale",
+        "DEF": "a choir"
+      },
+      {
+        "KEY": "corral",
+        "DEF": "a pen for horses"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "chord",
+        "DEF": "three tones in harmony"
+      },
+      {
+        "KEY": "cord",
+        "DEF": "very light rope"
+      },
+      {
+        "KEY": "cored",
+        "DEF": "divested of its central part"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "chute",
+        "DEF": "inclined trough"
+      },
+      {
+        "KEY": "shoot",
+        "DEF": "to project an object"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "cite",
+        "DEF": "to refer to"
+      },
+      {
+        "KEY": "sight",
+        "DEF": "vision"
+      },
+      {
+        "KEY": "site",
+        "DEF": "a location"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "cited",
+        "DEF": "referenced"
+      },
+      {
+        "KEY": "sighted",
+        "DEF": "visually identified"
+      },
+      {
+        "KEY": "sited",
+        "DEF": "located"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "cites",
+        "DEF": "past tense of cite"
+      },
+      {
+        "KEY": "sights",
+        "DEF": "tourist rationale"
+      },
+      {
+        "KEY": "sites",
+        "DEF": "more than one location"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "clack",
+        "DEF": "a chattering sound"
+      },
+      {
+        "KEY": "claque",
+        "DEF": "a group hired to applaud, sycophants"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "Claus",
+        "DEF": "fat, jolly guy with presents"
+      },
+      {
+        "KEY": "clause",
+        "DEF": "contractual unit"
+      },
+      {
+        "KEY": "claws",
+        "DEF": "big fingernails"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "clew",
+        "DEF": "sheet cringle on a sail"
+      },
+      {
+        "KEY": "clue",
+        "DEF": "a hint"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "click",
+        "DEF": "ticking noise"
+      },
+      {
+        "KEY": "clique",
+        "DEF": "exclusive group"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "climb",
+        "DEF": "ascending"
+      },
+      {
+        "KEY": "clime",
+        "DEF": "climate"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "close",
+        "DEF": "to shut"
+      },
+      {
+        "KEY": "clothes",
+        "DEF": "garments"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "coal",
+        "DEF": "black mineral"
+      },
+      {
+        "KEY": "cole",
+        "DEF": "plants in the crucifer family"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "coaled",
+        "DEF": "supplied with coal"
+      },
+      {
+        "KEY": "cold",
+        "DEF": "not supplied with coal"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "coarse",
+        "DEF": "rough"
+      },
+      {
+        "KEY": "course",
+        "DEF": "path of travel"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "coat",
+        "DEF": "wear it for warmth"
+      },
+      {
+        "KEY": "cote",
+        "DEF": "small animal shed"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "coax",
+        "DEF": "persuade"
+      },
+      {
+        "KEY": "cokes",
+        "DEF": "more than one soft drink"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "cocks",
+        "DEF": "more than one male bird"
+      },
+      {
+        "KEY": "cox",
+        "DEF": "a coxswain"
+      },
+      {
+        "KEY": "Cox",
+        "DEF": "a variety of eating apple"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "coddling",
+        "DEF": "tenderly treating"
+      },
+      {
+        "KEY": "codling",
+        "DEF": "small, unripe apple"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "coffer",
+        "DEF": "a strongbox; decorative, sunken ceiling panels"
+      },
+      {
+        "KEY": "cougher",
+        "DEF": "one who coughs"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "coin",
+        "DEF": "money"
+      },
+      {
+        "KEY": "quoin",
+        "DEF": "corner stone"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "colonel",
+        "DEF": "military officer"
+      },
+      {
+        "KEY": "kernel",
+        "DEF": "seed"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "complacence",
+        "DEF": "self-satisfaction"
+      },
+      {
+        "KEY": "complaisance",
+        "DEF": "willingness to please"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "complacent",
+        "DEF": "self-satified"
+      },
+      {
+        "KEY": "complaisant",
+        "DEF": "willing to please"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "complement",
+        "DEF": "allotment"
+      },
+      {
+        "KEY": "compliment",
+        "DEF": "encomium"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "conch",
+        "DEF": "marine mollusk"
+      },
+      {
+        "KEY": "conk",
+        "DEF": "blow to the head"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "coo",
+        "DEF": "a soft murmuring sound"
+      },
+      {
+        "KEY": "coup",
+        "DEF": "a successful stroke"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "copes",
+        "DEF": "gets along with adversity"
+      },
+      {
+        "KEY": "copse",
+        "DEF": "a stand of trees"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "copped",
+        "DEF": "swiped"
+      },
+      {
+        "KEY": "copt",
+        "DEF": "a native Egyptian to a Roman"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "cops",
+        "DEF": "police officers"
+      },
+      {
+        "KEY": "copse",
+        "DEF": "a small wood"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "core",
+        "DEF": "inner part"
+      },
+      {
+        "KEY": "corps",
+        "DEF": "body"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "cosign",
+        "DEF": "to sign in addition"
+      },
+      {
+        "KEY": "cosine",
+        "DEF": "sine of the complement"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "council",
+        "DEF": "group of leaders"
+      },
+      {
+        "KEY": "counsel",
+        "DEF": "advisor"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "craft",
+        "DEF": "a manual occupation"
+      },
+      {
+        "KEY": "kraft",
+        "DEF": "a strong paper made from wood pulp"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "crater",
+        "DEF": "impact hole"
+      },
+      {
+        "KEY": "krater",
+        "DEF": "ancient Greek jar"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "Crays",
+        "DEF": "more than one supercomputer"
+      },
+      {
+        "KEY": "craze",
+        "DEF": "sensation needed to buy more than one supercomputer"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "creak",
+        "DEF": "to squeak"
+      },
+      {
+        "KEY": "creek",
+        "DEF": "small stream"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "crewed",
+        "DEF": "served by a crew"
+      },
+      {
+        "KEY": "crude",
+        "DEF": "coarse"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "crewel",
+        "DEF": "embroidery yarn"
+      },
+      {
+        "KEY": "cruel",
+        "DEF": "merciless"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "crews",
+        "DEF": "more than one crew"
+      },
+      {
+        "KEY": "cruise",
+        "DEF": "a sea journey"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "cue",
+        "DEF": "a signal"
+      },
+      {
+        "KEY": "Kew",
+        "DEF": "home of the famous English gardens"
+      },
+      {
+        "KEY": "queue",
+        "DEF": "a waiting line (another famous English-ism)"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "currant",
+        "DEF": "small berry"
+      },
+      {
+        "KEY": "current",
+        "DEF": "of the present"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "curser",
+        "DEF": "one who swears"
+      },
+      {
+        "KEY": "cursor",
+        "DEF": "on-screen positional indicator"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "cygnet",
+        "DEF": "a young swan"
+      },
+      {
+        "KEY": "signet",
+        "DEF": "an authenticating seal"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "cymbal",
+        "DEF": "percussive brass dish"
+      },
+      {
+        "KEY": "symbol",
+        "DEF": "a representation"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "dam",
+        "DEF": "holds back water"
+      },
+      {
+        "KEY": "damn",
+        "DEF": "a curse"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "dammed",
+        "DEF": "prevented from flowing"
+      },
+      {
+        "KEY": "damned",
+        "DEF": "cursed"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "darn",
+        "DEF": "to mend"
+      },
+      {
+        "KEY": "darne",
+        "DEF": "a fish steak"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "days",
+        "DEF": "more than one day"
+      },
+      {
+        "KEY": "daze",
+        "DEF": "to bewilder"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "dear",
+        "DEF": "beloved"
+      },
+      {
+        "KEY": "deer",
+        "DEF": "Bambi"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "dew",
+        "DEF": "morning condensation"
+      },
+      {
+        "KEY": "do",
+        "DEF": "to perform"
+      },
+      {
+        "KEY": "due",
+        "DEF": "payable"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "die",
+        "DEF": "to become dead"
+      },
+      {
+        "KEY": "dye",
+        "DEF": "coloring agent"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "died",
+        "DEF": "passed away"
+      },
+      {
+        "KEY": "dyed",
+        "DEF": "colored"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "dies",
+        "DEF": "passing away"
+      },
+      {
+        "KEY": "dyes",
+        "DEF": "colors"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "dine",
+        "DEF": "to eat"
+      },
+      {
+        "KEY": "dyne",
+        "DEF": "unit of energy"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "dire",
+        "DEF": "desperate"
+      },
+      {
+        "KEY": "dyer",
+        "DEF": "one who dyes"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "disc",
+        "DEF": "a phonograph record"
+      },
+      {
+        "KEY": "disk",
+        "DEF": "a round, plate-shaped object"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "discreet",
+        "DEF": "confidential"
+      },
+      {
+        "KEY": "discrete",
+        "DEF": "individual"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "discussed",
+        "DEF": "talked about"
+      },
+      {
+        "KEY": "disgust",
+        "DEF": "sickening"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "do",
+        "DEF": "first note of diatonic scale"
+      },
+      {
+        "KEY": "doe",
+        "DEF": "a female deer"
+      },
+      {
+        "KEY": "dough",
+        "DEF": "uncooked bread"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "doc",
+        "DEF": "a physician"
+      },
+      {
+        "KEY": "dock",
+        "DEF": "where a boat is kept"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "does",
+        "DEF": "several female deer"
+      },
+      {
+        "KEY": "doughs",
+        "DEF": "several uncooked breads"
+      },
+      {
+        "KEY": "doze",
+        "DEF": "to nap"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "done",
+        "DEF": "completed"
+      },
+      {
+        "KEY": "dun",
+        "DEF": "demand money"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "dos",
+        "DEF": "opposite of don'ts"
+      },
+      {
+        "KEY": "dues",
+        "DEF": "membership payments"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "draft",
+        "DEF": "a preliminary written version"
+      },
+      {
+        "KEY": "draught",
+        "DEF": "a gust of wind; depth of water needed to float a ship"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "dual",
+        "DEF": "two things"
+      },
+      {
+        "KEY": "duel",
+        "DEF": "a fight between two over honor"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "e'er,",
+        "DEF": "see: air"
+      },
+      {
+        "KEY": "earl",
+        "DEF": "British nobleman"
+      },
+      {
+        "KEY": "URL",
+        "DEF": "Internet address"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "earn",
+        "DEF": "to come to deserve"
+      },
+      {
+        "KEY": "urn",
+        "DEF": "a jar"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "elicit",
+        "DEF": "to draw out"
+      },
+      {
+        "KEY": "illicit",
+        "DEF": "unlawful"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "elude",
+        "DEF": "to escape from"
+      },
+      {
+        "KEY": "illude",
+        "DEF": "to deceive"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "epic",
+        "DEF": "a narrative poem or story"
+      },
+      {
+        "KEY": "epoch",
+        "DEF": "a noteworthy period in history"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "eunuchs",
+        "DEF": "men unable to serve all of humanity"
+      },
+      {
+        "KEY": "Unix",
+        "DEF": "operating system unable to serve all of humanity"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "ewe",
+        "DEF": "female sheep"
+      },
+      {
+        "KEY": "yew",
+        "DEF": "a type of tree"
+      },
+      {
+        "KEY": "you",
+        "DEF": "the second person"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "ewes",
+        "DEF": "more than one female sheep"
+      },
+      {
+        "KEY": "use",
+        "DEF": "to apply"
+      },
+      {
+        "KEY": "yews",
+        "DEF": "more than one yew tree"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "eyelet",
+        "DEF": "small hole for laces"
+      },
+      {
+        "KEY": "islet",
+        "DEF": "small island"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "facts",
+        "DEF": "objective things"
+      },
+      {
+        "KEY": "fax",
+        "DEF": "obsolete, but widespread, image transmission technology"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "fain",
+        "DEF": "willing"
+      },
+      {
+        "KEY": "feign",
+        "DEF": "pretend to be affected"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "faint",
+        "DEF": "pass out"
+      },
+      {
+        "KEY": "feint",
+        "DEF": "a weak, misdirected attack to confuse the enemy"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "fair",
+        "DEF": "even-handed"
+      },
+      {
+        "KEY": "fare",
+        "DEF": "payment"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "fairing",
+        "DEF": "streamlining"
+      },
+      {
+        "KEY": "faring",
+        "DEF": "the state of progress"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "fairy",
+        "DEF": "imaginary magic person"
+      },
+      {
+        "KEY": "ferry",
+        "DEF": "river-crossing boat"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "faker",
+        "DEF": "a deceiver"
+      },
+      {
+        "KEY": "fakir",
+        "DEF": "a Hindu ascetic"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "farrow",
+        "DEF": "a litter of pigs"
+      },
+      {
+        "KEY": "pharoah",
+        "DEF": "Egyptian king"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "faux",
+        "DEF": "fake"
+      },
+      {
+        "KEY": "foe",
+        "DEF": "enemy"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "fay",
+        "DEF": "a fairy"
+      },
+      {
+        "KEY": "Faye",
+        "DEF": "a woman's name"
+      },
+      {
+        "KEY": "fey",
+        "DEF": "strange and otherwordly"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "fays",
+        "DEF": "more than one fairy"
+      },
+      {
+        "KEY": "faze",
+        "DEF": "to disconcert"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "faze",
+        "DEF": "to stun"
+      },
+      {
+        "KEY": "phase",
+        "DEF": "a part of the sequence"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "fazed",
+        "DEF": "stunned"
+      },
+      {
+        "KEY": "phased",
+        "DEF": "done in sequential parts"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "feat",
+        "DEF": "an accomplishment"
+      },
+      {
+        "KEY": "feet",
+        "DEF": "look down"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "ferrate",
+        "DEF": "a salt containing iron and oxygen"
+      },
+      {
+        "KEY": "ferret",
+        "DEF": "a domesticated polecat"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "feted",
+        "DEF": "celebrated"
+      },
+      {
+        "KEY": "fetid",
+        "DEF": "stinking"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "few",
+        "DEF": "not many"
+      },
+      {
+        "KEY": "phew",
+        "DEF": "expression of relief"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "file",
+        "DEF": "a folder for holding papers"
+      },
+      {
+        "KEY": "phial",
+        "DEF": "a small glass bottle"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "fills",
+        "DEF": "plural of fill"
+      },
+      {
+        "KEY": "fils",
+        "DEF": "one one-thousandth of an Iraqi dinar"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "filter",
+        "DEF": "keep the bad stuff from passing through"
+      },
+      {
+        "KEY": "philter",
+        "DEF": "a love potion"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "find",
+        "DEF": "to locate"
+      },
+      {
+        "KEY": "fined",
+        "DEF": "to have to pay a parking ticket"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "finish",
+        "DEF": "to complete"
+      },
+      {
+        "KEY": "Finnish",
+        "DEF": "from Finland"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "fir",
+        "DEF": "evergreen tree"
+      },
+      {
+        "KEY": "fur",
+        "DEF": "animal hair"
+      },
+      {
+        "KEY": "furr",
+        "DEF": "to separate with strips of wood"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "fisher",
+        "DEF": "one who fishes"
+      },
+      {
+        "KEY": "fissure",
+        "DEF": "a crack"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "flair",
+        "DEF": "verve"
+      },
+      {
+        "KEY": "flare",
+        "DEF": "to spread"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "flea",
+        "DEF": "parasitic insect"
+      },
+      {
+        "KEY": "flee",
+        "DEF": "to run away"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "flecks",
+        "DEF": "many tiny specks"
+      },
+      {
+        "KEY": "flex",
+        "DEF": "to bend"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "flew",
+        "DEF": "past tense of fly"
+      },
+      {
+        "KEY": "flu",
+        "DEF": "short for influenza"
+      },
+      {
+        "KEY": "flue",
+        "DEF": "chimney pipe"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "Flo",
+        "DEF": "a girl's name"
+      },
+      {
+        "KEY": "floe",
+        "DEF": "sheet of floating ice"
+      },
+      {
+        "KEY": "flow",
+        "DEF": "to glide along"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "flocks",
+        "DEF": "more than one group of birds"
+      },
+      {
+        "KEY": "phlox",
+        "DEF": "a scented plant"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "floes",
+        "DEF": "sheets of floating ice"
+      },
+      {
+        "KEY": "flows",
+        "DEF": "glides along"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "floor",
+        "DEF": "what one walks on"
+      },
+      {
+        "KEY": "fluor",
+        "DEF": "something that glows"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "flour",
+        "DEF": "powdered grain"
+      },
+      {
+        "KEY": "flower",
+        "DEF": "a bloom"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "for",
+        "DEF": "in place of"
+      },
+      {
+        "KEY": "fore",
+        "DEF": "in front"
+      },
+      {
+        "KEY": "four",
+        "DEF": "number after three"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "forego",
+        "DEF": "to precede"
+      },
+      {
+        "KEY": "forgo",
+        "DEF": "to abstain from"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "foreword",
+        "DEF": "introduction to a book"
+      },
+      {
+        "KEY": "forward",
+        "DEF": "the facing direction"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "fort",
+        "DEF": "a fortification"
+      },
+      {
+        "KEY": "forte",
+        "DEF": "a person's strong point"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "forth",
+        "DEF": "a direction"
+      },
+      {
+        "KEY": "fourth",
+        "DEF": "following the third"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "foul",
+        "DEF": "grossly offensive to the senses"
+      },
+      {
+        "KEY": "fowl",
+        "DEF": "domestic hen or rooster"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "frees",
+        "DEF": "releasing"
+      },
+      {
+        "KEY": "freeze",
+        "DEF": "very cold"
+      },
+      {
+        "KEY": "frieze",
+        "DEF": "a wall decoration"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "friar",
+        "DEF": "a monk"
+      },
+      {
+        "KEY": "fryer",
+        "DEF": "small chicken"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "gaff",
+        "DEF": "a barbed spear"
+      },
+      {
+        "KEY": "gaffe",
+        "DEF": "a mistake"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "gage",
+        "DEF": "a pledge or security deposit"
+      },
+      {
+        "KEY": "gauge",
+        "DEF": "instrument for measuring"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "gait",
+        "DEF": "a manner of walking or running"
+      },
+      {
+        "KEY": "gate",
+        "DEF": "fence door"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "gaited",
+        "DEF": "describing a walking horse"
+      },
+      {
+        "KEY": "gated",
+        "DEF": "having a gate"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "galley",
+        "DEF": "ship's kitchen"
+      },
+      {
+        "KEY": "gally",
+        "DEF": "to frighten or terrify"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "gallop",
+        "DEF": "horse's fastest gait"
+      },
+      {
+        "KEY": "galop",
+        "DEF": "a round dance"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "gays",
+        "DEF": "a frisky gathering"
+      },
+      {
+        "KEY": "gaze",
+        "DEF": "a languid look"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "gene",
+        "DEF": "a chromosome"
+      },
+      {
+        "KEY": "jean",
+        "DEF": "cotton twill"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "gild",
+        "DEF": "to coat with gold"
+      },
+      {
+        "KEY": "gilled",
+        "DEF": "having gills"
+      },
+      {
+        "KEY": "guild",
+        "DEF": "a craft society"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "gilt",
+        "DEF": "gold-plated"
+      },
+      {
+        "KEY": "guilt",
+        "DEF": "culpable"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "gin",
+        "DEF": "alcoholic beverage"
+      },
+      {
+        "KEY": "jinn",
+        "DEF": "plural of jinni, a Muslim spirit or demon"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "gnawed",
+        "DEF": "chewed"
+      },
+      {
+        "KEY": "nod",
+        "DEF": "head tilting"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "gneiss",
+        "DEF": "coarse-grained metamorphic rock of feldspar, quartz and mica"
+      },
+      {
+        "KEY": "nice",
+        "DEF": "pleasant"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "gnu",
+        "DEF": "African antelope"
+      },
+      {
+        "KEY": "knew",
+        "DEF": "past tense of know"
+      },
+      {
+        "KEY": "new",
+        "DEF": "not old"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "gnus",
+        "DEF": "several antelope"
+      },
+      {
+        "KEY": "news",
+        "DEF": "timely information"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "gored",
+        "DEF": "pierced by an animal's horns"
+      },
+      {
+        "KEY": "gourd",
+        "DEF": "fleshy fruit with hard skin"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "gorilla",
+        "DEF": "large ape"
+      },
+      {
+        "KEY": "guerrilla",
+        "DEF": "irregular soldier"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "grade",
+        "DEF": "a slope"
+      },
+      {
+        "KEY": "grayed",
+        "DEF": "turned gray"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "graft",
+        "DEF": "to attach"
+      },
+      {
+        "KEY": "graphed",
+        "DEF": "plotted"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "grate",
+        "DEF": "a lattice"
+      },
+      {
+        "KEY": "great",
+        "DEF": "extremely good"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "grays",
+        "DEF": "more than one shade of black"
+      },
+      {
+        "KEY": "graze",
+        "DEF": "to eat grass while wandering"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "grease",
+        "DEF": "lubricant"
+      },
+      {
+        "KEY": "Greece",
+        "DEF": "Mediterranean country"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "greave",
+        "DEF": "leg armor"
+      },
+      {
+        "KEY": "grieve",
+        "DEF": "to mourn"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "greaves",
+        "DEF": "more than one greave"
+      },
+      {
+        "KEY": "grieves",
+        "DEF": "to mourn"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "grill",
+        "DEF": "to sear cook"
+      },
+      {
+        "KEY": "grille",
+        "DEF": "an iron gate or door"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "groan",
+        "DEF": "reaction to hearing a pun"
+      },
+      {
+        "KEY": "grown",
+        "DEF": "has gotten larger"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "guessed",
+        "DEF": "past tense of guess"
+      },
+      {
+        "KEY": "guest",
+        "DEF": "a visitor"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "guide",
+        "DEF": "one who shows the way"
+      },
+      {
+        "KEY": "guyed",
+        "DEF": "secured with a rope or wire"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "guise",
+        "DEF": "appearance"
+      },
+      {
+        "KEY": "guys",
+        "DEF": "Garrison Keillor's obsession"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "gunnel",
+        "DEF": "small, eel-shaped marine fish; butterfish"
+      },
+      {
+        "KEY": "gunwale",
+        "DEF": "upper part of sides of a boat"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "gym",
+        "DEF": "sports room"
+      },
+      {
+        "KEY": "Jim",
+        "DEF": "nickname for James"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "hail",
+        "DEF": "frozen rain"
+      },
+      {
+        "KEY": "hale",
+        "DEF": "robust health"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "hair",
+        "DEF": "grows from your head"
+      },
+      {
+        "KEY": "hare",
+        "DEF": "rabbit"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "hairy",
+        "DEF": "having much hair"
+      },
+      {
+        "KEY": "Harry",
+        "DEF": "a man's name"
+      },
+      {
+        "KEY": "harry",
+        "DEF": "to harass or hunt"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "hall",
+        "DEF": "a large room"
+      },
+      {
+        "KEY": "haul",
+        "DEF": "to carry"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "halve",
+        "DEF": "break in two"
+      },
+      {
+        "KEY": "have",
+        "DEF": "to hold in possession"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "halves",
+        "DEF": "more than one half"
+      },
+      {
+        "KEY": "haves",
+        "DEF": "those who possess"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "hammock",
+        "DEF": "rope bed"
+      },
+      {
+        "KEY": "hummock",
+        "DEF": "low, rounded hill"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "hangar",
+        "DEF": "garage for airplanes"
+      },
+      {
+        "KEY": "hanger",
+        "DEF": "from which things hang"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "Harold",
+        "DEF": "a man's name"
+      },
+      {
+        "KEY": "herald",
+        "DEF": "a horn blower"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "hart",
+        "DEF": "a stag"
+      },
+      {
+        "KEY": "heart",
+        "DEF": "blood pump"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "haut",
+        "DEF": "high, as in \"haut couture\""
+      },
+      {
+        "KEY": "ho",
+        "DEF": "an expression of admiration or surprise"
+      },
+      {
+        "KEY": "hoe",
+        "DEF": "garden tool"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "hay",
+        "DEF": "grass"
+      },
+      {
+        "KEY": "hey",
+        "DEF": "a shout"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "hays",
+        "DEF": "more than one type of hay"
+      },
+      {
+        "KEY": "haze",
+        "DEF": "atmospheric obscuration due to water or dust"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "he'd",
+        "DEF": "contraction of \"he would\""
+      },
+      {
+        "KEY": "heed",
+        "DEF": "to pay attention"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "he'll",
+        "DEF": "contraction of \"he will\""
+      },
+      {
+        "KEY": "heal",
+        "DEF": "to make well"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "he'll",
+        "DEF": "contraction of \"he will\""
+      },
+      {
+        "KEY": "hill",
+        "DEF": "smaller than a mountain"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "heal",
+        "DEF": "to cure of disease"
+      },
+      {
+        "KEY": "heel",
+        "DEF": "hind part of foot"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "hear",
+        "DEF": "to listen"
+      },
+      {
+        "KEY": "here",
+        "DEF": "at this location"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "heard",
+        "DEF": "listened to"
+      },
+      {
+        "KEY": "herd",
+        "DEF": "a group of ruminants"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "heigh",
+        "DEF": "an exclamation"
+      },
+      {
+        "KEY": "hi",
+        "DEF": "a greeting"
+      },
+      {
+        "KEY": "hie",
+        "DEF": "to go quickly"
+      },
+      {
+        "KEY": "high",
+        "DEF": "way up"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "heroin",
+        "DEF": "narcotic"
+      },
+      {
+        "KEY": "heroine",
+        "DEF": "female hero"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "hew",
+        "DEF": "to chop"
+      },
+      {
+        "KEY": "hue",
+        "DEF": "a color"
+      },
+      {
+        "KEY": "Hugh",
+        "DEF": "a man's name"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "hide",
+        "DEF": "animal skin"
+      },
+      {
+        "KEY": "hied",
+        "DEF": "hurried"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "higher",
+        "DEF": "farther up"
+      },
+      {
+        "KEY": "hire",
+        "DEF": "to employ"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "him",
+        "DEF": "pronoun"
+      },
+      {
+        "KEY": "hymn",
+        "DEF": "religious song"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "hoar",
+        "DEF": "a white frost"
+      },
+      {
+        "KEY": "whore",
+        "DEF": "a prostitute"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "hoard",
+        "DEF": "a great stash"
+      },
+      {
+        "KEY": "horde",
+        "DEF": "a great many people"
+      },
+      {
+        "KEY": "whored",
+        "DEF": "prostituted"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "hoarse",
+        "DEF": "rough voice"
+      },
+      {
+        "KEY": "horse",
+        "DEF": "equine"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "hoes",
+        "DEF": "more than one garden weeding tool"
+      },
+      {
+        "KEY": "hose",
+        "DEF": "tube for watering garden weeds"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "hold",
+        "DEF": "to grip"
+      },
+      {
+        "KEY": "holed",
+        "DEF": "full of holes"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "hole",
+        "DEF": "round opening"
+      },
+      {
+        "KEY": "whole",
+        "DEF": "entirety"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "holey",
+        "DEF": "perforated"
+      },
+      {
+        "KEY": "holy",
+        "DEF": "with religious significance"
+      },
+      {
+        "KEY": "wholly",
+        "DEF": "completely"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "hostel",
+        "DEF": "inexpensive lodging for travelers"
+      },
+      {
+        "KEY": "hostile",
+        "DEF": "unfriendly"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "hour",
+        "DEF": "sixty minutes"
+      },
+      {
+        "KEY": "our",
+        "DEF": "possessed by us"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "hours",
+        "DEF": "time measurement"
+      },
+      {
+        "KEY": "ours",
+        "DEF": "belonging to us"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "humerus",
+        "DEF": "funny bone"
+      },
+      {
+        "KEY": "humorous",
+        "DEF": "funny"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "I'll,",
+        "DEF": "see: aisle"
+      },
+      {
+        "KEY": "idle",
+        "DEF": "not working"
+      },
+      {
+        "KEY": "idol",
+        "DEF": "object of worship"
+      },
+      {
+        "KEY": "idyl",
+        "DEF": "paradise"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "in",
+        "DEF": "expressing inclusion"
+      },
+      {
+        "KEY": "inn",
+        "DEF": "hotel"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "inc",
+        "DEF": "short for incorporated"
+      },
+      {
+        "KEY": "ink",
+        "DEF": "writing fluid"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "incite",
+        "DEF": "to provoke"
+      },
+      {
+        "KEY": "insight",
+        "DEF": "understanding"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "innocence",
+        "DEF": "a state without guilt"
+      },
+      {
+        "KEY": "innocents",
+        "DEF": "more than one innocent"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "inns",
+        "DEF": "hotels"
+      },
+      {
+        "KEY": "ins",
+        "DEF": "those on the inside"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "it's",
+        "DEF": "contraction of \"it is\""
+      },
+      {
+        "KEY": "its",
+        "DEF": "possessive pronoun"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "jam",
+        "DEF": "to smash together"
+      },
+      {
+        "KEY": "jamb",
+        "DEF": "side post of a doorway"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "jewel",
+        "DEF": "precious stone"
+      },
+      {
+        "KEY": "joule",
+        "DEF": "unit of energy measure"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "juggler",
+        "DEF": "one who juggles"
+      },
+      {
+        "KEY": "jugular",
+        "DEF": "artery to head"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "knap",
+        "DEF": "crest of a hill; break with a hammer"
+      },
+      {
+        "KEY": "nap",
+        "DEF": "a short sleep"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "knead",
+        "DEF": "working bread dough"
+      },
+      {
+        "KEY": "need",
+        "DEF": "must have"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "knickers",
+        "DEF": "woman's underwear"
+      },
+      {
+        "KEY": "nickers",
+        "DEF": "those who nick"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "knight",
+        "DEF": "chivalrous man"
+      },
+      {
+        "KEY": "night",
+        "DEF": "darkness"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "knit",
+        "DEF": "interlocking loops of yarn"
+      },
+      {
+        "KEY": "nit",
+        "DEF": "louse egg"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "knits",
+        "DEF": "verb form of knit"
+      },
+      {
+        "KEY": "nits",
+        "DEF": "louse eggs"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "knob",
+        "DEF": "handle"
+      },
+      {
+        "KEY": "nob",
+        "DEF": "rich person"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "knock",
+        "DEF": "to rap"
+      },
+      {
+        "KEY": "nock",
+        "DEF": "a notch in an arrow"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "knot",
+        "DEF": "fastening in cord"
+      },
+      {
+        "KEY": "naught",
+        "DEF": "nothing"
+      },
+      {
+        "KEY": "not",
+        "DEF": "negation"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "know",
+        "DEF": "to possess knowledge"
+      },
+      {
+        "KEY": "no",
+        "DEF": "negation"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "knows",
+        "DEF": "\"Only the shadow knows...\""
+      },
+      {
+        "KEY": "noes",
+        "DEF": "\"The noes have it...\""
+      },
+      {
+        "KEY": "nose",
+        "DEF": "\"Plain as the nose on your face...\""
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "lacks",
+        "DEF": "does not have"
+      },
+      {
+        "KEY": "lax",
+        "DEF": "loose discipline"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "lain",
+        "DEF": "past tense of lay"
+      },
+      {
+        "KEY": "lane",
+        "DEF": "narrow road"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "lam",
+        "DEF": "headlong flight"
+      },
+      {
+        "KEY": "lamb",
+        "DEF": "baby sheep"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "lay",
+        "DEF": "to recline"
+      },
+      {
+        "KEY": "lei",
+        "DEF": "a flower necklace"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "lays",
+        "DEF": "to recline"
+      },
+      {
+        "KEY": "laze",
+        "DEF": "to recline with extreme prejudice"
+      },
+      {
+        "KEY": "leis",
+        "DEF": "several flower necklaces"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "lea",
+        "DEF": "a meadow"
+      },
+      {
+        "KEY": "lee",
+        "DEF": "downwind"
+      },
+      {
+        "KEY": "li",
+        "DEF": "about one-third of a mile in China"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "leach",
+        "DEF": "washing action"
+      },
+      {
+        "KEY": "leech",
+        "DEF": "sucking parasite"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "lead",
+        "DEF": "heavy metal"
+      },
+      {
+        "KEY": "led",
+        "DEF": "guided"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "leak",
+        "DEF": "accidental escape of liquid"
+      },
+      {
+        "KEY": "leek",
+        "DEF": "variety of onion"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "lean",
+        "DEF": "angle of repose"
+      },
+      {
+        "KEY": "lien",
+        "DEF": "a claim on property"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "leas",
+        "DEF": "more than one meadow"
+      },
+      {
+        "KEY": "lees",
+        "DEF": "the dregs"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "leased",
+        "DEF": "rented"
+      },
+      {
+        "KEY": "least",
+        "DEF": "the minimum"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "lends",
+        "DEF": "allows to borrow"
+      },
+      {
+        "KEY": "lens",
+        "DEF": "convex glass"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "lessen",
+        "DEF": "to reduce"
+      },
+      {
+        "KEY": "lesson",
+        "DEF": "a segment of learning"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "liar",
+        "DEF": "tells falsehoods"
+      },
+      {
+        "KEY": "lyre",
+        "DEF": "stringed instrument"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "lichen",
+        "DEF": "a fungus among us"
+      },
+      {
+        "KEY": "liken",
+        "DEF": "to compare"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "lie",
+        "DEF": "an untruth"
+      },
+      {
+        "KEY": "lye",
+        "DEF": "a caustic"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "lieu",
+        "DEF": "instead"
+      },
+      {
+        "KEY": "loo",
+        "DEF": "British toilet"
+      },
+      {
+        "KEY": "Lou",
+        "DEF": "short for Louis"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "lightening",
+        "DEF": "removing weight or darkness"
+      },
+      {
+        "KEY": "lightning",
+        "DEF": "static electricity from the sky"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "limb",
+        "DEF": "tree branch"
+      },
+      {
+        "KEY": "limn",
+        "DEF": "delineate"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "limbs",
+        "DEF": "arms or legs"
+      },
+      {
+        "KEY": "limns",
+        "DEF": "to illuminate, as in a manuscript"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "links",
+        "DEF": "pieces of chain"
+      },
+      {
+        "KEY": "lynx",
+        "DEF": "feral cat"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "literal",
+        "DEF": "taking words in their primary sense"
+      },
+      {
+        "KEY": "littoral",
+        "DEF": "having to do with the shore"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "lo",
+        "DEF": "interjection"
+      },
+      {
+        "KEY": "low",
+        "DEF": "not high"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "load",
+        "DEF": "cargo"
+      },
+      {
+        "KEY": "lode",
+        "DEF": "mineral vein"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "load",
+        "DEF": "what is carried"
+      },
+      {
+        "KEY": "lowed",
+        "DEF": "a cow mooed"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "loan",
+        "DEF": "allow to borrow"
+      },
+      {
+        "KEY": "lone",
+        "DEF": "by itself"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "loch",
+        "DEF": "a lake"
+      },
+      {
+        "KEY": "lock",
+        "DEF": "a security device"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "lochs",
+        "DEF": "more than one lake"
+      },
+      {
+        "KEY": "locks",
+        "DEF": "more than one security device"
+      },
+      {
+        "KEY": "lox",
+        "DEF": "salmon jerky"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "loon",
+        "DEF": "a water fowl"
+      },
+      {
+        "KEY": "lune",
+        "DEF": "a crescent shape"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "loop",
+        "DEF": "a circular pattern"
+      },
+      {
+        "KEY": "loupe",
+        "DEF": "a jeweler's monocular magnifier"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "loos",
+        "DEF": "several British toilets"
+      },
+      {
+        "KEY": "lose",
+        "DEF": "fail to win"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "loot",
+        "DEF": "ill-gotten gains"
+      },
+      {
+        "KEY": "lute",
+        "DEF": "stringed instrument"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "lumbar",
+        "DEF": "lower back"
+      },
+      {
+        "KEY": "lumber",
+        "DEF": "dimensional wood"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "mach",
+        "DEF": "speed of sound"
+      },
+      {
+        "KEY": "mock",
+        "DEF": "parody"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "made",
+        "DEF": "accomplished"
+      },
+      {
+        "KEY": "maid",
+        "DEF": "young woman"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "mail",
+        "DEF": "postal delivery"
+      },
+      {
+        "KEY": "male",
+        "DEF": "masculine person"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "main",
+        "DEF": "primary"
+      },
+      {
+        "KEY": "mane",
+        "DEF": "back hair"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "maize",
+        "DEF": "corn"
+      },
+      {
+        "KEY": "maze",
+        "DEF": "puzzle"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "mall",
+        "DEF": "hallway"
+      },
+      {
+        "KEY": "maul",
+        "DEF": "shred"
+      },
+      {
+        "KEY": "moll",
+        "DEF": "gangster's girlfriend"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "manner",
+        "DEF": "method"
+      },
+      {
+        "KEY": "manor",
+        "DEF": "lord's house"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "marc",
+        "DEF": "coarse brandy"
+      },
+      {
+        "KEY": "mark",
+        "DEF": "a sign"
+      },
+      {
+        "KEY": "marque",
+        "DEF": "a license to privateer; a brand"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "marquee",
+        "DEF": "a rooflike projection over a theatre entrance"
+      },
+      {
+        "KEY": "marquis",
+        "DEF": "a nobleman ranking between a duke and a count"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "marry",
+        "DEF": "to join in matrimony"
+      },
+      {
+        "KEY": "merry",
+        "DEF": "happy"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "marshal",
+        "DEF": "to gather"
+      },
+      {
+        "KEY": "martial",
+        "DEF": "warlike"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "massed",
+        "DEF": "grouped together"
+      },
+      {
+        "KEY": "mast",
+        "DEF": "sail pole"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "Mays",
+        "DEF": "several spring months"
+      },
+      {
+        "KEY": "maze",
+        "DEF": "a labyrinth"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "me",
+        "DEF": "myself"
+      },
+      {
+        "KEY": "mi",
+        "DEF": "musical note"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "mean",
+        "DEF": "average"
+      },
+      {
+        "KEY": "mein",
+        "DEF": "manner"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "meat",
+        "DEF": "animal flesh"
+      },
+      {
+        "KEY": "meet",
+        "DEF": "to connect"
+      },
+      {
+        "KEY": "mete",
+        "DEF": "a boundary"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "medal",
+        "DEF": "an award"
+      },
+      {
+        "KEY": "meddle",
+        "DEF": "to interfere"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "men's",
+        "DEF": "owned by males"
+      },
+      {
+        "KEY": "mends",
+        "DEF": "to repair"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "metal",
+        "DEF": "ductile element"
+      },
+      {
+        "KEY": "mettle",
+        "DEF": "moxie"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "mewl",
+        "DEF": "to whimper"
+      },
+      {
+        "KEY": "mule",
+        "DEF": "offspring of female horse and male donkey"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "mews",
+        "DEF": "stables"
+      },
+      {
+        "KEY": "muse",
+        "DEF": "creative inspiration"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "might",
+        "DEF": "possible"
+      },
+      {
+        "KEY": "mite",
+        "DEF": "tiny creature"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "mince",
+        "DEF": "chop finely"
+      },
+      {
+        "KEY": "mints",
+        "DEF": "aromatic candies"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "mind",
+        "DEF": "thinking unit"
+      },
+      {
+        "KEY": "mined",
+        "DEF": "looked for ore"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "miner",
+        "DEF": "one who digs"
+      },
+      {
+        "KEY": "minor",
+        "DEF": "small"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "missal",
+        "DEF": "hymn book"
+      },
+      {
+        "KEY": "missile",
+        "DEF": "projectile"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "missed",
+        "DEF": "not hit"
+      },
+      {
+        "KEY": "mist",
+        "DEF": "fog"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "misses",
+        "DEF": "young ladies"
+      },
+      {
+        "KEY": "Mrs.",
+        "DEF": "married lady"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "moan",
+        "DEF": "to groan"
+      },
+      {
+        "KEY": "mown",
+        "DEF": "the lawn is freshly cut"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "moat",
+        "DEF": "water around a castle"
+      },
+      {
+        "KEY": "mote",
+        "DEF": "a speck"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "mode",
+        "DEF": "condition"
+      },
+      {
+        "KEY": "mowed",
+        "DEF": "a lawn in a well-trimmed condition"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "moiré",
+        "DEF": "optical illusion"
+      },
+      {
+        "KEY": "moray",
+        "DEF": "eel"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "mood",
+        "DEF": "emotional state"
+      },
+      {
+        "KEY": "mooed",
+        "DEF": "what the loquacious cow did"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "moor",
+        "DEF": "swampy coastland; to anchor"
+      },
+      {
+        "KEY": "more",
+        "DEF": "additional"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "moose",
+        "DEF": "a large elk"
+      },
+      {
+        "KEY": "mousse",
+        "DEF": "dessert of whipped cream and eggs"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "moral",
+        "DEF": "a social imperative"
+      },
+      {
+        "KEY": "morel",
+        "DEF": "a mushroom"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "morn",
+        "DEF": "AM"
+      },
+      {
+        "KEY": "mourn",
+        "DEF": "remember the dead"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "morning",
+        "DEF": "AM"
+      },
+      {
+        "KEY": "mourning",
+        "DEF": "remembering the dead"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "muscle",
+        "DEF": "fibrous, contracting tissue"
+      },
+      {
+        "KEY": "mussel",
+        "DEF": "a bivalve mollusc"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "muscles",
+        "DEF": "more than one muscle"
+      },
+      {
+        "KEY": "mussels",
+        "DEF": "more than one mussel"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "mussed",
+        "DEF": "made messy"
+      },
+      {
+        "KEY": "must",
+        "DEF": "required"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "mustard",
+        "DEF": "spicy yellow sauce"
+      },
+      {
+        "KEY": "mustered",
+        "DEF": "assembled for roll call"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "naval",
+        "DEF": "pertaining to ships and the sea"
+      },
+      {
+        "KEY": "navel",
+        "DEF": "pertaining to the belly button"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "nay",
+        "DEF": "no"
+      },
+      {
+        "KEY": "neigh",
+        "DEF": "a horse's cry"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "nays",
+        "DEF": "votes against"
+      },
+      {
+        "KEY": "neighs",
+        "DEF": "a horse vocalizes"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "neap",
+        "DEF": "the lowest tide"
+      },
+      {
+        "KEY": "neep",
+        "DEF": "a turnip"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "none",
+        "DEF": "not one"
+      },
+      {
+        "KEY": "nun",
+        "DEF": "woman of God"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "oar",
+        "DEF": "boat propulsion system"
+      },
+      {
+        "KEY": "or",
+        "DEF": "boolean deathtrap"
+      },
+      {
+        "KEY": "ore",
+        "DEF": "mineral-laden dirt"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "oh",
+        "DEF": "interjection"
+      },
+      {
+        "KEY": "owe",
+        "DEF": "to be indebted"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "ohs",
+        "DEF": "more than one letter \"O\""
+      },
+      {
+        "KEY": "owes",
+        "DEF": "in debt"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "one",
+        "DEF": "singularity"
+      },
+      {
+        "KEY": "won",
+        "DEF": "victorious"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "oohs",
+        "DEF": "as in \"oohs and ahs\""
+      },
+      {
+        "KEY": "ooze",
+        "DEF": "slime"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "ordinance",
+        "DEF": "a decree"
+      },
+      {
+        "KEY": "ordnance",
+        "DEF": "artillery"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "overdo",
+        "DEF": "carried to excess"
+      },
+      {
+        "KEY": "overdue",
+        "DEF": "past time for payment"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "paced",
+        "DEF": "measured by footsteps"
+      },
+      {
+        "KEY": "paste",
+        "DEF": "thick glue"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "packed",
+        "DEF": "placed in a container"
+      },
+      {
+        "KEY": "pact",
+        "DEF": "agreement"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "pail",
+        "DEF": "bucket"
+      },
+      {
+        "KEY": "pale",
+        "DEF": "light colored"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "pain",
+        "DEF": "it hurts"
+      },
+      {
+        "KEY": "pane",
+        "DEF": "a single panel of glass"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "pair",
+        "DEF": "a set of two"
+      },
+      {
+        "KEY": "pare",
+        "DEF": "cutting down"
+      },
+      {
+        "KEY": "pear",
+        "DEF": "bottom-heavy fruit"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "palate",
+        "DEF": "taste"
+      },
+      {
+        "KEY": "pallet",
+        "DEF": "a platform for transporting goods; bed"
+      },
+      {
+        "KEY": "pallette",
+        "DEF": "a selection of paint"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "pall",
+        "DEF": "to become wearisome"
+      },
+      {
+        "KEY": "Paul",
+        "DEF": "barefoot Beatle"
+      },
+      {
+        "KEY": "pawl",
+        "DEF": "locks a ratchet"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "passed",
+        "DEF": "approved; moved on"
+      },
+      {
+        "KEY": "past",
+        "DEF": "before now"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "patience",
+        "DEF": "being willing to wait"
+      },
+      {
+        "KEY": "patients",
+        "DEF": "being willing to wait"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "pause",
+        "DEF": "to hesitate"
+      },
+      {
+        "KEY": "paws",
+        "DEF": "cat transportation"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "pea",
+        "DEF": "round, green legume"
+      },
+      {
+        "KEY": "pee",
+        "DEF": "piss"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "peace",
+        "DEF": "what hippies want"
+      },
+      {
+        "KEY": "piece",
+        "DEF": "what hippies want"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "peak",
+        "DEF": "mountain top"
+      },
+      {
+        "KEY": "peek",
+        "DEF": "secret look"
+      },
+      {
+        "KEY": "pique",
+        "DEF": "ruffled pride"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "peal",
+        "DEF": "ringing sound"
+      },
+      {
+        "KEY": "peel",
+        "DEF": "fruit wrapping"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "pealed",
+        "DEF": "rang with sound"
+      },
+      {
+        "KEY": "peeled",
+        "DEF": "ready to eat"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "pearl",
+        "DEF": "round, luminescent gem from an oyster"
+      },
+      {
+        "KEY": "purl",
+        "DEF": "to edge with a chain of small loops"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "pearl",
+        "DEF": "something of value made from an irritant"
+      },
+      {
+        "KEY": "Perl",
+        "DEF": "something of value made from an irritant"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "pedal",
+        "DEF": "foot control"
+      },
+      {
+        "KEY": "peddle",
+        "DEF": "to sell"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "peer",
+        "DEF": "an equal (a captain at sea has no peer)"
+      },
+      {
+        "KEY": "pier",
+        "DEF": "wharf (a captain at sea has no pier)"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "pencil",
+        "DEF": "writing implement"
+      },
+      {
+        "KEY": "pensil",
+        "DEF": "thin, swallowtail flag"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "per",
+        "DEF": "for each"
+      },
+      {
+        "KEY": "purr",
+        "DEF": "endearing cat hum"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "pi",
+        "DEF": "3.1416"
+      },
+      {
+        "KEY": "pie",
+        "DEF": "good eating"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "picnic",
+        "DEF": "outdoor meal"
+      },
+      {
+        "KEY": "pyknic",
+        "DEF": "physiological type with thick neck, large abdomen and short limbs"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "pieced",
+        "DEF": "assembled from pieces"
+      },
+      {
+        "KEY": "piste",
+        "DEF": "a ski run of compacted snow"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "pincer",
+        "DEF": "claw-like gripping action"
+      },
+      {
+        "KEY": "pincher",
+        "DEF": "one who pinches"
+      },
+      {
+        "KEY": "pinscher",
+        "DEF": "terrier"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "pistil",
+        "DEF": "seed-bearing organ of a flower"
+      },
+      {
+        "KEY": "pistol",
+        "DEF": "hand gun"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "place",
+        "DEF": "a location"
+      },
+      {
+        "KEY": "plaice",
+        "DEF": "a flounder"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "plain",
+        "DEF": "not fancy"
+      },
+      {
+        "KEY": "plane",
+        "DEF": "a surface"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "plait",
+        "DEF": "braid"
+      },
+      {
+        "KEY": "plate",
+        "DEF": "a dish"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "planar",
+        "DEF": "flat"
+      },
+      {
+        "KEY": "planer",
+        "DEF": "one who planes"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "pleas",
+        "DEF": "crys for help"
+      },
+      {
+        "KEY": "please",
+        "DEF": "good manners"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "pleural",
+        "DEF": "related to lungs"
+      },
+      {
+        "KEY": "plural",
+        "DEF": "more than one"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "plum",
+        "DEF": "purple fruit"
+      },
+      {
+        "KEY": "plumb",
+        "DEF": "straight up and down"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "polar",
+        "DEF": "relating to the North or South poles"
+      },
+      {
+        "KEY": "poler",
+        "DEF": "one who uses a pole"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "Pole",
+        "DEF": "a person from Poland"
+      },
+      {
+        "KEY": "pole",
+        "DEF": "big stick"
+      },
+      {
+        "KEY": "poll",
+        "DEF": "a voting"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "poled",
+        "DEF": "a pole was used"
+      },
+      {
+        "KEY": "polled",
+        "DEF": "lacking horns"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "pone",
+        "DEF": "the dealer's opponent in two-handed card games"
+      },
+      {
+        "KEY": "pony",
+        "DEF": "a small horse"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "poor",
+        "DEF": "no money"
+      },
+      {
+        "KEY": "pore",
+        "DEF": "careful study; microscopic hole"
+      },
+      {
+        "KEY": "pour",
+        "DEF": "to flow freely"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "popery",
+        "DEF": "a disparaging term for Catholics"
+      },
+      {
+        "KEY": "potpourri",
+        "DEF": "a miscellaneous collection"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "praise",
+        "DEF": "to commend"
+      },
+      {
+        "KEY": "prays",
+        "DEF": "worships God"
+      },
+      {
+        "KEY": "preys",
+        "DEF": "hunts"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "pray",
+        "DEF": "worship God"
+      },
+      {
+        "KEY": "prey",
+        "DEF": "hunt"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "precedence",
+        "DEF": "priority"
+      },
+      {
+        "KEY": "precedents",
+        "DEF": "established course of action"
+      },
+      {
+        "KEY": "presidents",
+        "DEF": "commanders-in-chief"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "presence",
+        "DEF": "the state of being present"
+      },
+      {
+        "KEY": "presents",
+        "DEF": "what Santa brings"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "pride",
+        "DEF": "ego"
+      },
+      {
+        "KEY": "pryed",
+        "DEF": "opened"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "pries",
+        "DEF": "wedging open"
+      },
+      {
+        "KEY": "prize",
+        "DEF": "the reward"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "prince",
+        "DEF": "son of the King"
+      },
+      {
+        "KEY": "prints",
+        "DEF": "impressions"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "principal",
+        "DEF": "head of school"
+      },
+      {
+        "KEY": "principle",
+        "DEF": "causative force"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "profit",
+        "DEF": "money earned"
+      },
+      {
+        "KEY": "prophet",
+        "DEF": "seer"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "pros",
+        "DEF": "multiple experts"
+      },
+      {
+        "KEY": "prose",
+        "DEF": "ordinary language"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "psi",
+        "DEF": "twenty-third letter of Greek alphabet"
+      },
+      {
+        "KEY": "sigh",
+        "DEF": "sad and weary breath"
+      },
+      {
+        "KEY": "xi",
+        "DEF": "fourteenth letter of Greek alphabet"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "quarts",
+        "DEF": "several fourths-of-gallons"
+      },
+      {
+        "KEY": "quartz",
+        "DEF": "crystalline rock"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "quince",
+        "DEF": "small, round fruit"
+      },
+      {
+        "KEY": "quints",
+        "DEF": "multiple quintuplets"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "rabbet",
+        "DEF": "a groove cut in a board"
+      },
+      {
+        "KEY": "rabbit",
+        "DEF": "small mammal"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "rack",
+        "DEF": "shelf"
+      },
+      {
+        "KEY": "wrack",
+        "DEF": "wreckage"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "racket",
+        "DEF": "illegal moneymaking scheme"
+      },
+      {
+        "KEY": "racquet",
+        "DEF": "woven bat for tennis"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "rain",
+        "DEF": "precipitation"
+      },
+      {
+        "KEY": "reign",
+        "DEF": "sovereign rule"
+      },
+      {
+        "KEY": "rein",
+        "DEF": "horse's steering wheel"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "raise",
+        "DEF": "elevate"
+      },
+      {
+        "KEY": "rays",
+        "DEF": "thin beams of light"
+      },
+      {
+        "KEY": "raze",
+        "DEF": "to tear down completely"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "rap",
+        "DEF": "a sharp knock"
+      },
+      {
+        "KEY": "wrap",
+        "DEF": "to encase in cloth"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "rapped",
+        "DEF": "knocked sharply"
+      },
+      {
+        "KEY": "rapt",
+        "DEF": "spellbound"
+      },
+      {
+        "KEY": "wrapped",
+        "DEF": "encased in cloth"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "ray",
+        "DEF": "arrow of light"
+      },
+      {
+        "KEY": "re",
+        "DEF": "musical note"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "read",
+        "DEF": "having knowledge from reading"
+      },
+      {
+        "KEY": "red",
+        "DEF": "a primary color"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "read",
+        "DEF": "to get the meaning by looking"
+      },
+      {
+        "KEY": "rede",
+        "DEF": "advice"
+      },
+      {
+        "KEY": "reed",
+        "DEF": "tall, thin water plant"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "reading",
+        "DEF": "what you are doing now"
+      },
+      {
+        "KEY": "reeding",
+        "DEF": "a small semicylindrical moulding or ornamentation"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "reads",
+        "DEF": "gets the meaning by looking"
+      },
+      {
+        "KEY": "reeds",
+        "DEF": "more than one aquatic plant"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "real",
+        "DEF": "authentic"
+      },
+      {
+        "KEY": "reel",
+        "DEF": "armature for winding"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "recede",
+        "DEF": "to move backward"
+      },
+      {
+        "KEY": "reseed",
+        "DEF": "to plant again"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "reck",
+        "DEF": "to care"
+      },
+      {
+        "KEY": "wreck",
+        "DEF": "a ruin"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "reek",
+        "DEF": "smells bad"
+      },
+      {
+        "KEY": "wreak",
+        "DEF": "to inflict"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "resinate",
+        "DEF": "to impregnate with resin"
+      },
+      {
+        "KEY": "resonate",
+        "DEF": "sympathetic vibration"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "resisters",
+        "DEF": "protesters"
+      },
+      {
+        "KEY": "resistors",
+        "DEF": "electrical restrictors"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "rest",
+        "DEF": "stop working"
+      },
+      {
+        "KEY": "wrest",
+        "DEF": "take away"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "retch",
+        "DEF": "call Ralph on the porcelain telephone"
+      },
+      {
+        "KEY": "wretch",
+        "DEF": "a ragamuffin"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "review",
+        "DEF": "a general survey or assessment"
+      },
+      {
+        "KEY": "revue",
+        "DEF": "a series of theatrical sketches or songs"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "rheum",
+        "DEF": "watery discharge of mucous"
+      },
+      {
+        "KEY": "room",
+        "DEF": "partitioned space"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "rheumy",
+        "DEF": "having a watery discharge of mucous"
+      },
+      {
+        "KEY": "roomie",
+        "DEF": "colloquialism for \"roommate\""
+      },
+      {
+        "KEY": "roomy",
+        "DEF": "lots of space"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "rho",
+        "DEF": "seventeenth letter of Greek alphabet"
+      },
+      {
+        "KEY": "roe",
+        "DEF": "fish eggs"
+      },
+      {
+        "KEY": "row",
+        "DEF": "aisle; pull an oar"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "rhumb",
+        "DEF": "a constant compass direction"
+      },
+      {
+        "KEY": "rum",
+        "DEF": "liquor distilled from sugar cane"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "rhyme",
+        "DEF": "a verse with regular recurrence of sounds"
+      },
+      {
+        "KEY": "rime",
+        "DEF": "frost"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "rigger",
+        "DEF": "one who rigs"
+      },
+      {
+        "KEY": "rigor",
+        "DEF": "discipline"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "right",
+        "DEF": "correct"
+      },
+      {
+        "KEY": "rite",
+        "DEF": "ritual"
+      },
+      {
+        "KEY": "wright",
+        "DEF": "a maker"
+      },
+      {
+        "KEY": "write",
+        "DEF": "to inscribe"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "ring",
+        "DEF": "circle around your finger"
+      },
+      {
+        "KEY": "wring",
+        "DEF": "twisting"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "rise",
+        "DEF": "to stand up"
+      },
+      {
+        "KEY": "ryes",
+        "DEF": "varieties of grain"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "road",
+        "DEF": "a broad trail"
+      },
+      {
+        "KEY": "rode",
+        "DEF": "past tense of ride"
+      },
+      {
+        "KEY": "rowed",
+        "DEF": "to propel a boat by oars"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "roam",
+        "DEF": "to wander"
+      },
+      {
+        "KEY": "Rome",
+        "DEF": "Italian capital"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "roil",
+        "DEF": "to make turbid"
+      },
+      {
+        "KEY": "royal",
+        "DEF": "worthy of a king or queen"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "role",
+        "DEF": "part to play"
+      },
+      {
+        "KEY": "roll",
+        "DEF": "rotate"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "rood",
+        "DEF": "a cross"
+      },
+      {
+        "KEY": "rude",
+        "DEF": "coarse"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "roomer",
+        "DEF": "a tenant"
+      },
+      {
+        "KEY": "rumor",
+        "DEF": "gossip"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "root",
+        "DEF": "subterranean part of a plant"
+      },
+      {
+        "KEY": "route",
+        "DEF": "path of travel"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "rose",
+        "DEF": "pretty flower"
+      },
+      {
+        "KEY": "rows",
+        "DEF": "linear arrangement"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "rot",
+        "DEF": "decay"
+      },
+      {
+        "KEY": "wrought",
+        "DEF": "made"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "rote",
+        "DEF": "by memory"
+      },
+      {
+        "KEY": "wrote",
+        "DEF": "has written"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "rough",
+        "DEF": "coarse"
+      },
+      {
+        "KEY": "ruff",
+        "DEF": "pleated collar"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "rout",
+        "DEF": "to force out"
+      },
+      {
+        "KEY": "route",
+        "DEF": "path of travel"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "roux",
+        "DEF": "cooked butter and flour"
+      },
+      {
+        "KEY": "rue",
+        "DEF": "regret"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "rude",
+        "DEF": "impolite"
+      },
+      {
+        "KEY": "rued",
+        "DEF": "regretted"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "rye",
+        "DEF": "grain"
+      },
+      {
+        "KEY": "wry",
+        "DEF": "twisted"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "sachet",
+        "DEF": "a small bag containing perfumed powder"
+      },
+      {
+        "KEY": "sashay",
+        "DEF": "to strut or flounce"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "sacks",
+        "DEF": "bags"
+      },
+      {
+        "KEY": "sax",
+        "DEF": "short for saxophone"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "sail",
+        "DEF": "wind powered water travel"
+      },
+      {
+        "KEY": "sale",
+        "DEF": "the act of selling"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "sane",
+        "DEF": "mentally normal"
+      },
+      {
+        "KEY": "seine",
+        "DEF": "fishing net"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "saner",
+        "DEF": "more mentally normal than others"
+      },
+      {
+        "KEY": "seiner",
+        "DEF": "one who fishes with a net"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "saver",
+        "DEF": "one who saves"
+      },
+      {
+        "KEY": "savor",
+        "DEF": "to relish a taste"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "sawed",
+        "DEF": "cut timber"
+      },
+      {
+        "KEY": "sod",
+        "DEF": "turf"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "scene",
+        "DEF": "visual location"
+      },
+      {
+        "KEY": "seen",
+        "DEF": "past tense of saw"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "scull",
+        "DEF": "rowing motion"
+      },
+      {
+        "KEY": "skull",
+        "DEF": "head bone"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "sea",
+        "DEF": "ocean"
+      },
+      {
+        "KEY": "see",
+        "DEF": "to look"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "seal",
+        "DEF": "to close"
+      },
+      {
+        "KEY": "seel",
+        "DEF": "to close someone's eyes"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "seam",
+        "DEF": "row of stitches"
+      },
+      {
+        "KEY": "seem",
+        "DEF": "appears"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "seamen",
+        "DEF": "sailors"
+      },
+      {
+        "KEY": "semen",
+        "DEF": "male discharge"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "seams",
+        "DEF": "more than one rows of stitching"
+      },
+      {
+        "KEY": "seems",
+        "DEF": "it appears to be"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "sear",
+        "DEF": "scorched"
+      },
+      {
+        "KEY": "seer",
+        "DEF": "a person who sees"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "seas",
+        "DEF": "oceans"
+      },
+      {
+        "KEY": "sees",
+        "DEF": "looks"
+      },
+      {
+        "KEY": "seize",
+        "DEF": "to grab"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "sects",
+        "DEF": "religious factions"
+      },
+      {
+        "KEY": "sex",
+        "DEF": "if you have to ask, you're too young"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "seek",
+        "DEF": "to look for"
+      },
+      {
+        "KEY": "Sikh",
+        "DEF": "Hindu religious sect"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "serf",
+        "DEF": "slave"
+      },
+      {
+        "KEY": "surf",
+        "DEF": "breaking waves"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "serge",
+        "DEF": "strong twilled fabric"
+      },
+      {
+        "KEY": "surge",
+        "DEF": "forceful push"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "sew",
+        "DEF": "needle and thread"
+      },
+      {
+        "KEY": "so",
+        "DEF": "in the manner shown"
+      },
+      {
+        "KEY": "sol",
+        "DEF": "musical note"
+      },
+      {
+        "KEY": "sow",
+        "DEF": "broadcasting seeds"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "sewer",
+        "DEF": "one who sews"
+      },
+      {
+        "KEY": "sower",
+        "DEF": "one who sows"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "sewer",
+        "DEF": "waste drain"
+      },
+      {
+        "KEY": "suer",
+        "DEF": "one who sues"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "shake",
+        "DEF": "vibrate"
+      },
+      {
+        "KEY": "sheik",
+        "DEF": "Arab prince"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "shall",
+        "DEF": "is allowed"
+      },
+      {
+        "KEY": "shell",
+        "DEF": "aquatic exoskeleton"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "she'll",
+        "DEF": "contraction of \"she will\""
+      },
+      {
+        "KEY": "shill",
+        "DEF": "a decoy"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "shear",
+        "DEF": "to cut or wrench"
+      },
+      {
+        "KEY": "sheer",
+        "DEF": "thin; abrupt turn"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "shears",
+        "DEF": "cuts or wrenches; scissors"
+      },
+      {
+        "KEY": "sheers",
+        "DEF": "abruptly turns"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "sheave",
+        "DEF": "pulley"
+      },
+      {
+        "KEY": "shiv",
+        "DEF": "knife"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "shoe",
+        "DEF": "footwear"
+      },
+      {
+        "KEY": "shoo",
+        "DEF": "\"go away\""
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "shoes",
+        "DEF": "more than one shoe"
+      },
+      {
+        "KEY": "shoos",
+        "DEF": "sends away"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "sic",
+        "DEF": "to set upon"
+      },
+      {
+        "KEY": "sick",
+        "DEF": "ill"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "sics",
+        "DEF": "sets upon"
+      },
+      {
+        "KEY": "six",
+        "DEF": "whole number"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "side",
+        "DEF": "lateral"
+      },
+      {
+        "KEY": "sighed",
+        "DEF": "breathed sorrowfully"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "sighs",
+        "DEF": "multiple sad and weary breaths"
+      },
+      {
+        "KEY": "size",
+        "DEF": "magnitude"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "sign",
+        "DEF": "displayed board bearing information"
+      },
+      {
+        "KEY": "sine",
+        "DEF": "reciprocal of the cosecant"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "sink",
+        "DEF": "to submerge"
+      },
+      {
+        "KEY": "synch",
+        "DEF": "together in time"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "Sioux",
+        "DEF": "tribe of native Americans"
+      },
+      {
+        "KEY": "sou",
+        "DEF": "French coin worth five centimes"
+      },
+      {
+        "KEY": "sough",
+        "DEF": "soft sound"
+      },
+      {
+        "KEY": "sue",
+        "DEF": "bring civil action"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "slay",
+        "DEF": "kill"
+      },
+      {
+        "KEY": "sleigh",
+        "DEF": "snow carriage"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "sleight",
+        "DEF": "cunning skill"
+      },
+      {
+        "KEY": "slight",
+        "DEF": "not much"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "slew",
+        "DEF": "past tense of slay"
+      },
+      {
+        "KEY": "slough",
+        "DEF": "bog"
+      },
+      {
+        "KEY": "slue",
+        "DEF": "to swing around"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "sloe",
+        "DEF": "blackthorn berries"
+      },
+      {
+        "KEY": "slow",
+        "DEF": "not fast"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "soar",
+        "DEF": "fly"
+      },
+      {
+        "KEY": "sore",
+        "DEF": "hurt"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "soared",
+        "DEF": "to have sailed through the air"
+      },
+      {
+        "KEY": "sword",
+        "DEF": "long fighting blade"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "solace",
+        "DEF": "comfort"
+      },
+      {
+        "KEY": "soulless",
+        "DEF": "lacking a soul"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "sole",
+        "DEF": "only"
+      },
+      {
+        "KEY": "soul",
+        "DEF": "immortal part of a person"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "some",
+        "DEF": "a few"
+      },
+      {
+        "KEY": "sum",
+        "DEF": "result of addition"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "son",
+        "DEF": "male child"
+      },
+      {
+        "KEY": "sun",
+        "DEF": "star"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "sonny",
+        "DEF": "diminutive for male child"
+      },
+      {
+        "KEY": "sunny",
+        "DEF": "lit by the sun"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "soot",
+        "DEF": "black residue of burning"
+      },
+      {
+        "KEY": "suit",
+        "DEF": "clothes"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "sordid",
+        "DEF": "squalid"
+      },
+      {
+        "KEY": "sorted",
+        "DEF": "arranged"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "spade",
+        "DEF": "shovel"
+      },
+      {
+        "KEY": "spayed",
+        "DEF": "to sterilize a female animal"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "spoor",
+        "DEF": "trail of an animal"
+      },
+      {
+        "KEY": "spore",
+        "DEF": "single cell reproductive body"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "staid",
+        "DEF": "reserved"
+      },
+      {
+        "KEY": "stayed",
+        "DEF": "remained"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "stair",
+        "DEF": "a step"
+      },
+      {
+        "KEY": "stare",
+        "DEF": "look intently"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "stake",
+        "DEF": "wooden pole"
+      },
+      {
+        "KEY": "steak",
+        "DEF": "slice of meat"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "statice",
+        "DEF": "an astringent herb"
+      },
+      {
+        "KEY": "status",
+        "DEF": "position with regard to law"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "stationary",
+        "DEF": "not moving"
+      },
+      {
+        "KEY": "stationery",
+        "DEF": "writing paper"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "steal",
+        "DEF": "take unlawfully"
+      },
+      {
+        "KEY": "steel",
+        "DEF": "iron alloy"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "step",
+        "DEF": "a measure taken"
+      },
+      {
+        "KEY": "steppe",
+        "DEF": "a level, grassy, unforested plain"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "stile",
+        "DEF": "narrow passage"
+      },
+      {
+        "KEY": "style",
+        "DEF": "mode"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "stoop",
+        "DEF": "a small porch"
+      },
+      {
+        "KEY": "stoup",
+        "DEF": "a drinking cup"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "storey",
+        "DEF": "the horizontal divisions of a building"
+      },
+      {
+        "KEY": "story",
+        "DEF": "a narrative tale"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "straight",
+        "DEF": "not crooked"
+      },
+      {
+        "KEY": "strait",
+        "DEF": "narrow waterway"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "succor",
+        "DEF": "relief"
+      },
+      {
+        "KEY": "sucker",
+        "DEF": "one who sucks"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "suede",
+        "DEF": "split leather"
+      },
+      {
+        "KEY": "swayed",
+        "DEF": "curved; convinced"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "suite",
+        "DEF": "ensemble"
+      },
+      {
+        "KEY": "sweet",
+        "DEF": "sugary"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "summary",
+        "DEF": "precis"
+      },
+      {
+        "KEY": "summery",
+        "DEF": "like summer"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "sundae",
+        "DEF": "ice cream with syrup on it"
+      },
+      {
+        "KEY": "Sunday",
+        "DEF": "first day of the week"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "tach",
+        "DEF": "short for tachometer"
+      },
+      {
+        "KEY": "tack",
+        "DEF": "small nail"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "tacks",
+        "DEF": "small nails"
+      },
+      {
+        "KEY": "tax",
+        "DEF": "governmental tithe"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "tail",
+        "DEF": "spinal appendage"
+      },
+      {
+        "KEY": "tale",
+        "DEF": "story"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "tailer",
+        "DEF": "one who hauls in on a ship's line"
+      },
+      {
+        "KEY": "tailor",
+        "DEF": "one who makes clothes"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "taper",
+        "DEF": "wedge-shaped"
+      },
+      {
+        "KEY": "tapir",
+        "DEF": "hoglike, Malaysian mammal"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "tare",
+        "DEF": "allowance for the weight of packing materials"
+      },
+      {
+        "KEY": "tear",
+        "DEF": "to rip"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "taught",
+        "DEF": "past tense of teach"
+      },
+      {
+        "KEY": "taut",
+        "DEF": "stretched tight"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "tea",
+        "DEF": "herbal infusion"
+      },
+      {
+        "KEY": "tee",
+        "DEF": "golfball prop"
+      },
+      {
+        "KEY": "ti",
+        "DEF": "musical note"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "team",
+        "DEF": "a group working together"
+      },
+      {
+        "KEY": "teem",
+        "DEF": "to swarm"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "teaming",
+        "DEF": "a fortuitous pairing"
+      },
+      {
+        "KEY": "teeming",
+        "DEF": "a swarming"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "tear",
+        "DEF": "eyeball lubricant"
+      },
+      {
+        "KEY": "tier",
+        "DEF": "a horizontal row"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "teas",
+        "DEF": "more than one herbal infusion"
+      },
+      {
+        "KEY": "tease",
+        "DEF": "tantalize"
+      },
+      {
+        "KEY": "tees",
+        "DEF": "more than one tee"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "tenner",
+        "DEF": "English slang for a ten pound note"
+      },
+      {
+        "KEY": "tenor",
+        "DEF": "tendency"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "tense",
+        "DEF": "nervous"
+      },
+      {
+        "KEY": "tents",
+        "DEF": "more than one temporary shelter"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "tern",
+        "DEF": "a shorebird"
+      },
+      {
+        "KEY": "terne",
+        "DEF": "alloy of lead and tin"
+      },
+      {
+        "KEY": "turn",
+        "DEF": "rotate"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "Thai",
+        "DEF": "from Thailand"
+      },
+      {
+        "KEY": "tie",
+        "DEF": "a draw"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "the",
+        "DEF": "denoting persons already mentioned"
+      },
+      {
+        "KEY": "thee",
+        "DEF": "objective case of thou"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "their",
+        "DEF": "belonging to them"
+      },
+      {
+        "KEY": "there",
+        "DEF": "a place"
+      },
+      {
+        "KEY": "they're",
+        "DEF": "contraction of \"they are\""
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "threw",
+        "DEF": "to propel by hand"
+      },
+      {
+        "KEY": "through",
+        "DEF": "from end to end"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "throe",
+        "DEF": "a spasm of pain"
+      },
+      {
+        "KEY": "throw",
+        "DEF": "to discharge through the air"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "throes",
+        "DEF": "spasms of pain"
+      },
+      {
+        "KEY": "throws",
+        "DEF": "discharging through the air"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "throne",
+        "DEF": "the royal seat"
+      },
+      {
+        "KEY": "thrown",
+        "DEF": "was hurled"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "thyme",
+        "DEF": "herb"
+      },
+      {
+        "KEY": "time",
+        "DEF": "natures way of keeping everything from happening at once"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "tic",
+        "DEF": "twitch"
+      },
+      {
+        "KEY": "tick",
+        "DEF": "small noise; parasitic bug"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "ticks",
+        "DEF": "the sounds of a clock"
+      },
+      {
+        "KEY": "tics",
+        "DEF": "more than one twitch"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "tide",
+        "DEF": "periodic ebb and flow of oceans"
+      },
+      {
+        "KEY": "tied",
+        "DEF": "passed tense of tie"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "tighten",
+        "DEF": "to make tighter"
+      },
+      {
+        "KEY": "titan",
+        "DEF": "a giant"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "timber",
+        "DEF": "wood for building"
+      },
+      {
+        "KEY": "timbre",
+        "DEF": "musical quality"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "tire",
+        "DEF": "round, rubber things on your car"
+      },
+      {
+        "KEY": "tyer",
+        "DEF": "one who ties"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "to",
+        "DEF": "toward"
+      },
+      {
+        "KEY": "too",
+        "DEF": "also"
+      },
+      {
+        "KEY": "two",
+        "DEF": "a couple"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "toad",
+        "DEF": "frog"
+      },
+      {
+        "KEY": "toed",
+        "DEF": "having toes"
+      },
+      {
+        "KEY": "towed",
+        "DEF": "pulled ahead"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "tocsin",
+        "DEF": "an alarm"
+      },
+      {
+        "KEY": "toxin",
+        "DEF": "a poison"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "tocsins",
+        "DEF": "more than one alarm"
+      },
+      {
+        "KEY": "toxins",
+        "DEF": "more than one poisons"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "toe",
+        "DEF": "forepart of the foot"
+      },
+      {
+        "KEY": "tow",
+        "DEF": "to pull ahead"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "told",
+        "DEF": "what was spoken"
+      },
+      {
+        "KEY": "tolled",
+        "DEF": "a bell was rung"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "tole",
+        "DEF": "lacquered metalware"
+      },
+      {
+        "KEY": "toll",
+        "DEF": "a tax or charge"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "ton",
+        "DEF": "2000 lbs."
+      },
+      {
+        "KEY": "Tun",
+        "DEF": "a large cask"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "tongue",
+        "DEF": "mouth muscle"
+      },
+      {
+        "KEY": "tung",
+        "DEF": "Chinese tree and its oil (similar to linseed)"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "toon",
+        "DEF": "cartoon personality"
+      },
+      {
+        "KEY": "tune",
+        "DEF": "song"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "tort",
+        "DEF": "a sweet cake for lawyers"
+      },
+      {
+        "KEY": "torte",
+        "DEF": "a sweet cake for kids"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "tough",
+        "DEF": "difficult"
+      },
+      {
+        "KEY": "tuff",
+        "DEF": "a stratified, porous rock"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "tracked",
+        "DEF": "having tracks"
+      },
+      {
+        "KEY": "tract",
+        "DEF": "a plot of land"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "tray",
+        "DEF": "a platter"
+      },
+      {
+        "KEY": "trey",
+        "DEF": "three; Bill Gates' nickname"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "troop",
+        "DEF": "a company of soldiers"
+      },
+      {
+        "KEY": "troup",
+        "DEF": "a company of actors"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "trooper",
+        "DEF": "a private soldier"
+      },
+      {
+        "KEY": "trouper",
+        "DEF": "a staunch colleague"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "troopers",
+        "DEF": "several soldiers"
+      },
+      {
+        "KEY": "troupers",
+        "DEF": "multiple actors"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "trussed",
+        "DEF": "tied up"
+      },
+      {
+        "KEY": "trust",
+        "DEF": "faith"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "vain",
+        "DEF": "worthless"
+      },
+      {
+        "KEY": "vane",
+        "DEF": "flat piece moving with the air"
+      },
+      {
+        "KEY": "vein",
+        "DEF": "blood vessel"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "vale",
+        "DEF": "valley"
+      },
+      {
+        "KEY": "veil",
+        "DEF": "gauzy fabric"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "vary",
+        "DEF": "to change"
+      },
+      {
+        "KEY": "very",
+        "DEF": "extremely"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "verses",
+        "DEF": "paragraphs"
+      },
+      {
+        "KEY": "versus",
+        "DEF": "against"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "vial",
+        "DEF": "narrow glass container"
+      },
+      {
+        "KEY": "vile",
+        "DEF": "despicable"
+      },
+      {
+        "KEY": "viol",
+        "DEF": "stringed instrument"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "vice",
+        "DEF": "bad habit"
+      },
+      {
+        "KEY": "vise",
+        "DEF": "bench-mounted clamp"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "WACs",
+        "DEF": "members of the Women's Army Corps"
+      },
+      {
+        "KEY": "wax",
+        "DEF": "candle stuff"
+      },
+      {
+        "KEY": "whacks",
+        "DEF": "several blows"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "wade",
+        "DEF": "walk in shallow water"
+      },
+      {
+        "KEY": "weighed",
+        "DEF": "weight was measured"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "wail",
+        "DEF": "a cry"
+      },
+      {
+        "KEY": "wale",
+        "DEF": "welt; corduroy ridge"
+      },
+      {
+        "KEY": "whale",
+        "DEF": "large oceanic mammal"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "wain",
+        "DEF": "a wagon"
+      },
+      {
+        "KEY": "wane",
+        "DEF": "decrease"
+      },
+      {
+        "KEY": "Wayne",
+        "DEF": "a man's name"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "waist",
+        "DEF": "between ribs and hips"
+      },
+      {
+        "KEY": "waste",
+        "DEF": "make ill use of"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "wait",
+        "DEF": "remain in readiness"
+      },
+      {
+        "KEY": "weight",
+        "DEF": "an amount of heaviness"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "waive",
+        "DEF": "give up rights"
+      },
+      {
+        "KEY": "wave",
+        "DEF": "undulating motion"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "waiver",
+        "DEF": "contract for giving up rights"
+      },
+      {
+        "KEY": "waver",
+        "DEF": "rocking motion"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "Wales",
+        "DEF": "Western division of UK"
+      },
+      {
+        "KEY": "wales",
+        "DEF": "corduroy ridges"
+      },
+      {
+        "KEY": "whales",
+        "DEF": "a pod of ocean mammals"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "walk",
+        "DEF": "perambulate"
+      },
+      {
+        "KEY": "wok",
+        "DEF": "Chinese cooking pan"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "walks",
+        "DEF": "moves by foot"
+      },
+      {
+        "KEY": "woks",
+        "DEF": "salient feature of a Chinese kitchen"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "want",
+        "DEF": "desire"
+      },
+      {
+        "KEY": "wont",
+        "DEF": "accustomed"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "war",
+        "DEF": "large scale armed conflict"
+      },
+      {
+        "KEY": "wore",
+        "DEF": "past tense of wear"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "ware",
+        "DEF": "merchandise"
+      },
+      {
+        "KEY": "wear",
+        "DEF": "attire"
+      },
+      {
+        "KEY": "where",
+        "DEF": "a place"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "warn",
+        "DEF": "to advise of a hazard"
+      },
+      {
+        "KEY": "worn",
+        "DEF": "displaying evidence of use"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "warrantee",
+        "DEF": "one who is protected by a guarantee"
+      },
+      {
+        "KEY": "warranty",
+        "DEF": "a guarantee"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "warship",
+        "DEF": "naval implement of destruction"
+      },
+      {
+        "KEY": "worship",
+        "DEF": "revere in a religious manner"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "wary",
+        "DEF": "cautious"
+      },
+      {
+        "KEY": "wherry",
+        "DEF": "light row boat"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "way",
+        "DEF": "path or direction"
+      },
+      {
+        "KEY": "weigh",
+        "DEF": "to measure weight"
+      },
+      {
+        "KEY": "whey",
+        "DEF": "watery part of milk"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "we",
+        "DEF": "us"
+      },
+      {
+        "KEY": "wee",
+        "DEF": "very small"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "we'd",
+        "DEF": "contraction of \"we would\""
+      },
+      {
+        "KEY": "weed",
+        "DEF": "like how our flowers won't grow"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "we'll",
+        "DEF": "contraction of \"we will\""
+      },
+      {
+        "KEY": "wheel",
+        "DEF": "what we keep reinventing"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "we're",
+        "DEF": "contraction of \"we are\""
+      },
+      {
+        "KEY": "weir",
+        "DEF": "a low dam, or a fence in a river for catching fish"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "we're",
+        "DEF": "contraction of \"we are\""
+      },
+      {
+        "KEY": "were",
+        "DEF": "past tense plural of \"to be\""
+      },
+      {
+        "KEY": "whir",
+        "DEF": "prolonged swish or buzz"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "we've",
+        "DEF": "contraction of \"we have\""
+      },
+      {
+        "KEY": "weave",
+        "DEF": "to make cloth"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "weak",
+        "DEF": "not strong"
+      },
+      {
+        "KEY": "week",
+        "DEF": "seven days"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "weal",
+        "DEF": "a skin welt"
+      },
+      {
+        "KEY": "wheel",
+        "DEF": "what we in Silicon Valley continually reinvent"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "weald",
+        "DEF": "a rural area"
+      },
+      {
+        "KEY": "wheeled",
+        "DEF": "having wheels"
+      },
+      {
+        "KEY": "wield",
+        "DEF": "to apply or use"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "weather",
+        "DEF": "meteorological conditions"
+      },
+      {
+        "KEY": "wether",
+        "DEF": "a castrated ram"
+      },
+      {
+        "KEY": "whether",
+        "DEF": "if it be the case"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "weld",
+        "DEF": "to join metal by melting its edges"
+      },
+      {
+        "KEY": "welled",
+        "DEF": "pouring forth"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "wen",
+        "DEF": "a benign skin tumor"
+      },
+      {
+        "KEY": "when",
+        "DEF": "at a specific time"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "wet",
+        "DEF": "watery"
+      },
+      {
+        "KEY": "whet",
+        "DEF": "prime"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "which",
+        "DEF": "selection"
+      },
+      {
+        "KEY": "witch",
+        "DEF": "broomstick ridin' crones"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "whig",
+        "DEF": "supporter of American revolution"
+      },
+      {
+        "KEY": "wig",
+        "DEF": "false hairpiece"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "while",
+        "DEF": "during"
+      },
+      {
+        "KEY": "wile",
+        "DEF": "craft"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "whiled",
+        "DEF": "passing the time"
+      },
+      {
+        "KEY": "wild",
+        "DEF": "untamed"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "whine",
+        "DEF": "annoying cry"
+      },
+      {
+        "KEY": "wine",
+        "DEF": "fermented grape juice"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "whined",
+        "DEF": "past tense of whine"
+      },
+      {
+        "KEY": "wind",
+        "DEF": "what you do to a clockwork"
+      },
+      {
+        "KEY": "wined",
+        "DEF": "drank well of spirits"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "whirled",
+        "DEF": "rapidly rotated"
+      },
+      {
+        "KEY": "world",
+        "DEF": "Earth"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "whirred",
+        "DEF": "made a whizzing or buzzing sound"
+      },
+      {
+        "KEY": "word",
+        "DEF": "a speech sound"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "whit",
+        "DEF": "insignificant amount"
+      },
+      {
+        "KEY": "wit",
+        "DEF": "cleverness; sense of humor"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "whither",
+        "DEF": "to which place, point, condition, etc.?"
+      },
+      {
+        "KEY": "wither",
+        "DEF": "shrivel up"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "who's",
+        "DEF": "contraction of \"who is\""
+      },
+      {
+        "KEY": "whose",
+        "DEF": "belonging to whom"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "whoa",
+        "DEF": "equestrian directive to stop"
+      },
+      {
+        "KEY": "woe",
+        "DEF": "despair"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "why",
+        "DEF": "how come?"
+      },
+      {
+        "KEY": "wye",
+        "DEF": "the shape of the letter \"Y\""
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "won't",
+        "DEF": "contraction of \"will not\""
+      },
+      {
+        "KEY": "wont",
+        "DEF": "accustomed"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "wood",
+        "DEF": "what trees are made of"
+      },
+      {
+        "KEY": "would",
+        "DEF": "will do"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "worst",
+        "DEF": "least best"
+      },
+      {
+        "KEY": "wurst",
+        "DEF": "sausage"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "y'all",
+        "DEF": "Southern contraction of \"you all\""
+      },
+      {
+        "KEY": "yawl",
+        "DEF": "two-masted sailboat with mizzenmast abaft the tiller"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "yack",
+        "DEF": "informal talk"
+      },
+      {
+        "KEY": "yak",
+        "DEF": "long-haired Tibetan ox"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "yoke",
+        "DEF": "oxen harness"
+      },
+      {
+        "KEY": "yolk",
+        "DEF": "yellow egg center"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "yokes",
+        "DEF": "more than one harness"
+      },
+      {
+        "KEY": "yolks",
+        "DEF": "an omelet"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "yore",
+        "DEF": "the past"
+      },
+      {
+        "KEY": "you're",
+        "DEF": "contraction of \"you are\""
+      },
+      {
+        "KEY": "your",
+        "DEF": "belonging to you"
+      }
+    ]
+  },
+  {
+    "PHONES": [
+      {
+        "KEY": "you'll",
+        "DEF": "contraction of \"you will\""
+      },
+      {
+        "KEY": "yule",
+        "DEF": "Christmas"
+      }
+    ]
+  },
+  {
     "KEY":"a","TYPE":"HOMSET",
     "MISUSED":0,
     "AUXCMT2":"mispronounced",
