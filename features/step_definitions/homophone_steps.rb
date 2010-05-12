@@ -36,3 +36,9 @@ When /^I create a homophone set with the following words:$/ do |table|
   end
   click_button "Publish"
 end
+
+Then /^I see (\d+) sets? of (\d+) homophones$/ do |num_sets, num_phones_in_set|
+  response.should have_tag('.homophone_set', :count => num_sets.to_i) do
+    with_tag('.homophone', :count => num_phones_in_set.to_i)
+  end
+end
