@@ -42,3 +42,19 @@ Then /^I see (\d+) sets? of (\d+) homophones$/ do |num_sets, num_phones_in_set|
     with_tag('.homophone', :count => num_phones_in_set.to_i)
   end
 end
+
+Then /^the homophones are in order: "(.*)"$/ do |homophones_list|
+  homophone_names = homophones_list.split(',').map(&:strip)
+  homophone_sets = Nokogiri.parse(response.body) / '.homophone_set'
+  target_set = homophone_sets.detect do |set|
+    homophone_names.all? {|name| set / ".homophone .name[text=#{name}]" }
+  end
+  homophone_div_names = (target_set / '.homophone .name').map(&:inner_text)
+  homophone_div_names.should == homophone_names
+end
+
+Then /^each word has a definition$/ do
+  definition_divs = Nokogiri.parse(response.body) / '.homophone_set .homophone .definition'
+  definition_divs.should_not be_empty
+  definition_divs.each {|definition| definition.inner_text.should be_present }
+end

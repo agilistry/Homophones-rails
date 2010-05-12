@@ -10,6 +10,6 @@ Feature: Create homophone set
       | too  | also              |
     And I go to the homophone list page
     Then I see 1 set of 3 homophones
-    And the homophones are in order: "to", "too", and "two"
+    And the homophones are in order: "to, too, two"
     And each word has a definition
     
