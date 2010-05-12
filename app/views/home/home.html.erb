@@ -1,6 +1,13 @@
-<% @grouped_hom_list = grouped_by_first_letter(@homophone_lists) %>
+<div class="grid_16">
+    <div id="search_box">
+      <form>
+          <label for="search_term">Search</label>
+          <input id="search_term" type="text" name="search_term" /><input type=submit value="Go" />
+          <div class="search_note">Type a single word to find a sets of homophones that include that word.</div>
+      </form>
+    </div>
 
-<div class="grid_13 alpha">
+<% @grouped_hom_list = grouped_by_first_letter(@homophone_lists) %>
     <div id="index_links">
       <ul id="index_links">
           <% ('A'..'Z').to_a.each do |index_letter| %>
@@ -31,7 +38,7 @@
       <% end %>
     <% end %>
 </div>
-<div id="sidebar" class="grid_6 omega">
+<div id="sidebar" class="grid_8">
     <div id="about_video">
         <h4>Mr. Homophone</h4>
         <object width="220" height="180"><param name="movie" value="http://www.youtube.com/v/ebK65kvbudA&hl=en_US&fs=1&"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/ebK65kvbudA&hl=en_US&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="220" height="180"></embed></object>

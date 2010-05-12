@@ -7,24 +7,44 @@ body {
 #header {
     margin-top: 25px;
 }
-#header span#site_tag_line {
+
+/* Tabbed Header */
+#tabbed_header {
+    margin-bottom: 10px;
+}
+
+#tabbed_header #nav {
+    background: silver;
+}
+
+#tabbed_header ul {
+    list-style-type:none;
+    margin: 5px 0 0;
+}
+
+#tabbed_header li {
+    padding: 5px 10px;
+    float: left;
     display: block;
-    font-size: .7em;
-    text-align: right;
-    padding-right: 200px;
+    margin: 0;
 }
-#header span#site_tag_line a {
-    color: black;
+#tabbed_header ul:first-child {
+    padding-left: 20px;
+}
+
+#tabbed_header a {
     text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
-#header span#site_tag_line a:hover {
+
+#tabbed_header a:hover {
     text-decoration: underline;
 }
-#header p.site_description {
-    width: 60%;
-    margin-top: 10px;
-    font-size: .8em;
-}
+
+
+
+/* Homophone List */
 .homophone_set {
   padding-bottom: 25px;
 }
@@ -38,6 +58,7 @@ body {
   font-style: italic;
 }
 
+/* Homophone Index */
 #index_links ul {
     padding: 0;
     list-style-type: none;
@@ -57,35 +78,23 @@ h2.key_letter {
     color: #003399;
 }
 
+
 /* Search Box */
-.search_box {
-    color: #474747;    
+#search_box {
+    color: #474747;
+    margin-bottom: 20px;
 }
-.search_box label {
+#search_box label {
     font-weight: bold;
 }
-.search_box input#search_term {
-    width: 100px;
+#search_box input#search_term {
+    width: 200px;
 }
-.search_box .search_note {
+#search_box .search_note {
     font-size: .7em;
     line-height: 1.2em;
 }
-/* Site Navigation */
-#site_navigation {
-    list-style-type: none;
-    margin: 10px 0 0 0;
-}
-#site_navigation li {
-    font-size: 1em;
-    margin: 0 0 10px 0;
-    line-height: 1.2em;
-}
-#site_navigation li a {
-    text-decoration: none;
-    font-weight: bold;
-    color: #474747;
-}
+
 
 /* Sidebar */
 #sidebar {

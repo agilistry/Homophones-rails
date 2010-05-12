@@ -21,29 +21,21 @@
   <body>
     <div class='container_24 wrapper'>
       <div id='header' class="grid_24">
-        <%= image_tag 'mrhomophone.png' %><br />
-        <span id="site_tag_line">Formerly known as <a href="http://www.cooper.com/alan/homonym_list.html">Alan Cooper's Homophone List</a></span>
-        <p class="site_description">Homophones are words like "caret" and "carrot" that are spelled differently,
-        pronounced the same, and have different meanings. Homophones are the prime numbers of the
-        English language.</p>
-      </div>
-      <div id="navigation"class="grid_4">
-        <div class="search_box">
-          <form>
-              <label for="search_term">Search</label><br />
-              <input id="search_term" type="text" name="search_term" /><input type=submit value="Go" />
-              <span class="search_note">Type a single word to find a sets of homophones that include that word.</span>
-          </form>
+        <div id="tabbed_header">
+          <%= image_tag 'mrhomophone.png' %><br />
+          <div id="nav">
+            <ul>
+              <li><%= link_to "Browse", home_url %></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Forum</a></li>
+              <li><%= link_to "About", about_url %></li>
+            </ul>
+            <div class="clearfix"></div>
+          </div>
         </div>
-        <ul id="site_navigation">
-          <li><%= link_to "Browse Homophones", home_url %></li>
-          <li><a href="#">Make a suggestion</a></li>
-          <li><a href="#">Read the blog</a></li>
-          <li><a href="#">Join the discussion</a></li>
-          <li><%= link_to "Learn more about Homophones", about_url %></li>
-        </ul>
       </div>
-      <div id='primaryContent' class="grid_19 prefix_1">
+
+      <div id='primaryContent'>
         <%= yield %>
       </div>      
     </div>
