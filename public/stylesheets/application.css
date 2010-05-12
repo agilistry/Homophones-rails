@@ -115,3 +115,17 @@ h2.key_letter {
     min-height: 300px;
     background-color: #FFDF29;
 }
+
+/* Error messages */
+.formError, .errorExplanation {
+	color: red;
+}
+
+#new_homophone_set .fieldWithErrors {
+	float: left;
+	padding-right: 4px;
+}
+
+.fieldWithErrors input {
+	border: 3px solid red;
+}
