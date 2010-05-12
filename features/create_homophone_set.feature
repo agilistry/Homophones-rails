@@ -24,21 +24,18 @@ Feature: Create homophone set
     And there are 0 homophone sets
 
   Scenario: System displays error when 1 homophone is submitted
-    Given wip
     When I create a homophone set with the following words:
       | name | definition          |
       | to   | a short little word |
-    Then I see the error "Please create the second homophone to complete the set"
+    Then I see the error "Please create at least 2 homophones for a complete set"
     And there are 0 homophone sets
 
-  Scenario: System displays error when homophone submitted without definition
-    Given wip
+  Scenario: System accepts words without definitions
     When I create a homophone set with the following words:
       | name | definition          |
       | to   | a short little word |
       | too  |                     |
-    Then I see the error "Please enter the missing definition"
-    And there are 0 homophone sets
+    And there is 1 homophone set
 
   Scenario: System displays error when homophone submitted without word
     Given wip

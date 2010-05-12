@@ -68,6 +68,6 @@ Then /^I see the error "(.*)"$/ do |error_message|
   Then %(I should see "#{error_message}")
 end
 
-Then /^there are (\d+) homophone sets$/ do |num_sets|
+Then /^there (?:is|are) (\d+) homophone sets?$/ do |num_sets|
   HomophoneSet.count.should == num_sets.to_i
 end
