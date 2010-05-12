@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  homophone_set_id: 1
+  name: MyString
+  definition: MyString
+
+two:
+  homophone_set_id: 1
+  name: MyString
+  definition: MyString

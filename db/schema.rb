@@ -9,7 +9,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100511225004) do
+ActiveRecord::Schema.define(:version => 20100512191138) do
+
+  create_table "homophone_sets", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "homophones", :force => true do |t|
+    t.integer  "homophone_set_id"
+    t.string   "name"
+    t.string   "definition"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "logins", :force => true do |t|
     t.string   "user_name"

@@ -2,6 +2,10 @@ Given /^we have a homophone set "([^\"]*)"$/ do |phone_set|
   HOM_LIST = [phone_set.split(',').map {|hom| OpenStruct.new(:name => hom.strip, :definition => "")}]
 end
 
+Given /^there are no homophone sets$/ do
+  HomophoneSet.destroy_all
+end
+
 Then /^I should see a link called "([^\"]*)"$/ do |link_content|
   response.should have_tag("a", link_content)
 end
@@ -22,4 +26,13 @@ When /^I log in with "(.*)" \/ "(.*)"$/ do |username, password|
   When %(I fill in "User Name" with "#{username}")
   When %(I fill in "Password" with "#{password}")
   When %(I press "Login")
+end
+
+When /^I create a homophone set with the following words:$/ do |table|
+  When %(I go to the new homophone set page)
+  table.hashes.each_with_index do |phone_attrs, i|
+    fill_in "homophone_set[homophones][#{i}][name]", :with => phone_attrs['name']
+    fill_in "homophone_set[homophones][#{i}][definition]", :with => phone_attrs['definition']
+  end
+  click_button "Publish"
 end

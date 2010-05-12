@@ -1,0 +1,17 @@
+<div id="homophone_entry">
+  <% form_for @homophone_set do |f| %>
+    <%= submit_tag "Publish" %>
+    <div>
+      <div class='column_header'>Word</div>
+      <div class='column_header'>Definition</div>
+    </div>
+    <% @homophone_set.homophones.each_with_index do |homophone, i| %>
+      <% fields_for "homophone_set[homophones][#{i}]", homophone do |h| %>
+        <div class='homophone'>
+          <%= h.text_field :name, :class => 'name' %>
+          <%= h.text_field :definition, :class => 'definition' %>
+        </div>
+      <% end %>
+    <% end %>
+  <% end %>
+ </div>
