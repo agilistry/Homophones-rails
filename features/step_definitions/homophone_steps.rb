@@ -63,3 +63,11 @@ Then /^each word has a definition$/ do
   definition_divs.should_not be_empty
   definition_divs.each {|definition| definition.inner_text.should be_present }
 end
+
+Then /^I see the error "(.*)"$/ do |error_message|
+  Then %(I should see "#{error_message}")
+end
+
+Then /^there are (\d+) homophone sets$/ do |num_sets|
+  HomophoneSet.count.should == num_sets.to_i
+end

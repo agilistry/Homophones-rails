@@ -12,6 +12,9 @@ class HomophoneSetsController < AdminController
     end
     if @homophone_set.save
       redirect_to admin_path
+    else
+      @homophone_set.homophones.size.upto(7) { @homophone_set.homophones.build }
+      render :action => 'new'
     end
   end
 end

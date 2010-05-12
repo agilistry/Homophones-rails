@@ -70,4 +70,26 @@ describe HomophoneSetsController, 'POST create' do
     response.should redirect_to(login_path)
   end
 
+  context "failure" do
+    integrate_views
+
+    it "renders the new form" do
+      post :create, :homophone_set => {:homophones => {}}
+      response.should render_template('new')
+    end
+
+    it "attaches 8 new homophones to the new homophone set" do
+      post :create, :homophone_set => {:homophones => {}}
+      assigns[:homophone_set].should have(8).homophones
+    end
+
+    it "shows 8 form rows" do
+      homophones = {}
+      1.upto(8) {|i| homophones[i.to_s] = {}}
+      post :create, :homophone_set => {:homophones => homophones}
+      response.body.should have_tag('input.name', :count => 8)
+      response.body.should have_tag('input.definition', :count => 8)
+    end
+  end
+
 end
