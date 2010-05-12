@@ -8,8 +8,13 @@
     <link rel="stylesheet" type="text/css" media="all" href="stylesheets/960.css" />
     <link rel="stylesheet" type="text/css" media="all" href="stylesheets/960_24_col.css" />
     <link rel="stylesheet" type="text/css" media="all" href="stylesheets/application.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="stylesheets/jquery.twitter.css" />
 
-    
+    <%= javascript_include_tag "jquery" %>
+    <%= javascript_include_tag "jquery.twitter" %>
+    <%= javascript_include_tag "application" %>
+
+
     <title>Mr. Homophone's Homophones</title>
   </head>
   
@@ -42,5 +47,19 @@
         <%= yield %>
       </div>      
     </div>
+    <script>
+    $(document).ready(function() {
+        $("#twitter").getTwitter({
+            userName: "mrhomophone",
+            numTweets: 5,
+            loaderText: "Loading tweets...",
+            slideIn: true,
+            showHeading: true,
+            headingText: "Latest Tweets",
+            showProfileLink: true
+        });
+    });
+    </script>
+
   </body>
 </html>
