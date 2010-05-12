@@ -10,11 +10,6 @@ describe HomophoneSetsController, 'GET new' do
     response.should be_success
   end
 
-  it "attaches 8 new homophones to the new homophone set" do
-    get :new
-    assigns[:homophone_set].should have(8).homophones
-  end
-  
   context "integrated" do
     integrate_views
     
@@ -76,11 +71,6 @@ describe HomophoneSetsController, 'POST create' do
     it "renders the new form" do
       post :create, :homophone_set => {:homophones => {}}
       response.should render_template('new')
-    end
-
-    it "attaches 8 new homophones to the new homophone set" do
-      post :create, :homophone_set => {:homophones => {}}
-      assigns[:homophone_set].should have(8).homophones
     end
 
     it "shows 8 form rows" do

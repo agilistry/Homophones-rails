@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe HomophoneSet do
+describe HomophoneSet, 'validations' do
   it "is invalid with 0 homophones" do
     set = HomophoneSet.new
     set.should_not be_valid
@@ -11,5 +11,20 @@ describe HomophoneSet do
     set = HomophoneSet.new
     2.times { set.homophones.build }
     set.should be_valid
+  end
+end
+
+describe HomophoneSet, '#fill_empty_homophones(n)' do
+  it "builds homophones up to number given when there are 0" do
+    set = HomophoneSet.new
+    set.fill_empty_homophones 8
+    set.should have(8).homophones
+  end
+
+  it "builds homophones up to number given when there are already 2" do
+    set = HomophoneSet.new
+    2.times { set.homophones.build }
+    set.fill_empty_homophones 8
+    set.should have(8).homophones
   end
 end

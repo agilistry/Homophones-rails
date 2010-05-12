@@ -1,7 +1,6 @@
 class HomophoneSetsController < AdminController
   def new
     @homophone_set = HomophoneSet.new
-    8.times { @homophone_set.homophones.build }
   end
   
   def create
@@ -13,7 +12,6 @@ class HomophoneSetsController < AdminController
     if @homophone_set.save
       redirect_to admin_path
     else
-      @homophone_set.homophones.size.upto(7) { @homophone_set.homophones.build }
       render :action => 'new'
     end
   end

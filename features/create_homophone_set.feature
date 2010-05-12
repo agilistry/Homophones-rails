@@ -1,10 +1,10 @@
+@wip
 Feature: Create homophone set
   Background:
     Given the administrator user name is "admin" with password "password"
     And I log in with "admin" / "password"
     And there are no homophone sets
 
-  @wip
   Scenario: Creating a new homophone set displays set on main list
     When I create a homophone set with the following words:
       | name | definition          |
@@ -16,7 +16,6 @@ Feature: Create homophone set
     And the homophones are in order: "to, too, two"
     And each word has a definition
 
-  @wip
   Scenario: System displays error when no homophones are submitted
     When I create a homophone set with the following words:
       | name | definition |
@@ -25,6 +24,7 @@ Feature: Create homophone set
     And there are 0 homophone sets
 
   Scenario: System displays error when 1 homophone is submitted
+    Given wip
     When I create a homophone set with the following words:
       | name | definition          |
       | to   | a short little word |
@@ -32,6 +32,7 @@ Feature: Create homophone set
     And there are 0 homophone sets
 
   Scenario: System displays error when homophone submitted without definition
+    Given wip
     When I create a homophone set with the following words:
       | name | definition          |
       | to   | a short little word |
@@ -40,6 +41,7 @@ Feature: Create homophone set
     And there are 0 homophone sets
 
   Scenario: System displays error when homophone submitted without word
+    Given wip
     When I create a homophone set with the following words:
       | name | definition          |
       | to   | a short little word |
@@ -48,6 +50,7 @@ Feature: Create homophone set
     And there are 0 homophone sets
 
   Scenario: System displays multiple errors if applicable
+    Given wip
     When I create a homophone set with the following words:
       | name | definition |
       | to   |            |
