@@ -55,11 +55,10 @@ Feature: Create homophone set
   Scenario: Words with apostrophes within homsets are in the correct order
     When I create a homophone set with the following words:
       | name   | definition                                     |
-      | mends  | fixes                                          |
       | men's  | not women's                                    |
-      | mens'  | belonging to more than one guy                 |
+      | mends  | fixes                                          |
     And I go to the homophone list page
-    And the homophones are in order: "men's, mends, mens'"
+    And the homophones are in order: "mends, men's"
     
   Scenario: Words with caps within homsets are in the correct order
     When I create a homophone set with the following words:
@@ -68,6 +67,6 @@ Feature: Create homophone set
       | e'er  | not women's                                    |
       | earl  | belonging to more than one guy                 |
     And I go to the homophone list page
-    And the homophones are in order: "e'er, earl, URL"
+    And the homophones are in order: "earl, e'er, URL"
     
     

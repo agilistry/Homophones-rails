@@ -8,4 +8,8 @@ describe Homophone, 'comparable' do
   it "is case-insensitive" do
     Homophone.new(:name => 'a').should < Homophone.new(:name => 'Alf')
   end
+  
+  it "ignores apostrophes" do
+    Homophone.new(:name => "e'er").should > Homophone.new(:name => 'earl')
+  end
 end
