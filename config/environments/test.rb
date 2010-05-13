@@ -33,6 +33,6 @@ config.gem "cucumber", :version => '0.7.2', :lib => false
 config.gem "cucumber-rails", :version => '0.3.1', :lib => false
 config.gem "webrat", :version => '0.7.1', :lib => false
 config.gem "database_cleaner", :version => '0.5.2', :lib => false
-config.gem 'fixjour', :version => "0.4.2", :lib => false
+config.gem 'fixjour', :version => "0.4.2"
 config.gem 'rcov', :version => '0.9.8', :lib => false
 config.gem 'mechanize', :version => '1.0.0', :lib => false
