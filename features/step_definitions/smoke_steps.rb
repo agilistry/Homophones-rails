@@ -30,6 +30,6 @@ When /^I log in with the secret admin credentials$/ do
   @response = login_form.submit
 end
 
-Then /^I should see "(.*)"$/ do |expected_text|
-  @response.send(:html_body).should include(expected_text)
+Then /^I should see the admin page$/ do
+  @response.send(:html_body).should include("Homophone Administration Page")
 end

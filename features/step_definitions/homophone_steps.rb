@@ -58,6 +58,15 @@ Then /^the homophones are in order: "(.*)"$/ do |homophones_list|
   homophone_div_names.should == homophone_names
 end
 
+Given /^I have the production data loaded$/ do
+  load 'db/seeds.rb'
+end
+
+Then /^the homophone groups are in order$/ do
+  homophone_group_letters = (Nokogiri.parse(response.body) / '.key_letter').map(&:inner_text)
+  homophone_group_letters.should == homophone_group_letters.sort
+end
+
 Then /^each word has a definition$/ do
   definition_divs = Nokogiri.parse(response.body) / '.homophone_set .homophone .definition'
   definition_divs.should_not be_empty

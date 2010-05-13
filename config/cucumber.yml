@@ -1,10 +1,11 @@
 <%
 rerun = File.file?('rerun.txt') ? IO.read('rerun.txt') : ""
 rerun_opts = rerun.to_s.strip.empty? ? "--format #{ENV['CUCUMBER_FORMAT'] || 'progress'} features" : "--format #{ENV['CUCUMBER_FORMAT'] || 'pretty'} #{rerun}"
-std_opts = "--format #{ENV['CUCUMBER_FORMAT'] || 'progress'} --strict --tags ~@wip ~@smoke"
+std_opts = "--format #{ENV['CUCUMBER_FORMAT'] || 'progress'} --strict --tags ~@wip --tags ~@slow --tags ~@smoke"
 %>
 default: <%= std_opts %> features
-rspactor: --tags @wip:3 ~@smoke --wip features
-wip: --tags @wip:3 ~@smoke --wip features
-rerun: <%= rerun_opts %> --format rerun --out rerun.txt --strict --tags ~@wip ~@smoke
+rspactor: --tags @wip:3 --tags ~@slow --tags ~@smoke --wip features
+wip: --tags @wip:3 --tags ~@slow --tags ~@smoke --wip features
+rerun: <%= rerun_opts %> --format rerun --out rerun.txt --strict --tags ~@wip --tags ~@slow --tags ~@smoke
 smoke: features -t @smoke -r features/support -r features/step_definitions/smoke_steps.rb
+slow: --tags @slow features
