@@ -51,3 +51,23 @@ Feature: Create homophone set
     Then I see the error "Please enter the missing word"
     And I see the error "Please create at least 2 homophones for a complete set"
     And there are 0 homophone sets
+
+  Scenario: Words with apostrophes within homsets are in the correct order
+    When I create a homophone set with the following words:
+      | name   | definition                                     |
+      | mends  | fixes                                          |
+      | men's  | not women's                                    |
+      | mens'  | belonging to more than one guy                 |
+    And I go to the homophone list page
+    And the homophones are in order: "men's, mends, mens'"
+    
+  Scenario: Words with caps within homsets are in the correct order
+    When I create a homophone set with the following words:
+      | name   | definition                                     |
+      | URL  | fixes                                          |
+      | e'er  | not women's                                    |
+      | earl  | belonging to more than one guy                 |
+    And I go to the homophone list page
+    And the homophones are in order: "e'er, earl, URL"
+    
+    

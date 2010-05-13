@@ -46,3 +46,21 @@ describe HomophoneSet, '#fill_empty_homophones(n)' do
     set.should have(8).homophones
   end
 end
+
+describe HomophoneSet, "#homophones association" do
+  it "is ordered by name ascending" do
+    set = HomophoneSet.new
+    %w(erl earl url).each {|name| set.homophones.build :name => name }
+    set.save!
+    set.reload
+    set.homophones.map(&:name).should == %w(earl erl url)
+  end
+
+  it "is ordered by name ascending (case insensitive)" do
+    set = HomophoneSet.new
+    %w(erl earl URL).each {|name| set.homophones.build :name => name }
+    set.save!
+    set.reload
+    set.homophones.map(&:name).should == %w(earl erl URL)
+  end
+end

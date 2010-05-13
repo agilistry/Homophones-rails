@@ -67,7 +67,7 @@ Then /^the homophones are in order: "(.*)"$/ do |homophones_list|
   homophone_names = homophones_list.split(',').map(&:strip)
   homophone_sets = Nokogiri.parse(response.body) / '.homophone_set'
   target_set = homophone_sets.detect do |set|
-    homophone_names.all? {|name| set / ".homophone .name[text=#{name}]" }
+    homophone_names.all? {|name| set / ".homophone .name[text=\"#{name}\"]" }
   end
   homophone_div_names = (target_set / '.homophone .name').map(&:inner_text)
   homophone_div_names.should == homophone_names
