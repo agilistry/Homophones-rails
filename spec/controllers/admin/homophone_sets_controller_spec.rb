@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe HomophoneSetsController, 'GET new' do
+describe Admin::HomophoneSetsController, 'GET new' do
   before(:each) do
     controller.stub(:logged_in?).and_return true
   end
@@ -26,7 +26,7 @@ describe HomophoneSetsController, 'GET new' do
   end
 end
 
-describe HomophoneSetsController, 'POST create' do
+describe Admin::HomophoneSetsController, 'POST create' do
   before(:each) do
     controller.stub(:logged_in?).and_return true
   end
