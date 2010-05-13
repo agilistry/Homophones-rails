@@ -7,14 +7,9 @@ class HomophoneSetLoader
   end
 
   def create_homsets_from_json_string(raw_contents)
-    return [] if raw_contents.blank?
-    
     contents = JSON.load(raw_contents)
-    homsets = contents[:HOMLIST]
-    return [] unless homsets
-    
     hs = {}
-    raw_sets = homsets.each do |list|
+    raw_sets = contents['HOMLIST'].each do |list|
       phones = list["PHONES"]
       next if phones.blank?
    
@@ -28,11 +23,6 @@ class HomophoneSetLoader
     end
     hs
   end
-  
-  def has_homlist?(contents)
-    
-  end
-  
 
   def load_from_file(filename)
     raw_contents = load_raw_contents(filename)
