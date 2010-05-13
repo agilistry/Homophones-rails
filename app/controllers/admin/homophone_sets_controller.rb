@@ -1,4 +1,4 @@
-class HomophoneSetsController < AdminController
+class Admin::HomophoneSetsController < AdminController
   def new
     @homophone_set = HomophoneSet.new
   end

@@ -17,7 +17,7 @@ module NavigationHelpers
     when /the admin login page/
       '/admin/login'
     when /the new homophone set page/
-      '/homophone_sets/new'
+      '/admin/homophone_sets/new'
     when /the new quiz question page/
       '/questions/new'
     when /the create quiz question page/
