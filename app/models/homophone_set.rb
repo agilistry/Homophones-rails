@@ -1,5 +1,5 @@
 class HomophoneSet < ActiveRecord::Base
-  has_many :homophones, :order => 'name ASC'
+  has_many :homophones, :order => 'name ASC', :dependent => :destroy
   validate :validate_at_least_2_homophones
   validate :validate_homophones_are_valid
   validate :delete_errors_from_homophones_attribute
