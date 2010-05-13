@@ -26,3 +26,5 @@ Feature: Administrator must log in to get to Homophone Maintenance screen
     And I am on the admin login page
     When I log in with "alan" / "badpassword"
     Then I should see "Login Required"
+
+## we want to verify that you can only access the question/quiz creation page if you are admin

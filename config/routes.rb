@@ -4,4 +4,5 @@ ActionController::Routing::Routes.draw do |map|
   map.login '/admin/login', :controller => 'admin', :action => 'login'
   map.about '/about_homophones', :controller => 'home', :action => 'about'
   map.resources :homophone_sets
+  map.resources :questions
 end
