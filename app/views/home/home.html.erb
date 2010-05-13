@@ -28,7 +28,7 @@
 
       <% homophone_sets.each do |homophone_set| %>
         <div class='homophone_set'>
-          <% homophone_set.each do |homophone| %>
+          <% homophone_set.sort.each do |homophone| %>
             <div class='homophone'>
               <span class='name'><%= h homophone.name %></span>
               <span class='definition'><%= h homophone.definition %></span>

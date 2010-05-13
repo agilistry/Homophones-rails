@@ -1,5 +1,6 @@
 class HomophoneSet < ActiveRecord::Base
-  has_many :homophones, :order => 'LOWER(name) ASC', :dependent => :destroy
+  include Comparable
+  has_many :homophones, :dependent => :destroy
   validate :validate_at_least_2_homophones
   validate :validate_homophones_are_valid
   validate :delete_errors_from_homophones_attribute
@@ -8,6 +9,15 @@ class HomophoneSet < ActiveRecord::Base
     homophones.size.upto(num - 1) { homophones.build }
   end
 
+  def <=>(other)
+    homophones_sorted.first <=> other.homophones_sorted.first
+  end
+
+  def homophones_sorted
+    homophones.sort
+  end
+
+  protected
   def validate_at_least_2_homophones
     if homophones.size < 2
       errors.add(:base, "Please create at least 2 homophones for a complete set")

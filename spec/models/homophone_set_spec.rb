@@ -47,20 +47,36 @@ describe HomophoneSet, '#fill_empty_homophones(n)' do
   end
 end
 
-describe HomophoneSet, "#homophones association" do
+describe HomophoneSet, "#homophones_sorted" do
   it "is ordered by name ascending" do
     set = HomophoneSet.new
     %w(erl earl url).each {|name| set.homophones.build :name => name }
-    set.save!
-    set.reload
-    set.homophones.map(&:name).should == %w(earl erl url)
+    set.homophones_sorted.map(&:name).should == %w(earl erl url)
   end
 
-  it "is ordered by name ascending (case insensitive)" do
+  it "is case-inensitive" do
     set = HomophoneSet.new
     %w(erl earl URL).each {|name| set.homophones.build :name => name }
-    set.save!
-    set.reload
-    set.homophones.map(&:name).should == %w(earl erl URL)
+    set.homophones_sorted.map(&:name).should == %w(earl erl URL)
+  end
+end
+
+describe HomophoneSet, 'comparable' do
+  it "is comparable according to its first homophone" do
+    smaller = HomophoneSet.new
+    smaller.homophones.build :name => 'a'
+    bigger = HomophoneSet.new
+    bigger.homophones.build :name => 'zoo'
+    smaller.should < bigger
+  end
+
+  it "does not rely on the homophones being previously sorted" do
+    smaller = HomophoneSet.new
+    smaller.homophones.build :name => 'eh'
+    smaller.homophones.build :name => 'a'
+    bigger = HomophoneSet.new
+    bigger.homophones.build :name => 'ba'
+    bigger.homophones.build :name => 'bah'
+    smaller.should < bigger    
   end
 end

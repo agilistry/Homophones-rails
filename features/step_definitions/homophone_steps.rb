@@ -63,6 +63,17 @@ Then /^I see (\d+) sets? of (\d+) homophones$/ do |num_sets, num_phones_in_set|
   end
 end
 
+Then /^the homophone sets are in order:$/ do |table|
+  expected_homophone_sets = table.hashes.map {|hash|
+    hash['homophones'].split(',').map(&:strip)
+  }
+  homophone_set_divs = Nokogiri.parse(response.body) / '.homophone_set'
+  actual_homophone_sets = homophone_set_divs.map {|homophone_set_div|
+    (homophone_set_div / '.homophone .name').map(&:inner_text)
+  }
+  actual_homophone_sets.should == expected_homophone_sets
+end
+
 Then /^the homophones are in order: "(.*)"$/ do |homophones_list|
   homophone_names = homophones_list.split(',').map(&:strip)
   homophone_sets = Nokogiri.parse(response.body) / '.homophone_set'
