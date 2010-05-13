@@ -85,7 +85,7 @@ Then /^the homophones are in order: "(.*)"$/ do |homophones_list|
 end
 
 Given /^I have the production data loaded$/ do
-  load 'db/seeds.rb'
+  load File.join(RAILS_ROOT, 'db/seeds.rb')
 end
 
 Then /^the homophone groups are in order$/ do
