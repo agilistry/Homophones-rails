@@ -1,3 +1,5 @@
+require 'spec_helper'
+
 describe HomophoneSetLoader do
   it "returns an empty homlist if JSON file is empty" do
     loader = HomophoneSetLoader.new
