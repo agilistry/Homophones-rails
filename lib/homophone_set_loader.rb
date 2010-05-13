@@ -36,7 +36,7 @@ class HomophoneSetLoader
 
   def load_from_file(filename)
     raw_contents = load_raw_contents(filename)
-    @raw_sets = create_homsets_from_json(raw_contents)
+    @raw_sets = create_homsets_from_json_string(raw_contents)
   end
 
   def save
