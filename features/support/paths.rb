@@ -13,11 +13,17 @@ module NavigationHelpers
     when /the homophone list page/
       '/'
     when /the homophone maintenance page/
-      '/admin/'
+      '/admin'
     when /the admin login page/
       '/admin/login'
     when /the new homophone set page/
       '/homophone_sets/new'
+    when /the new quiz question page/
+      '/questions/new'
+    when /the create quiz question page/
+      '/questions'
+    when /the quiz question page/
+      '/questions'
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #

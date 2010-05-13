@@ -6,6 +6,13 @@ Given /^we have a homophone set:$/ do |table|
   homophone_set.save!
 end
 
+Given /^I have the quiz question:$/ do |table|
+  table.hashes.each do |question_attrs|
+    Question.create! question_attrs 
+  end
+end
+
+
 Given /^there are no homophone sets$/ do
   HomophoneSet.destroy_all
 end
@@ -20,6 +27,14 @@ end
 
 Given /^I am not logged in$/ do
   
+end
+
+Given /^I am logged in$/ do
+  Given "the administrator user name is \"something\" with password \"other\""
+  When "I am on the admin login page"
+  When "I fill in \"User name\" with \"something\""
+  When "I fill in \"Password\" with \"other\""
+  When "I press \"Login\""
 end
 
 Given /^the administrator user name is "(.*)" with password "(.*)"$/ do |username, password|

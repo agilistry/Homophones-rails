@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100512191138) do
+ActiveRecord::Schema.define(:version => 20100512225613) do
 
   create_table "homophone_sets", :force => true do |t|
     t.datetime "created_at"
@@ -27,6 +27,14 @@ ActiveRecord::Schema.define(:version => 20100512191138) do
   create_table "logins", :force => true do |t|
     t.string   "user_name"
     t.string   "password"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "questions", :force => true do |t|
+    t.string   "ask"
+    t.integer  "response_size"
+    t.string   "responses"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
