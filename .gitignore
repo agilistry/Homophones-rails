@@ -3,3 +3,4 @@ log/*
 tmp/*
 .idea/
 coverage/
+config/admin_credentials.yml
