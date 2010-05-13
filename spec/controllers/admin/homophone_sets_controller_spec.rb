@@ -1,9 +1,7 @@
 require 'spec_helper'
 
 describe Admin::HomophoneSetsController, 'GET new' do
-  before(:each) do
-    controller.stub(:logged_in?).and_return true
-  end
+  stub_logged_in
 
   it "is successful" do
     get :new
@@ -27,9 +25,7 @@ describe Admin::HomophoneSetsController, 'GET new' do
 end
 
 describe Admin::HomophoneSetsController, 'POST create' do
-  before(:each) do
-    controller.stub(:logged_in?).and_return true
-  end
+  stub_logged_in
 
   def do_post
     post :create, :homophone_set => {:homophones => {
@@ -82,4 +78,77 @@ describe Admin::HomophoneSetsController, 'POST create' do
     end
   end
 
+end
+
+describe Admin::HomophoneSetsController, 'GET edit' do
+  stub_logged_in
+  
+  let(:homophone_set) { create_homophone_set }
+  
+  def do_get
+    get :edit, :id => homophone_set.to_param
+  end
+
+  it "is successful" do
+    do_get
+    response.should be_success
+  end
+
+  context "integrated" do
+    integrate_views
+    
+    it "is successful" do
+      do_get
+      response.should be_success
+    end
+  end
+  
+  it "rejects the user if not logged in" do
+    controller.stub(:logged_in?).and_return false
+    do_get
+    response.should redirect_to(login_path)
+  end
+end
+
+describe Admin::HomophoneSetsController, 'PUT update' do
+  stub_logged_in
+  
+  let(:homophone_set) do
+    create_homophone_set :homophones => [
+      Homophone.new(:name => 'a'),
+      Homophone.new(:name => 'ay'),
+      Homophone.new(:name => 'eh')
+    ]
+  end
+
+  it "replaces the homophones in the database" do
+    homophone_set # load that beeyotch
+    expect {
+      put :update, :id => homophone_set.to_param,
+          :homophone_set => {:homophones => {
+        '1' => {:name => 'to'},
+        '2' => {:name => 'eh'}}}
+    }.to change(Homophone, :count).from(3).to(2)
+  end
+  
+  it "redirects to the admin page" do
+    put :update, :id => homophone_set.to_param,
+        :homophone_set => {:homophones => {
+      '1' => {:name => 'to'},
+      '2' => {:name => 'eh'}}}
+    response.should redirect_to(admin_url)
+  end
+
+  context "failed" do
+    def do_put
+      put :update, :id => homophone_set.to_param,
+          :homophone_set => {:homophones => {
+        '1' => {:name => 'a'}}}      
+    end
+
+    it "renders the edit template" do
+      do_put
+      response.should render_template('edit')
+    end
+  end
 end

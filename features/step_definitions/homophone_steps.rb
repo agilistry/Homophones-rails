@@ -48,12 +48,27 @@ When /^I log in with "(.*)" \/ "(.*)"$/ do |username, password|
   When %(I press "Login")
 end
 
+Given /^I am logged in as "(.*)"$/ do |admin_name|
+  Given %(the administrator user name is "#{admin_name}" with password "password")
+  When %(I log in with "#{admin_name}" / "password")
+end
+
 When /^I create a homophone set with the following words:$/ do |table|
   When %(I go to the new homophone set page)
   table.hashes.each_with_index do |phone_attrs, i|
     fill_in "homophone_set[homophones][#{i}][name]", :with => phone_attrs['name']
     fill_in "homophone_set[homophones][#{i}][definition]", :with => phone_attrs['definition']
   end
+  click_button "Publish"
+end
+
+When /^I edit the homophone set containing "(.*)" to be:$/ do |phone_name, table|
+  homophone_set = HomophoneSet.find Homophone.find_by_name!(phone_name).homophone_set_id
+  visit edit_admin_homophone_set_path(homophone_set)
+  table.hashes.each_with_index do |phone_attrs, i|
+    fill_in "homophone_set[homophones][#{i}][name]", :with => phone_attrs['name']
+    fill_in "homophone_set[homophones][#{i}][definition]", :with => phone_attrs['definition']
+  end   
   click_button "Publish"
 end
 
