@@ -15,10 +15,8 @@ class HomophoneSetLoader
    
       key = phones.collect{|i| i["KEY"]}.sort.join("-")
 
-      if !hs.has_key? key
+      unless hs.has_key?(key)
         hs[key] =  phones.collect{|phone| {:name => phone['KEY'], :definition => phone['DEF']} }
-      else
-        p key
       end
     end
     hs
