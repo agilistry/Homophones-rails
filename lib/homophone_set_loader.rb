@@ -10,15 +10,16 @@ class HomophoneSetLoader
     contents = JSON.load(raw_contents)
     hs = {}
     raw_sets = contents['HOMLIST'].each do |list|
-      puts list["PHONES"]
       phones = list["PHONES"]
       next if phones.blank?
    
       key = phones.collect{|i| i["KEY"]}.sort.join("-")
 
-      hs[key] =  phones.collect{|phone| {:name => phone['KEY'], 
-        :definition => phone['DEF']}
-        } unless hs.has_key? key 
+      if !hs.has_key? key
+        hs[key] =  phones.collect{|phone| {:name => phone['KEY'], :definition => phone['DEF']} }
+      else
+        p key
+      end
     end
     hs
   end
