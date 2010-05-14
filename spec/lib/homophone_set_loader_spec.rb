@@ -76,7 +76,7 @@ describe HomophoneSetLoader, "yaya" do
     add_homset_to(@homlist, homset)
  
     input = {:HOMLIST => @homlist}.to_json
-    loaded_homsets = @loader.create_homsets_from_json_string(input)
+    loaded_homsets = @loader.translate_homlist_from_json_string(input)
     
     output = {
       "a-eh" => [
@@ -100,7 +100,7 @@ describe HomophoneSetLoader, "yaya" do
  
     input = {:HOMLIST => @homlist}.to_json
 
-    loaded_homsets = @loader.create_homsets_from_json_string(input)
+    loaded_homsets = @loader.translate_homlist_from_json_string(input)
     
     output = {
       "a-eh" => [
@@ -118,7 +118,7 @@ describe HomophoneSetLoader, "yaya" do
     add_homset_to(@homlist, homset)
     
     input = {:HOMLIST => @homlist}.to_json
-    loaded_homsets = @loader.create_homsets_from_json_string(input)
+    loaded_homsets = @loader.translate_homlist_from_json_string(input)
 
     loaded_homsets.length.should == 1
   end
@@ -135,7 +135,7 @@ describe HomophoneSetLoader, "yaya" do
     add_homset_to(@homlist, homset)
  
     input = {:HOMLIST => @homlist}.to_json
-    loaded_homsets = @loader.create_homsets_from_json_string(input)
+    loaded_homsets = @loader.translate_homlist_from_json_string(input)
 
     loaded_homsets.length.should == 2
   end
@@ -149,7 +149,7 @@ describe HomophoneSetLoader, "returns an empty homlist" do
 
   def should_return_empty_homlist(input)
     loader = HomophoneSetLoader.new
-    loaded_homsets = loader.create_homsets_from_json_string(input)
+    loaded_homsets = loader.translate_homlist_from_json_string(input)
     loaded_homsets.length.should == 0
   end
 
