@@ -1,7 +1,3 @@
-<% homophone_sets_list.each do |key_letter, homophone_sets| %>
-  <a name=<%= key_letter.downcase %>></a>
-  <h2 class="key_letter"><%= h key_letter.upcase %></h2>
-
   <% homophone_sets.each do |homophone_set| %>
     <div class='homophone_set'>
       <% homophone_set.sort.each do |homophone| %>
@@ -12,4 +8,3 @@
       <% end %>
     </div>
   <% end %>
-<% end %>

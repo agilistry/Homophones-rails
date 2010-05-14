@@ -19,13 +19,15 @@
   </head>
   
   <body>
+    <a name="top"></a>
     <div class='container_24 wrapper'>
       <div id='header' class="grid_24">
         <div id="tabbed_header">
           <%= image_tag 'mrhomophone.png' %><br />
           <div id="nav">
             <ul>
-              <li><%= link_to "Browse", home_url %></li>
+              <li><%= link_to "Home", home_url %></li>
+              <li><%= link_to "Browse", homophone_sets_url %></li>
               <li><a href="#">Blog</a></li>
               <li><a href="#">Forum</a></li>
               <li><%= link_to "About", about_url %></li>
@@ -39,9 +41,12 @@
         </div>
       </div>
 
-      <div id='primaryContent'>
+      <div class="grid_14 suffix_2">
+        <div id="primaryContent">
         <%= yield(:application) or yield %>
-      </div>      
+        </div>
+      </div>
+      <%= render :partial => "homophone_sets/sidebar" %>     
     </div>
     <script>
     $(document).ready(function() {

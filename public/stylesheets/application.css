@@ -1,6 +1,10 @@
 body {
 }
 
+a {
+	text-decoration:none;
+}
+
 .wrapper {
     font-size: 1.2em
 }
@@ -10,7 +14,7 @@ body {
 
 /* Tabbed Header */
 #tabbed_header {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 #tabbed_header #nav {
@@ -29,7 +33,7 @@ body {
     margin: 0;
 }
 #tabbed_header ul:first-child {
-    padding-left: 20px;
+    padding-left: 0px;
 }
 
 #tabbed_header a {
@@ -40,6 +44,16 @@ body {
 
 #tabbed_header a:hover {
     text-decoration: underline;
+}
+
+
+/* basic layout */
+#primaryContent {
+  padding: 0 10px 0 10px;
+}
+
+#sidebar {
+  padding: 0 10px 0 0;
 }
 
 
@@ -59,22 +73,50 @@ body {
 }
 
 /* Homophone Index */
-#index_links ul {
+#rolodex {
+	height: 40px;
+	color:#999;
+}
+
+.rolodex_letter_container {
+	float: left;
+	width: 20px;
+    text-align: center;
+}
+
+#rolodex ul {
     padding: 0;
     list-style-type: none;
     margin: 0;
 }
-#index_links li {
-  float: left;
-  padding-right: 5px;
-  margin: 0;
-}
-#index_links li a {
+
+#rolodex a {
     color: #003399;
+	text-decoration:none;
 }
 
-h2.key_letter {
+#rolodex a:hover {
+    color: #003399;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+.go_to_top {
+	/* display: none; */
+	display: inline;
+	font-size: .8em;
+	margin-left: 20px;
+}
+
+.go_to_top a:hover {
+	display: inline;
+}
+
+
+.key_letter {
     font-size: 2em;
+	font-weight: bold;
+	display: inline;
     color: #003399;
 }
 

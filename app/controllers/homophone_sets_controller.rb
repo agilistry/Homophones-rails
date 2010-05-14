@@ -1,7 +1,6 @@
 class HomophoneSetsController < ApplicationController
 
   def index
-    @homophone_lists = HomophoneSet.all_homophones
   end
 
   def search

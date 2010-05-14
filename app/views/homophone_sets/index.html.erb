@@ -1,25 +1,22 @@
-<div class="grid_16">
-    <div id="search_box">
-      <%= form_tag search_homophone_sets_path, :method => :get %>
-          <%= render :partial => 'search_form' %>
-      </form>
-    </div>
+<div id="search_box">
+  <%= form_tag search_homophone_sets_path, :method => :get %>
+      <%= render :partial => 'homophone_sets/search_form' %>
+  </form>
+</div>
 
-<% @grouped_hom_list = grouped_by_first_letter(@homophone_lists) %>
-<div id="index_links">
-  <ul id="index_links">
+<% @grouped_hom_list = grouped_by_first_letter(HomophoneSet.all_homophones) %>
+<div id="rolodex">
       <% ('A'..'Z').to_a.each do |index_letter| %>
-        <li><%= link_to_if @grouped_hom_list.keys.include?(index_letter.downcase),
-                           index_letter,
-                           {:anchor => index_letter.downcase},
-                           {:class => "index_link"}  %>
-        </li>
+      <div class="rolodex_letter_container">
+        <%= link_to_if @grouped_hom_list.keys.include?(index_letter.downcase),
+                       "<div class='rolodex_letter'>#{index_letter}</div>",
+                       {:anchor => index_letter.downcase},
+                       {:class => "index_link"}  %>
+      </div>
       <% end -%>
-      <div class="clearfix"></div>
-    </ul>
+      <div class="clearfix">&nbsp;</div>
 </div>
 
-<%= render :partial => 'homophone_sets/homophone_sets_list', :object => @grouped_hom_list %>
 
-</div>
-<%= render :partial => 'sidebar' %>
+<%= render :partial => 'homophone_sets/homophone_sets_list_with_keys', :locals => {:homophone_sets_list => @grouped_hom_list } %>
+

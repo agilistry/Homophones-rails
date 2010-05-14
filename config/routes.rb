@@ -1,5 +1,5 @@
 ActionController::Routing::Routes.draw do |map|
-  map.home '/', :controller => 'homophone_sets', :action => 'index'
+  map.home '/', :controller => 'home', :action => 'home'
   map.admin '/admin/homophones', :controller => 'Admin::HomophoneSets', :action => 'index'
   map.login '/admin/login', :controller => 'admin', :action => 'login'
   map.logout '/admin/logout', :controller => 'admin', :action => 'logout'

@@ -11,7 +11,7 @@ module NavigationHelpers
     when /the home\s?page/
       '/'
     when /the homophone list page/
-      '/'
+      homophone_sets_path
     when /the homophone maintenance page/
       '/admin/homophone_sets'
     when /the admin login page/

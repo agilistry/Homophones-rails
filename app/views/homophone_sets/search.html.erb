@@ -5,7 +5,7 @@
       </form>
     </div>
     <% unless @grouped_hom_list.blank? %>
-        <%= render :partial => 'homophone_sets/homophone_sets_list', :object => @grouped_hom_list %>
+        <%= render :partial => 'homophone_sets/homophone_sets_list_with_keys', :locals => {:homophone_sets_list => @grouped_hom_list } %>
     <% else %>
         <div class="errorMessage">
             <h3>There are no homophones that match <%= params[:search_term] %></h3>

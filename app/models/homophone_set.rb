@@ -5,6 +5,10 @@ class HomophoneSet < ActiveRecord::Base
   validate :validate_homophones_are_valid
   validate :delete_errors_from_homophones_attribute
 
+  def self.random(limit)
+    all :order => 'RANDOM()', :limit => 4
+  end
+
   def self.all_homophones
     sorted_homophones(all(:include => :homophones))
   end

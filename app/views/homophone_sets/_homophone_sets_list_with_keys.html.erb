@@ -1,0 +1,8 @@
+<% homophone_sets_list.each do |key_letter, homophone_sets| %>
+  <a name=<%= key_letter.downcase %>></a>
+  <a href="/#top">
+    <div class="key_letter"><%= h key_letter.upcase %></div>
+    <div class="go_to_top">Go to top</div>
+  </a>
+  <%= render :partial => 'homophone_sets_list', :locals => {:homophone_sets => homophone_sets } %>
+<% end %>
