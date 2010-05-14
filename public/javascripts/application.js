@@ -1,2 +1,7 @@
-// Place your application-specific JavaScript functions and classes here
-// This file is automatically included by javascript_include_tag :defaults
+function punctuationlessCaseAgnosticWordCompare(word1, word2) {
+  removePunctuationAndApostrophe = function(word) {
+    return word.toLowerCase().replace(/'/g, "");
+  }
+  return removePunctuationAndApostrophe(word1) ==
+         removePunctuationAndApostrophe(word2);
+}
