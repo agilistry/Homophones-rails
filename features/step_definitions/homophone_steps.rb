@@ -13,7 +13,6 @@ Given /^I have the quiz question:$/ do |table|
 end
 
 Then /^I see the quiz questions:$/ do |table|
-  puts Nokogiri.parse(response.body)
   expected_questions = table.hashes.map {|hash| 
     hash['question_text']
   }
