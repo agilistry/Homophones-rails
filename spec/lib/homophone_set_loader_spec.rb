@@ -50,40 +50,90 @@ describe HomophoneSetLoader do
     set << {:KEY => key, :DEF => definition}
   end
   
-  def add_phone_set_to(hom_set, phone_set)
-    hom_set << {:PHONES => phone_set}
+  def add_homset_to(list, set)
+    list << {:PHONES => set}
   end
   
-  it "loads a single phoneset" do
+  it "loads a phone's key and definition" do
+    loader = HomophoneSetLoader.new
+    
+    homset = []
+    homlist = []
+    
+    add_phone_to(homset, "a", "a little word")
+    add_phone_to(homset, "eh", "interrogative")
+    add_homset_to(homlist, homset)
+ 
+    input = {:HOMLIST => homlist}.to_json
+    loaded_homsets = loader.create_homsets_from_json_string(input)
+    
+    output = {
+      "a-eh" => [
+      {:name => "a", :definition => "a little word"},
+      {:name => "eh", :definition => "interrogative"}
+      ]
+    }
+    loaded_homsets.should == output
+  end
+  
+  it "retains only the first of multiple phone sets with the same keys" do
+    loader = HomophoneSetLoader.new
+    
+    homset = []
+    homlist = []
+    
+    add_phone_to(homset, "a", "a little word")
+    add_phone_to(homset, "eh", "interrogative")
+    add_homset_to(homlist, homset)
+      
+    homset = []
+    add_phone_to(homset, "a", "the indefinite article")
+    add_phone_to(homset, "eh", "confirming Canadian")
+    add_homset_to(homlist, homset)
+ 
+    input = {:HOMLIST => homlist}.to_json
+    loaded_homsets = loader.create_homsets_from_json_string(input)
+    
+    output = {
+      "a-eh" => [
+      {:name => "a", :definition => "a little word"},
+      {:name => "eh", :definition => "interrogative"}
+      ]
+    }
+    loaded_homsets.should == output
+  end
+  
+  it "loads a single homset" do
     loader = HomophoneSetLoader.new
 
-    phone_set = []
-    hom_set = []
+    homset = []
+    homlist = []
     
-    add_phone_to(phone_set, "a", "a little word")
-    add_phone_to(phone_set, "eh", "interrogative")
-    add_phone_set_to(hom_set, phone_set)
+    add_phone_to(homset, "a", "a little word")
+    add_phone_to(homset, "eh", "interrogative")
+    add_homset_to(homlist, homset)
     
-    input = {:HOMLIST => hom_set}.to_json
+    input = {:HOMLIST => homlist}.to_json
     loaded_homsets = loader.create_homsets_from_json_string(input)
     loaded_homsets.length.should == 1
   end
   
-  it "loads multiple phonesets" do
+  it "loads multiple homsets" do
     loader = HomophoneSetLoader.new
-    phone_set = []
-    hom_set = []
     
-    add_phone_to(phone_set, "a", "a little word")
-    add_phone_to(phone_set, "eh", "interrogative")
-    add_phone_set_to(hom_set, phone_set)
+    homset = []
+    homlist = []
     
-    phone_set = []
-    add_phone_to(phone_set, "b", "a letter")
-    add_phone_to(phone_set, "bee", "makes honey")
-    add_phone_set_to(hom_set, phone_set)
+    add_phone_to(homset, "a", "a little word")
+    add_phone_to(homset, "eh", "interrogative")
+    add_homset_to(homlist, homset)
+    
+    homset = []
+    add_phone_to(homset, "b", "a letter")
+    add_phone_to(homset, "bee", "makes honey")
+    add_homset_to(homlist, homset)
  
-    input = {:HOMLIST => hom_set}.to_json
+    input = {:HOMLIST => homlist}.to_json
     loaded_homsets = loader.create_homsets_from_json_string(input)
     loaded_homsets.length.should == 2
   end
@@ -121,32 +171,4 @@ end
 #     should_return_empty_homlist(input)
 #   end
 # 
-# end
-
-# describe HomophoneSetLoader do
-#   it "happy path" do
-#     phone_set = []
-#     phone_set << {:KEY => "a", :DEF => "a short little word"}
-#     phone_set << {:KEY => "eh", :DEF => "interrogative"}
-#     hom_set = []
-#     hom_set << {:PHONES => phone_set}
-#     
-#     phone_set = []
-#     phone_set << {:KEY => "b", :DEF => "a letter"}
-#     phone_set << {:KEY => "bee", :DEF => "makes honey"}
-#     hom_set << {:PHONES => phone_set}
-#     
-#     input = {:HOMLIST => hom_set}.to_json
-#     
-#     puts input
-#     
-#     loader = HomophoneSetLoader.new
-#     loaded_homsets = loader.create_homsets_from_json_string(input)
-#     
-#     # expected_homsets = [
-#     #     {:key => "a", :def => "a short little word"},
-#     #     {:key => "eh", :def => "interrogative"}
-#     #     ]
-#     #   loaded_homsets.should == expected_homsets
-#   end
 # end
