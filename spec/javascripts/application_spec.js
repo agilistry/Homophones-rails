@@ -46,3 +46,32 @@ Screw.Unit(function(){
   });
 });
 
+Screw.Unit(function(){
+  describe("displayMatchingHomophoneSets(prefix)", function(){
+    it("hides homophone sets that don't match", function() {
+      displayMatchingHomophoneSets('turk');
+      expect($('#homophone_navigation .homophone_set .name:contains("bar")').
+        parents('.homophone_set').is(':hidden')).to(be_true);
+    });
+
+    it("hides homophone sets that do match", function() {
+      displayMatchingHomophoneSets('turk');
+      expect($('#homophone_navigation .homophone_set .name:contains("turkey")').
+        parents('.homophone_set').is(':hidden')).to(be_false);
+    });
+
+    it("shows all homophone sets when passed an empty string", function() {
+      $('#homophone_navigation .homophone_set').hide();
+      displayMatchingHomophoneSets('');
+      expect($('#homophone_navigation .homophone_set .name:contains("turkey")').
+        parents('.homophone_set').is(':hidden')).to(be_false);
+    });
+
+    it("shows all homophone sets when passed null", function() {
+      $('#homophone_navigation .homophone_set').hide();
+      displayMatchingHomophoneSets(null);
+      expect($('#homophone_navigation .homophone_set .name:contains("turkey")').
+        parents('.homophone_set').is(':hidden')).to(be_false);
+    });
+  });
+});
