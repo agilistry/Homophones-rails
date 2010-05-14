@@ -54,9 +54,15 @@ Screw.Unit(function(){
         parents('.homophone_set').is(':hidden')).to(be_true);
     });
 
-    it("hides homophone sets that do match", function() {
+    it("shows homophone sets that do match", function() {
       displayMatchingHomophoneSets('turk');
       expect($('#homophone_navigation .homophone_set .name:contains("turkey")').
+        parents('.homophone_set').is(':hidden')).to(be_false);
+    });
+
+    it("looks at all homophones in a set for a match", function() {
+      displayMatchingHomophoneSets('bo');
+      expect($('#homophone_navigation .homophone_set .name:contains("bor")').
         parents('.homophone_set').is(':hidden')).to(be_false);
     });
 

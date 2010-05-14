@@ -17,9 +17,18 @@ function displayMatchingHomophoneSets(prefix) {
   homophoneSets.hide();
   var matchingSets = jQuery.grep($('#homophone_navigation .homophone_set'),
     function(homophone_set, index) {
-      var homophone = jQuery(homophone_set).find(".homophone .name");
-      return punctuationlessCaseAgnosticStartsWith(homophone.text(), prefix);
+      var homophones = $(homophone_set).find(".homophone .name");
+      var matchingHomophones = jQuery.grep(homophones, function(homophone, indexOfHomophone) {
+        return punctuationlessCaseAgnosticStartsWith($(homophone).text(), prefix);
+      });
+      return matchingHomophones.length > 0;
     }
   );
   jQuery(matchingSets).show();
 }
+
+$(document).ready(function() {
+  $('#homophone_entry .homophone .name:first').keyup(function(event) {
+    displayMatchingHomophoneSets($(this).val());
+  });
+});
