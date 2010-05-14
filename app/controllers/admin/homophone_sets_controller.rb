@@ -46,6 +46,6 @@ class Admin::HomophoneSetsController < AdminController
 
   private
   def load_homophone_sets
-    @homophone_sets = HomophoneSet.all.sort
+    @homophone_sets = HomophoneSet.all(:include => :homophones).sort
   end
 end
