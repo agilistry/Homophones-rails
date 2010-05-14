@@ -1,4 +1,5 @@
 class QuestionsController < AdminController
+  skip_before_filter :login_required, :only => [:random]
   def new
     @question = Question.new
   end
@@ -38,5 +39,10 @@ class QuestionsController < AdminController
       flash[:notice] = "Quiz question deleted!"
     end
     redirect_to :action => "index"
+  end
+  
+  def random
+    @questions = Question.all
+    @questions = [@questions[rand(@questions.length)]]
   end
 end

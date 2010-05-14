@@ -1,7 +1,2 @@
 <%= flash[:notice] %>
-<% @questions.each do |question| %>
-  <h2><%= question.ask %></h2>
-  <p>Accepted responses: <%= question.responses %></p>
-  <p>Response size: <%= question.response_size %></p>
-  <p><%= link_to "Edit", edit_question_path(question) %> | <%= button_to "Delete", question_path(question), :method => :delete %></p>
-<% end %>
+<%= render :partial => "list" %>

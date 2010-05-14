@@ -24,6 +24,10 @@ module NavigationHelpers
       '/questions'
     when /the quiz question page/
       '/questions'
+      
+    when /the generate quiz page/
+       '/quiz'
+       
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #

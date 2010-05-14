@@ -12,6 +12,14 @@ Given /^I have the quiz question:$/ do |table|
   end
 end
 
+Then /^I see the quiz questions:$/ do |table|
+  puts Nokogiri.parse(response.body)
+  expected_questions = table.hashes.map {|hash| 
+    hash['question_text']
+  }
+  actual_questions = (Nokogiri.parse(response.body) / '.question_text').map(&:inner_text)
+  actual_questions.should == expected_questions
+end
 
 Given /^there are no homophone sets$/ do
   HomophoneSet.destroy_all

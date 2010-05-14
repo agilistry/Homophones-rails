@@ -7,5 +7,6 @@ ActionController::Routing::Routes.draw do |map|
     admin.resources :homophone_sets
   end
   map.resources :homophone_sets, :collection => {:search => :get}
+  map.quiz '/quiz', :controller => 'questions', :action => 'random'
   map.resources :questions
 end
