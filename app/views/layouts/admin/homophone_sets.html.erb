@@ -1,5 +1,5 @@
 <% content_for :application do %>
-  <div id="homophone_navigation">
+  <div id="homophone_navigation" class='grid_6'>
     <% @homophone_sets.each do |homophone_set| %>
       <div class='homophone_set'>
         <% homophone_set.homophones_sorted.each do |homophone| %>
@@ -12,6 +12,6 @@
     <% end %>
   </div>
   
-  <%= yield %>
+  <div class='grid_17'><%= yield %></div>
 <% end %>
 <%= render :file => 'layouts/application' %>
