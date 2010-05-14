@@ -1,4 +1,10 @@
 class Admin::HomophoneSetsController < AdminController
+  before_filter :load_homophone_sets
+
+  def index
+    @homophone_set = HomophoneSet.new
+  end
+
   def new
     @homophone_set = HomophoneSet.new
   end
@@ -36,5 +42,10 @@ class Admin::HomophoneSetsController < AdminController
     rescue ActiveRecord::RecordInvalid
       render :action => 'edit'
     end
+  end
+
+  private
+  def load_homophone_sets
+    @homophone_sets = HomophoneSet.all.sort
   end
 end

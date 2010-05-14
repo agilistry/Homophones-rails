@@ -36,7 +36,7 @@
       </div>
 
       <div id='primaryContent'>
-        <%= yield %>
+        <%= yield(:application) or yield %>
       </div>      
     </div>
     <script>

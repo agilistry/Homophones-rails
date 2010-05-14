@@ -129,3 +129,17 @@ h2.key_letter {
 .fieldWithErrors input {
 	border: 3px solid red;
 }
+
+/* Admin homophone navigation sidebar */
+#homophone_navigation {
+	float: left;
+	border: black solid;
+	border-width: 1px 1px 1px 0;
+	padding: 10px 5px 5px 15px;
+	margin-left: 0px;
+	margin-right: 25px;
+}
+
+#homophone_navigation .homophone_set {
+  border-bottom: 1px black dotted;
+}
