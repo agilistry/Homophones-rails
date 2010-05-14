@@ -9,8 +9,10 @@ function punctuationlessCaseAgnosticStartsWith(word, prefix) {
 
 function displayMatchingHomophoneSets(prefix) {
   var homophoneSets = $('#homophone_navigation .homophone_set');
+  var noMatchingHomophones = $('#no_matching_homophones');
   if(prefix == '' || prefix == null) {
     homophoneSets.show();
+    noMatchingHomophones.hide();
     return;
   }
 
@@ -24,7 +26,12 @@ function displayMatchingHomophoneSets(prefix) {
       return matchingHomophones.length > 0;
     }
   );
-  jQuery(matchingSets).show();
+  if(matchingSets.length > 0) {
+    noMatchingHomophones.hide();
+    jQuery(matchingSets).show();
+  } else {
+    noMatchingHomophones.show();
+  }
 }
 
 $(document).ready(function() {

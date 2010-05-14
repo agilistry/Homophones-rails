@@ -79,5 +79,28 @@ Screw.Unit(function(){
       expect($('#homophone_navigation .homophone_set .name:contains("turkey")').
         parents('.homophone_set').is(':hidden')).to(be_false);
     });
+
+    it("displays 'No matching homophones' when none match", function() {
+      displayMatchingHomophoneSets('this will never match');
+      expect($('#no_matching_homophones').is(':hidden')).to(be_false);
+    })
+
+    it("hides 'No matching homophones' there is a match", function() {
+      $('#no_matching_homophones').show();
+      displayMatchingHomophoneSets('tur');
+      expect($('#no_matching_homophones').is(':hidden')).to(be_true);
+    })
+
+    it("hides 'No matching homophones' when passed an empty string", function() {
+      $('#no_matching_homophones').show();
+      displayMatchingHomophoneSets('');
+      expect($('#no_matching_homophones').is(':hidden')).to(be_true);
+    })
+
+    it("hides 'No matching homophones' when passed null", function() {
+      $('#no_matching_homophones').show();
+      displayMatchingHomophoneSets(null);
+      expect($('#no_matching_homophones').is(':hidden')).to(be_true);
+    })
   });
 });

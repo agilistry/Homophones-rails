@@ -1,5 +1,9 @@
 <% content_for :application do %>
   <div id="homophone_navigation" class='grid_6'>
+    <div id="no_matching_homophones" style="display: none">
+      No matching homophones
+    </div>
+
     <% @homophone_sets.each do |homophone_set| %>
       <div class='homophone_set'>
         <% homophone_set.homophones_sorted.each do |homophone| %>
