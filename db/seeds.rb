@@ -4,5 +4,6 @@
 HomophoneSet.delete_all
 Homophone.delete_all
 loader = HomophoneSetLoader.new
-loader.load_from_file 'homlist.txt'
+filepath = File.join(Rails.root, 'homlist.txt');
+loader.load_from_file filepath
 loader.save

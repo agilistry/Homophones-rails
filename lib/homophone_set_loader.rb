@@ -1,29 +1,34 @@
 class HomophoneSetLoader
   attr_accessor :raw_sets
   
-  def load_raw_contents(filename)
-    file = File.join(Rails.root, filename);
+  def load_raw_contents(file)
     raw_contents = File.read(file)
   end
 
   def create_homsets_from_json_string(raw_contents)
-    contents = JSON.load(raw_contents)
     hs = {}
+
+    return hs if raw_contents.blank?
+
+    contents = JSON.load(raw_contents)
+   
+    return hs unless contents['HOMLIST']
+    
     raw_sets = contents['HOMLIST'].each do |list|
-      phones = list["PHONES"]
+      phones = list['PHONES']
       next if phones.blank?
    
-      key = phones.collect{|i| i["KEY"]}.sort.join("-")
+      key = phones.collect{|i| i['KEY']}.sort.join("-")
 
       unless hs.has_key?(key)
         hs[key] =  phones.collect{|phone| {:name => phone['KEY'], :definition => phone['DEF']} }
       end
     end
-    hs
+    hs 
   end
 
-  def load_from_file(filename)
-    raw_contents = load_raw_contents(filename)
+  def load_from_file(file)
+    raw_contents = load_raw_contents(file)
     @raw_sets = create_homsets_from_json_string(raw_contents)
   end
 
