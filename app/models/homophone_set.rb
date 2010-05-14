@@ -5,6 +5,18 @@ class HomophoneSet < ActiveRecord::Base
   validate :validate_homophones_are_valid
   validate :delete_errors_from_homophones_attribute
 
+  def self.all_homophones
+    sorted_homophones(all(:include => :homophones))
+  end
+
+  def self.find_and_return_phones(args)
+    sorted_homophones(find(args))
+  end
+
+  def self.sorted_homophones(hom_sets)
+    hom_sets.map(&:homophones).sort
+  end
+
   def fill_empty_homophones(num)
     homophones.size.upto(num - 1) { homophones.build }
   end
@@ -31,4 +43,5 @@ class HomophoneSet < ActiveRecord::Base
   def delete_errors_from_homophones_attribute
     errors.instance_variable_get('@errors').delete 'homophones'
   end
+
 end

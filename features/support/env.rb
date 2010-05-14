@@ -16,7 +16,7 @@ require 'cucumber/web/tableish'
 require 'webrat'
 require 'webrat/core/matchers'
 
-require 'spec/fixjour_builders'
+require File.join(RAILS_ROOT, 'spec/fixjour_builders.rb')
 
 Webrat.configure do |config|
   config.mode = :rails

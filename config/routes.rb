@@ -6,5 +6,6 @@ ActionController::Routing::Routes.draw do |map|
   map.namespace :admin do |admin|
     admin.resources :homophone_sets
   end
+  map.resources :homophone_sets, :collection => {:search => :get}
   map.resources :questions
 end

@@ -121,3 +121,9 @@ end
 Then /^there (?:is|are) (\d+) homophone sets?$/ do |num_sets|
   HomophoneSet.count.should == num_sets.to_i
 end
+
+Then /^I should see a homophone set that contains "([^\"]*)"$/ do |homophone|
+  response.should have_tag "div.homophone_set" do
+    have_tag "span", homophone, :class => "name"
+  end
+end

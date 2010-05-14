@@ -1,48 +1,25 @@
 <div class="grid_16">
     <div id="search_box">
-      <form>
-          <label for="search_term">Search</label>
-          <input id="search_term" type="text" name="search_term" /><input type=submit value="Go" />
-          <div class="search_note">Type a single word to find homophones that include that word.</div>
+      <%= form_tag search_homophone_sets_path, :method => :get %>
+          <%= render :partial => 'search_form' %>
       </form>
     </div>
 
 <% @grouped_hom_list = grouped_by_first_letter(@homophone_lists) %>
-    <div id="index_links">
-      <ul id="index_links">
-          <% ('A'..'Z').to_a.each do |index_letter| %>
-            <li><%= link_to_if @grouped_hom_list.keys.include?(index_letter.downcase),
-                               index_letter,
-                               {:anchor => index_letter.downcase},
-                               {:class => "index_link"}  %>
-            </li>
-          <% end -%>
-          <div class="clearfix"></div>
-        </ul>
-    </div>
-
-
-    <% @grouped_hom_list.each do |key_letter, homophone_sets| %>
-      <a name=<%= key_letter.downcase %>></a>
-      <h2 class="key_letter"><%= h key_letter.upcase %></h2>
-
-      <% homophone_sets.each do |homophone_set| %>
-        <div class='homophone_set'>
-          <% homophone_set.sort.each do |homophone| %>
-            <div class='homophone'>
-              <span class='name'><%= h homophone.name %></span>
-              <span class='definition'><%= h homophone.definition %></span>
-            </div>
-          <% end %>
-        </div>
-      <% end %>
-    <% end %>
+<div id="index_links">
+  <ul id="index_links">
+      <% ('A'..'Z').to_a.each do |index_letter| %>
+        <li><%= link_to_if @grouped_hom_list.keys.include?(index_letter.downcase),
+                           index_letter,
+                           {:anchor => index_letter.downcase},
+                           {:class => "index_link"}  %>
+        </li>
+      <% end -%>
+      <div class="clearfix"></div>
+    </ul>
 </div>
-<div id="sidebar" class="grid_8">
-    <div id="about_video">
-        <h4>Mr. Homophone</h4>
-        <object width="220" height="180"><param name="movie" value="http://www.youtube.com/v/ebK65kvbudA&hl=en_US&fs=1&"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/ebK65kvbudA&hl=en_US&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="220" height="180"></embed></object>
-        <p><span class="note_date">October 27, 2008</span>Alan Cooper speaking about users in a post Keynote speech chat with delegates at the Patterns and Practices Summit at Microsoft (2006).</p>
-    </div>
-    <div id="twitter"></div>
+
+<%= render :partial => 'homophone_sets/homophone_sets_list', :object => @grouped_hom_list %>
+
 </div>
+<%= render :partial => 'sidebar' %>
