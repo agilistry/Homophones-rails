@@ -1,7 +1,8 @@
-function punctuationlessCaseAgnosticWordCompare(word1, word2) {
-  removePunctuationAndApostrophe = function(word) {
-    return word.toLowerCase().replace(/'/g, "");
+function punctuationlessCaseAgnosticStartsWith(word, prefix) {
+  removePunctuationAndApostrophe = function(string) {
+    return string.toLowerCase().replace(/'/g, "");
   }
-  return removePunctuationAndApostrophe(word1) ==
-         removePunctuationAndApostrophe(word2);
+  return removePunctuationAndApostrophe(word).indexOf(
+          removePunctuationAndApostrophe(prefix)
+         ) == 0;
 }

@@ -14,23 +14,34 @@ Screw.Unit(function(){
 });
 
 Screw.Unit(function(){
-  describe("punctuationlessCaseAgnosticWordCompare(word1, word2)", function(){
+  describe("punctuationlessCaseAgnosticStartsWith(word1, word2)", function(){
     it("checks basic equality", function(){
-      expect(punctuationlessCaseAgnosticWordCompare('hello', 'hello')).
+      expect(punctuationlessCaseAgnosticStartsWith('hello', 'hello')).
         to(be_true);
 
-      expect(punctuationlessCaseAgnosticWordCompare('hello', 'hola')).
+      expect(punctuationlessCaseAgnosticStartsWith('hello', 'hola')).
         to(be_false);
     });
 
     it("is case agnostic", function(){
-      expect(punctuationlessCaseAgnosticWordCompare('HeLlO', 'hElLo')).
+      expect(punctuationlessCaseAgnosticStartsWith('HeLlO', 'hElLo')).
         to(be_true);
     });
 
     it("ignores apostrophes", function(){
-      expect(punctuationlessCaseAgnosticWordCompare("h'ello", "he'll'o")).
+      expect(punctuationlessCaseAgnosticStartsWith("h'ello", "he'll'o")).
         to(be_true);
+    });
+    
+    it("checks that the word starts with the prefix", function() {
+      expect(punctuationlessCaseAgnosticStartsWith('hello', 'he')).
+        to(be_true);
+
+      expect(punctuationlessCaseAgnosticStartsWith('hello', 'hek')).
+        to(be_false);      
+
+      expect(punctuationlessCaseAgnosticStartsWith('hello', 'el')).
+        to(be_false);      
     });
   });
 });
