@@ -29,6 +29,9 @@
               <li><a href="#">Blog</a></li>
               <li><a href="#">Forum</a></li>
               <li><%= link_to "About", about_url %></li>
+              <% if logged_in? %>
+                <li><%= link_to "Admin", admin_path %></li>
+              <% end %>
             </ul>
             <div class="clearfix"></div>
           </div>
