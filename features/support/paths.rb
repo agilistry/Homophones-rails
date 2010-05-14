@@ -13,7 +13,7 @@ module NavigationHelpers
     when /the homophone list page/
       '/'
     when /the homophone maintenance page/
-      '/admin'
+      '/admin/homophone_sets'
     when /the admin login page/
       '/admin/login'
     when /the new homophone set page/
