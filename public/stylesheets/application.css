@@ -145,7 +145,14 @@ h2 {
     line-height: 1.2em;
 }
 
+/* Riddles */
 
+#random_riddle {
+	float: right;
+	padding: 10px;
+	margin: 10px;
+	border: 1px solid gray;
+}
 /* Sidebar */
 #sidebar {
     font-size: .7em;    

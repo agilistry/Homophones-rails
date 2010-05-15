@@ -1,10 +1,21 @@
-
 <h1>Welcome</h1>
+<% if @riddle %>
+<div id="random_riddle">
+  <h2>Riddle</h2>
+  <p class='question'><%= h @riddle.ask %></p>
+  <p>
+    <a href='#' class='riddle_response' onclick="jQuery(this).hide().siblings('.answer').show()">Click here for answer</a>
+    <span class='answer' style='display: none'><%= h @riddle.riddle_response %></span>
+  </p>
+</div>
+<% end %>
+<div id="welcome_text">
 <p>
-Homophones are words, like "to," "too," and "two," that are pronounced the same, spelled differently, and have different meanings. In addition to the comprehensive list of homophones on this site, we are planning to add lots of related word-play stuff, including helpful information for school teachers.
+Homophones are words, like "to," "too," and "two" that are pronounced the same, spelled differently, and have different meanings. In addition to the comprehensive list of homophones on this site, we are planning to add lots of related word-play stuff, including helpful information for school teachers.
 Thanks for visiting, and I hope you have as much fun using this site as I did creating it.
 </p>
 <p>&mdash;<i>Alan Cooper (aka Mr. Homophone)</i></p>
+</div>
 <h2><%= link_to "Browse the list", homophone_sets_url %></h2>
 <p>
 <div id="search_box">
@@ -13,19 +24,7 @@ Thanks for visiting, and I hope you have as much fun using this site as I did cr
   </form>
 </div>
 
-
-<% if @riddle %>
-<div id="random_riddle">
-  <h2>Say what?!</h2>
-  <p class='question'><%= h @riddle.ask %></p>
-  <p>
-    <a href='#' class='riddle_response' onclick="jQuery(this).hide().siblings('.answer').show()">Click here for answer</a>
-    <span class='answer' style='display: none'><%= h @riddle.riddle_response %></span>
-  </p>
-</div>
-<% end %>
-
-<h2>Some random homophones</h2>
+<h2>Featured Homophone Sets</h2>
 
 <%= render :partial => 'homophone_sets/homophone_sets_list', :locals => {:homophone_sets => @homophone_sets} %>
 
