@@ -27,6 +27,7 @@ h2 {
 
 #tabbed_header #nav {
     background: silver;
+    height: 35px;
 }
 
 #tabbed_header ul {
