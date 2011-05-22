@@ -20,7 +20,7 @@ describe Admin::HomophoneSetsController, 'GET new' do
   it "rejects the user if not logged in" do
     controller.stub(:logged_in?).and_return false
     get :new
-    response.should redirect_to(login_path)
+    response.should redirect_to(admin_login_path)
   end
 end
 
@@ -58,7 +58,7 @@ describe Admin::HomophoneSetsController, 'POST create' do
   it "rejects the user if not logged in" do
     controller.stub(:logged_in?).and_return false
     post :create
-    response.should redirect_to(login_path)
+    response.should redirect_to(admin_login_path)
   end
 
   context "failure" do
@@ -106,7 +106,7 @@ describe Admin::HomophoneSetsController, 'GET edit' do
   it "rejects the user if not logged in" do
     controller.stub(:logged_in?).and_return false
     do_get
-    response.should redirect_to(login_path)
+    response.should redirect_to(admin_login_path)
   end
 end
 
@@ -136,7 +136,7 @@ describe Admin::HomophoneSetsController, 'PUT update' do
         :homophone_set => {:homophones => {
       '1' => {:name => 'to'},
       '2' => {:name => 'eh'}}}
-    response.should redirect_to(admin_url)
+    response.should redirect_to(admin_index_path)
   end
 
   context "failed" do

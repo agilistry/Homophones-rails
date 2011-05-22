@@ -16,7 +16,7 @@ class Admin::HomophoneSetsController < AdminController
       @homophone_set.homophones.build(attrs) if attrs[:name].present? || attrs[:definition].present?
     end
     if @homophone_set.save
-      redirect_to admin_path
+      redirect_to admin_index_path
     else
       render :action => 'new'
     end
@@ -38,7 +38,7 @@ class Admin::HomophoneSetsController < AdminController
         end
         @homophone_set.save!
       end
-      redirect_to admin_path
+      redirect_to admin_index_path
     rescue ActiveRecord::RecordInvalid
       render :action => 'edit'
     end

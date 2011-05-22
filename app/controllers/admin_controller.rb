@@ -4,13 +4,13 @@ class AdminController < ApplicationController
   
   def login
     if params[:login] && authenticate(params[:login][:user_name], params[:login][:password])
-      redirect_to admin_path
+      redirect_to admin_index_path
     end
   end
   
   def logout
     session[:logged_in] = false
-    redirect_to home_path
+    redirect_to :root
   end
   
   def index
@@ -20,6 +20,6 @@ class AdminController < ApplicationController
   private
   
   def login_required
-    redirect_to(login_path) unless logged_in?
+    redirect_to(admin_login_path) unless logged_in?
   end
 end

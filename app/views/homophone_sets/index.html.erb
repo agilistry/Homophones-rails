@@ -9,7 +9,7 @@
       <% ('A'..'Z').to_a.each do |index_letter| %>
       <div class="rolodex_letter_container">
         <%= link_to_if @grouped_hom_list.keys.include?(index_letter.downcase),
-                       "<div class='rolodex_letter'>#{index_letter}</div>",
+                       raw("<div class='rolodex_letter'>#{index_letter}</div>"),
                        {:anchor => index_letter.downcase},
                        {:class => "index_link"}  %>
       </div>

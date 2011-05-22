@@ -1,8 +1,10 @@
 <div id="homophone_entry">
-  <% form_for @homophone_set do |f| %>
+  <%= form_for @homophone_set do |f| %>
     <%= submit_tag "Publish" %>
     
-    <%= error_messages_for :homophone_set %>
+    <% @homophone_set.errors.full_messages.each do |msg| %>
+      <div class="error"><%= msg %></div>
+    <% end %>
 
     <div>
       <div class='column_header'>Word</div>
@@ -11,9 +13,11 @@
 
     <% @homophone_set.fill_empty_homophones(8) %>
     <% @homophone_set.homophones.each_with_index do |homophone, i| %>
-      <% fields_for "homophone_set[homophones][#{i}]", homophone do |h| %>
+      <%= fields_for "homophone_set[homophones][#{i}]", homophone do |h| %>
         <div class='homophone'>
-          <%= error_message_on homophone, :name %>
+          <% homophone.errors.full_messages.each do |msg| %>
+            <div class="error"><%= msg %></div>
+          <% end %>
           <%= h.text_field :name, :class => 'name' %>
           <%= h.text_field :definition, :class => 'definition' %>
         </div>

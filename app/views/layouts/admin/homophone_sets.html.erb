@@ -9,7 +9,7 @@
         <% homophone_set.homophones_sorted.each do |homophone| %>
           <div class='homophone'>
             <span class='name'><%= link_to homophone.name, edit_admin_homophone_set_path(homophone.homophone_set_id) %></span>
-            <span class='definition'><%= h homophone.definition %></span>
+            <span class='definition'><%=homophone.definition %></span>
           </div>
         <% end %>
       </div>

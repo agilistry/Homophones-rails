@@ -2,9 +2,11 @@
 # from the project root directory.
 ENV["RAILS_ENV"] ||= 'test'
 require File.expand_path(File.join(File.dirname(__FILE__),'..','config','environment'))
-require 'spec/autorun'
-require 'spec/rails'
+#require 'spec/autorun'
+require 'rspec/rails'
 require File.join(RAILS_ROOT, 'spec/fixjour_builders.rb')
+require 'webrat'
+require 'webrat/core/matchers'
 
 # Uncomment the next line to use webrat's matchers
 #require 'webrat/integrations/rspec-rails'
@@ -19,8 +21,10 @@ Spec::Runner.configure do |config|
   # in your config/boot.rb
   config.use_transactional_fixtures = true
   config.use_instantiated_fixtures  = false
-  config.fixture_path = RAILS_ROOT + '/spec/fixtures/'
-
+  config.fixture_path = Rails.root.to_s + '/spec/fixtures/'
+  config.include Webrat::Matchers, :type => :views
+  
+  
   module ControllerSpecHelpers
     def stub_logged_in(logged_in=true)
       before(:each) do

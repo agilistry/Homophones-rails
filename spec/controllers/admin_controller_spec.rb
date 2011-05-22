@@ -10,14 +10,14 @@ describe AdminController, 'POST /logout' do
   it "redirects to the home page" do
     session[:logged_in] = true
     post :logout
-    response.should redirect_to(home_path)
+    response.should redirect_to(:root)
   end
 end
 
 describe AdminController, 'GET /' do
   it "redirects to login page if not logged in" do
     get :index
-    response.should redirect_to(login_path)
+    response.should redirect_to(admin_login_path)
   end
   
   it "redirects to homophones admin page if logged in" do

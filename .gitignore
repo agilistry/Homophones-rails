@@ -4,3 +4,4 @@ tmp/*
 .idea/
 coverage/
 config/admin_credentials.yml
+*.rails2

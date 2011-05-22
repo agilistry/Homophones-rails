@@ -45,7 +45,7 @@ class HomophoneSet < ActiveRecord::Base
   end
 
   def delete_errors_from_homophones_attribute
-    errors.instance_variable_get('@errors').delete 'homophones'
+    errors.instance_variable_get('@errors').delete 'homophones' if errors.instance_variable_get('@errors')
   end
 
 end
