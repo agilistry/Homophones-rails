@@ -29,7 +29,6 @@ Feature: Edit homophone set
     And I go to the homophone list page
     Then the homophones are in order: "a, eh"
 
-  @wip
   Scenario: Fails with word name missing
     Given we have a homophone set:
       | name | definition        |
