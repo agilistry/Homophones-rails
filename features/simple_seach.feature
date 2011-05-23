@@ -2,7 +2,6 @@ Feature: Simple Search
   In order to find sets of homophones by searching for a word in the homophone set
   Nancy wants to enter a work in a homophone set to find the whole set
 
-  @wip
   Scenario: Searching results in 1 set
     Given we have a homophone set:
     |name| definition |
