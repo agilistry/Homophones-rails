@@ -11,10 +11,11 @@ group :development, :test, :ci, :cucumber do
   gem 'database_cleaner'
   gem 'rspec-rails', '>= 1.3.2'
   gem 'cucumber-rails', '>= 0.3.1'
-  gem 'webrat', '>= 0.7.0'
+  gem 'capybara'
   gem 'fixjour', '0.4.2'
   gem 'rcov'
   gem 'mechanize'
   gem 'nokogiri'
   gem 'ruby-debug'
+  gem 'launchy'
 end

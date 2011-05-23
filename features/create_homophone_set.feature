@@ -11,7 +11,7 @@ Feature: Create homophone set
       | two  | one more than one   |
       | too  | also                |
     And I go to the homophone list page
-    Then I see 1 set of 3 homophones
+    Then I see 1 set of 3 homophones each
     And the homophones are in order: "to, too, two"
     And each word has a definition
 

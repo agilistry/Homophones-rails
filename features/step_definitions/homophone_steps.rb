@@ -16,20 +16,12 @@ Then /^I see the quiz questions:$/ do |table|
   expected_questions = table.hashes.map {|hash| 
     hash['question_text']
   }
-  actual_questions = (Nokogiri.parse(response.body) / '.question_text').map(&:inner_text)
+  actual_questions = (Nokogiri.parse(page.body) / '.question_text').map(&:inner_text)
   actual_questions.should == expected_questions
 end
 
 Given /^there are no homophone sets$/ do
   HomophoneSet.destroy_all
-end
-
-Then /^I should see a link called "([^\"]*)"$/ do |link_content|
-  response.should have_tag("a", link_content)
-end
-
-Then /^I should not see a link called "([^\"]*)"$/ do |link_content|
-  response.should_not have_tag("a", link_content)
 end
 
 Given /^I am not logged in$/ do
@@ -50,7 +42,7 @@ end
 
 When /^I log in with "(.*)" \/ "(.*)"$/ do |username, password|
   visit admin_login_path
-  When %(I fill in "User Name" with "#{username}")
+  When %(I fill in "User name" with "#{username}")
   When %(I fill in "Password" with "#{password}")
   When %(I press "Login")
 end
@@ -79,17 +71,17 @@ When /^I edit the homophone set containing "(.*)" to be:$/ do |phone_name, table
   click_button "Publish"
 end
 
-Then /^I see (\d+) sets? of (\d+) homophones$/ do |num_sets, num_phones_in_set|
-  response.should have_tag('.homophone_set', :count => num_sets.to_i) do
-    with_tag('.homophone', :count => num_phones_in_set.to_i)
-  end
+Then /^I see (\d+) sets? of (\d+) homophones each$/ do |num_sets, num_phones_in_set|
+  sets = page.all(".homophone_set")
+  sets.should have(num_sets.to_i).items
+  sets.each {|s| s.all('.homophone').should have(num_phones_in_set.to_i).items }
 end
 
 Then /^the homophone sets are in order:$/ do |table|
   expected_homophone_sets = table.hashes.map {|hash|
     hash['homophones'].split(',').map(&:strip)
   }
-  homophone_set_divs = Nokogiri.parse(response.body) / '.homophone_set'
+  homophone_set_divs = Nokogiri.parse(page.body) / '.homophone_set'
   actual_homophone_sets = homophone_set_divs.map {|homophone_set_div|
     (homophone_set_div / '.homophone .name').map(&:inner_text)
   }
@@ -98,7 +90,7 @@ end
 
 Then /^the homophones are in order: "(.*)"$/ do |homophones_list|
   homophone_names = homophones_list.split(',').map(&:strip)
-  homophone_sets = Nokogiri.parse(response.body) / '.homophone_set'
+  homophone_sets = Nokogiri.parse(page.body) / '.homophone_set'
   target_set = homophone_sets.detect do |set|
     homophone_names.all? {|name| set / ".homophone .name[text=\"#{name}\"]" }
   end
@@ -111,12 +103,12 @@ Given /^I have the production data loaded$/ do
 end
 
 Then /^the homophone groups are in order$/ do
-  homophone_group_letters = (Nokogiri.parse(response.body) / '.key_letter').map(&:inner_text)
+  homophone_group_letters = (Nokogiri.parse(page.body) / '.key_letter').map(&:inner_text)
   homophone_group_letters.should == homophone_group_letters.sort
 end
 
 Then /^each word has a definition$/ do
-  definition_divs = Nokogiri.parse(response.body) / '.homophone_set .homophone .definition'
+  definition_divs = Nokogiri.parse(page.body) / '.homophone_set .homophone .definition'
   definition_divs.should_not be_empty
   definition_divs.each {|definition| definition.inner_text.should be_present }
 end
@@ -130,7 +122,7 @@ Then /^there (?:is|are) (\d+) homophone sets?$/ do |num_sets|
 end
 
 Then /^I should see a homophone set that contains "([^\"]*)"$/ do |homophone|
-  response.should have_tag "div.homophone_set" do
+  page.should have_tag "div.homophone_set" do
     have_tag "span", homophone, :class => "name"
   end
 end
