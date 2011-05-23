@@ -18,4 +18,5 @@ group :development, :test, :ci, :cucumber do
   gem 'nokogiri'
   gem 'ruby-debug'
   gem 'launchy'
+  gem 'webrat'
 end
