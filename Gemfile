@@ -16,4 +16,5 @@ group :development, :test, :ci, :cucumber do
   gem 'rcov'
   gem 'mechanize'
   gem 'nokogiri'
+  gem 'ruby-debug'
 end

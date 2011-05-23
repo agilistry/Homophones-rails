@@ -9,7 +9,15 @@ describe HomophoneSet, 'validations' do
 
   it "is valid with 2 homophones" do
     set = HomophoneSet.new
-    2.times { set.homophones.build(:name => 'asdf') }
+    set.homophones.build :name => 'asdfg'
+    set.homophones.build :name => 'asdf'
+    set.should be_valid
+  end
+
+  it "is valid with 2 homographs" do
+    pending
+    set = HomophoneSet.new
+    2.times { set.homophones.build :name => 'asdf' }
     set.should be_valid
   end
 

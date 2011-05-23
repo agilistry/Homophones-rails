@@ -1,6 +1,8 @@
 class HomophoneSet < ActiveRecord::Base
   include Comparable
   has_many :homophones, :dependent => :destroy
+  
+  
   validate :validate_at_least_2_homophones
   validate :validate_homophones_are_valid
   validate :delete_errors_from_homophones_attribute
@@ -45,7 +47,7 @@ class HomophoneSet < ActiveRecord::Base
   end
 
   def delete_errors_from_homophones_attribute
-    errors.instance_variable_get('@errors').delete 'homophones' if errors.instance_variable_get('@errors')
+    errors.delete :homophones
   end
 
 end
