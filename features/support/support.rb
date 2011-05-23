@@ -1,1 +1,1 @@
-require 'spec/fixjour_builders'
+require 'spec/support/fixjour_builders'
