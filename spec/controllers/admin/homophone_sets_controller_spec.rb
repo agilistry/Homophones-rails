@@ -73,8 +73,8 @@ describe Admin::HomophoneSetsController, 'POST create' do
       homophones = {}
       1.upto(8) {|i| homophones[i.to_s] = {}}
       post :create, :homophone_set => {:homophones => homophones}
-      response.body.should have_tag('input.name', :count => 8)
-      response.body.should have_tag('input.definition', :count => 8)
+      assert_select 'input.name', :count => 8
+      assert_select 'input.definition', :count => 8
     end
   end
 
