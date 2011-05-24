@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe Admin::HomophoneSetsController, 'GET new' do
-  stub_logged_in
+  stub_admin_logged_in
 
   it "is successful" do
     get :new
@@ -18,14 +18,14 @@ describe Admin::HomophoneSetsController, 'GET new' do
   end
   
   it "rejects the user if not logged in" do
-    controller.stub(:logged_in?).and_return false
+    controller.stub(:admin_logged_in?).and_return false
     get :new
     response.should redirect_to(admin_login_path)
   end
 end
 
 describe Admin::HomophoneSetsController, 'POST create' do
-  stub_logged_in
+  stub_admin_logged_in
 
   def do_post
     post :create, :homophone_set => {:homophones => {
@@ -56,7 +56,7 @@ describe Admin::HomophoneSetsController, 'POST create' do
   end
 
   it "rejects the user if not logged in" do
-    controller.stub(:logged_in?).and_return false
+    controller.stub(:admin_logged_in?).and_return false
     post :create
     response.should redirect_to(admin_login_path)
   end
@@ -81,7 +81,7 @@ describe Admin::HomophoneSetsController, 'POST create' do
 end
 
 describe Admin::HomophoneSetsController, 'GET edit' do
-  stub_logged_in
+  stub_admin_logged_in
   
   let(:homophone_set) { create_homophone_set }
   
@@ -104,14 +104,14 @@ describe Admin::HomophoneSetsController, 'GET edit' do
   end
   
   it "rejects the user if not logged in" do
-    controller.stub(:logged_in?).and_return false
+    controller.stub(:admin_logged_in?).and_return false
     do_get
     response.should redirect_to(admin_login_path)
   end
 end
 
 describe Admin::HomophoneSetsController, 'PUT update' do
-  stub_logged_in
+  stub_admin_logged_in
   
   let(:homophone_set) do
     create_homophone_set :homophones => [
