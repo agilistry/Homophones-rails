@@ -3,6 +3,7 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.0.6'
 gem 'rake', '0.8.7'
+gem 'devise', '1.3.4'
 
 gem 'sqlite3-ruby', :require => 'sqlite3'
 
@@ -18,4 +19,5 @@ group :development, :test, :ci, :cucumber do
   gem 'nokogiri'
   gem 'ruby-debug'
   gem 'launchy'
+  gem 'email_spec', :git => 'git://github.com/bmabey/email-spec.git'
 end
