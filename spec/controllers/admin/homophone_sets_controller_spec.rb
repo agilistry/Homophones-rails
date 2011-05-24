@@ -9,7 +9,7 @@ describe Admin::HomophoneSetsController, 'GET new' do
   end
 
   context "integrated" do
-    integrate_views
+    render_views
     
     it "is successful" do
       get :new
@@ -62,7 +62,7 @@ describe Admin::HomophoneSetsController, 'POST create' do
   end
 
   context "failure" do
-    integrate_views
+    render_views
 
     it "renders the new form" do
       post :create, :homophone_set => {:homophones => {}}
@@ -95,7 +95,7 @@ describe Admin::HomophoneSetsController, 'GET edit' do
   end
 
   context "integrated" do
-    integrate_views
+    render_views
     
     it "is successful" do
       do_get

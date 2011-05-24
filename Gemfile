@@ -14,7 +14,7 @@ group :development, :test, :ci, :cucumber do
   gem 'rspec-rails', '>= 1.3.2'
   gem 'cucumber-rails', '>= 0.3.1'
   gem 'capybara'
-  gem 'fixjour', '0.4.2'
+  gem 'fixjour', '0.5.3'
   gem 'rcov'
   gem 'mechanize'
   gem 'nokogiri'
