@@ -11,7 +11,6 @@ Feature: Administrator can create new quiz questions
     Then I should see "Quiz question saved!"
     And I should be on the quiz question page
   
-  @wip  
   Scenario: Fail to save a new quiz question
     When I go to the new quiz question page
     And I fill in "Ask" with "What is the largest set of homophones?"
