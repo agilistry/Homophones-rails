@@ -6,20 +6,28 @@ Given /^I am not logged in as an admin$/ do
   visit admin_logout_path
 end
 
+module AdminCreationMethods
+  def admin_with(username, password)
+    Login.create!(:user_name => username, :password => password) unless Login.find_by_user_name(username)
+  end
+  
+  def admin_login(username, password)
+    visit admin_login_path
+    fill_in 'User name', :with => username
+    fill_in 'Password', :with => password
+    click_button 'Login'    
+  end
+end
+World(AdminCreationMethods)
+
 When /^I log in as admin$/ do
-  Login.create!(:user_name => 'alan', :password => 'supersecret') unless Login.find_by_user_name('alan')
-  visit admin_login_path
-  fill_in 'User name', :with => 'alan'
-  fill_in 'Password', :with => 'supersecret'
-  click_button 'Login'
+  admin_with  'alan', 'supersecret'
+  admin_login 'alan', 'supersecret'
 end
 
 When /^I log in as admin with wrong credentials$/ do
-  Login.create!(:user_name => 'alan', :password => 'supersecret') unless Login.find_by_user_name('alan')
-  visit admin_login_path
-  fill_in 'User name', :with => 'alan'
-  fill_in 'Password', :with => 'this is bad'
-  click_button 'Login'
+  admin_with  'alan', 'supersecret'
+  admin_login 'alan', 'badbadbad'
 end
 
 When /^I log in with "(.*)" \/ "(.*)"$/ do |email, password|
