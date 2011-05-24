@@ -24,34 +24,6 @@ Given /^there are no homophone sets$/ do
   HomophoneSet.destroy_all
 end
 
-Given /^I am not logged in$/ do
-  
-end
-
-Given /^I am logged in$/ do
-  Given "the administrator user name is \"something\" with password \"other\""
-  When "I am on the admin login page"
-  When "I fill in \"User name\" with \"something\""
-  When "I fill in \"Password\" with \"other\""
-  When "I press \"Login\""
-end
-
-Given /^the administrator user name is "(.*)" with password "(.*)"$/ do |username, password|
-  Login.create! :user_name => username, :password => password
-end
-
-When /^I log in with "(.*)" \/ "(.*)"$/ do |username, password|
-  visit admin_login_path
-  When %(I fill in "User name" with "#{username}")
-  When %(I fill in "Password" with "#{password}")
-  When %(I press "Login")
-end
-
-Given /^I am logged in as "(.*)"$/ do |admin_name|
-  Given %(the administrator user name is "#{admin_name}" with password "password")
-  When %(I log in with "#{admin_name}" / "password")
-end
-
 When /^I create a homophone set with the following words:$/ do |table|
   When %(I go to the new homophone set page)
   table.hashes.each_with_index do |phone_attrs, i|

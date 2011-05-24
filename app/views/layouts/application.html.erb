@@ -7,7 +7,10 @@
 <body>
   <a name="top"></a>
   <div class='container_24 wrapper'>
-    <%=render :partial => "layouts/banner" %>
+    <%= render :partial => "layouts/banner" %>
+    <% if user_signed_in? %>
+      <span class='logged_in_user hidden_stash'><%= current_user.email %></span>
+    <% end %>
     
     <div class="grid_14 suffix_2">
       <div id="primaryContent">

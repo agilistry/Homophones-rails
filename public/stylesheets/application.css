@@ -236,3 +236,7 @@ h2 {
 .large {
   width: 300px;
 }
+
+.hidden_stash {
+  display: none;
+}

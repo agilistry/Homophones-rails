@@ -1,6 +1,6 @@
 Feature: Edit homophone set
   Background:
-    Given I am logged in as "admin"
+    Given I log in as admin
 
   Scenario: Add a new word
     Given we have a homophone set:
