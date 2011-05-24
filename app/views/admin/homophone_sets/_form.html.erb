@@ -6,9 +6,13 @@
       <div class="error"><%= msg %></div>
     <% end %>
 
-    <div>
-      <div class='column_header'>Word</div>
-      <div class='column_header'>Definition</div>
+    <div class="table_like">
+      <div class="small column">
+        Word
+      </div>
+      <div class="large column">
+        Definition
+      </div>
     </div>
 
     <% @homophone_set.fill_empty_homophones(8) %>
@@ -18,8 +22,14 @@
           <% homophone.errors.full_messages.each do |msg| %>
             <div class="error"><%= msg %></div>
           <% end %>
-          <%= h.text_field :name, :class => 'name' %>
-          <%= h.text_field :definition, :class => 'definition' %>
+          <div class="table_like">
+            <div class="small column">
+              <%= h.text_field :name, :class => 'name', :size => 15 %>
+            </div>
+            <div class="large column">
+              <%= h.text_field :definition, :class => 'definition',  :size => 40 %>
+            </div>
+          </div>
         </div>
       <% end %>
     <% end %>

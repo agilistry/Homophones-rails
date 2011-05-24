@@ -2,59 +2,20 @@
   "http://www.w3.org/TR/html4/loose.dtd">
 
 <html>
-  <head>
-    <link rel="stylesheet" type="text/css" media="all" href="/stylesheets/reset.css" />
-    <link rel="stylesheet" type="text/css" media="all" href="/stylesheets/text.css" />
-    <link rel="stylesheet" type="text/css" media="all" href="/stylesheets/960.css" />
-    <link rel="stylesheet" type="text/css" media="all" href="/stylesheets/960_24_col.css" />
-    <link rel="stylesheet" type="text/css" media="all" href="/stylesheets/application.css" />
-    <link rel="stylesheet" type="text/css" media="all" href="/stylesheets/jquery.twitter.css" />
-
-    <%= javascript_include_tag "jquery" %>
-    <%= javascript_include_tag "jquery.twitter" %>
-    <%= javascript_include_tag "application" %>
-    <!-- I was here -->
-
-    <title>Mr. Homophone's Homophones</title>
-  </head>
+  <%= render :partial => "layouts/head" %>
   
-  <body>
-    <a name="top"></a>
-    <div class='container_24 wrapper'>
-      <div id='header' class="grid_24">
-        <div id="tabbed_header">
-          <%= image_tag 'mrhomophone.png' %><br />
-          <div id="nav">
-            <ul>
-              <li><%= link_to "Home", root_path %></li>
-              <li><%= link_to "Browse the list", homophone_sets_url %></li>
-             <li><%= link_to "About", about_homophones_path %></li>
-            </ul>
-            <div class="clearfix"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="grid_14 suffix_2">
-        <div id="primaryContent">
+<body>
+  <a name="top"></a>
+  <div class='container_24 wrapper'>
+    <%=render :partial => "layouts/banner" %>
+    
+    <div class="grid_14 suffix_2">
+      <div id="primaryContent">
         <%= yield %>
-        </div>
       </div>
-      <%= render :partial => "homophone_sets/sidebar" %>     
     </div>
-    <script type="text/javascript">
-    $(document).ready(function() {
-        $("#twitter").getTwitter({
-            userName: "mrhomophone",
-            numTweets: 5,
-            loaderText: "Loading tweets...",
-            slideIn: true,
-            showHeading: true,
-            headingText: "Latest Tweets",
-            showProfileLink: true
-        });
-    });
-    </script>
+    <%= render :partial => "homophone_sets/sidebar" %>     
+  </div>
 
-  </body>
+</body>
 </html>

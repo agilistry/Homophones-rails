@@ -35,6 +35,18 @@ function displayMatchingHomophoneSets(prefix) {
 }
 
 $(document).ready(function() {
+    $("#twitter").getTwitter({
+        userName: "mrhomophone",
+        numTweets: 5,
+        loaderText: "Loading tweets...",
+        slideIn: true,
+        showHeading: true,
+        headingText: "Latest Tweets",
+        showProfileLink: true
+    });
+});
+
+$(document).ready(function() {
   $('#homophone_entry .homophone .name:first').keyup(function(event) {
     displayMatchingHomophoneSets($(this).val());
   });

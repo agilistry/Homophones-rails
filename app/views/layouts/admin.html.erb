@@ -1,0 +1,19 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+  <%= render :partial => "layouts/head" %>
+  <body>
+    <a name="top"></a>
+    <div class='container_24 wrapper'>
+      <%=render :partial => "layouts/banner" %>
+
+      <div class="grid_14 suffix_2">
+        <div id="primaryContent">
+        <%= yield %>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

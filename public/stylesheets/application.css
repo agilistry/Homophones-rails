@@ -210,3 +210,29 @@ h2 {
 #homophone_navigation .homophone_set {
   border-bottom: 1px black dotted;
 }
+
+.column_header {
+  display: block;
+  float: left;
+  text-align: center;
+}
+
+.table_like {
+  float: none;
+  clear: both;
+}
+
+.column {
+  overflow: hidden;
+  padding: 5px;
+  float: left;
+  width: 200px;
+}
+
+.small {
+  width: 125px;
+}
+
+.large {
+  width: 300px;
+}

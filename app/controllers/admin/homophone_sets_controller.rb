@@ -1,4 +1,5 @@
 class Admin::HomophoneSetsController < AdminController
+  layout "admin"
   before_filter :load_homophone_sets
 
   def index
