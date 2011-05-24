@@ -122,7 +122,5 @@ Then /^there (?:is|are) (\d+) homophone sets?$/ do |num_sets|
 end
 
 Then /^I should see a homophone set that contains "([^\"]*)"$/ do |homophone|
-  page.should have_tag "div.homophone_set" do
-    have_tag "span", homophone, :class => "name"
-  end
+  page.all('div.homophone_set span.name').map(&:text).should include(homophone)
 end

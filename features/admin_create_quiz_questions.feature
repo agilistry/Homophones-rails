@@ -11,7 +11,6 @@ Feature: Administrator can create new quiz questions
     Then I should see "Quiz question saved!"
     And I should be on the quiz question page
   
-  @wip  
   Scenario: Fail to save a new quiz question
     When I go to the new quiz question page
     And I fill in "Ask" with "What is the largest set of homophones?"
@@ -30,7 +29,6 @@ Feature: Administrator can create new quiz questions
     And I should see "ere, air, e'er" 
     And I should see "1"
 
-  @wip
   Scenario: Edit a quiz question
     Given I have the quiz question:
       | ask | responses | response_size |

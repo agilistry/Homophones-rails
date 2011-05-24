@@ -7,6 +7,7 @@ gem 'devise', '1.3.4'
 
 gem 'sqlite3-ruby', :require => 'sqlite3'
 
+gem 'dynamic_form'
 
 group :development, :test, :ci, :cucumber do
   gem 'database_cleaner'
