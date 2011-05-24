@@ -5,7 +5,7 @@ gem 'rails', '3.0.6'
 gem 'rake', '0.8.7'
 gem 'devise', '1.3.4'
 
-gem 'sqlite3-ruby', :require => 'sqlite3'
+gem 'sqlite3-ruby', '1.2.5', :require => 'sqlite3'
 
 gem 'dynamic_form'
 
