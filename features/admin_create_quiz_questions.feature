@@ -29,7 +29,6 @@ Feature: Administrator can create new quiz questions
     And I should see "ere, air, e'er" 
     And I should see "1"
 
-  @wip
   Scenario: Edit a quiz question
     Given I have the quiz question:
       | ask | responses | response_size |
