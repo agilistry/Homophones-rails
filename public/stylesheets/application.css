@@ -89,8 +89,8 @@ h2 {
 
 #page_content {
   vertical-align: top;
-  width: 400px;
-  padding-right: 210px;
+  width: 450px;
+  padding-right: 160px;
   display: inline-block;
 }
 
@@ -281,15 +281,14 @@ h2 {
   overflow: hidden;
   padding: 5px;
   float: left;
-  width: 200px;
 }
 
 .small {
-  width: 125px;
+  width: 100px;
 }
 
 .large {
-  width: 300px;
+  width: 275px;
 }
 
 .hidden_stash {
