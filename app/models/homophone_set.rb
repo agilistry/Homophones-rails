@@ -12,15 +12,11 @@ class HomophoneSet < ActiveRecord::Base
   end
 
   def self.all_homophones
-    sorted_homophones(all(:include => :homophones))
+    all(:include => :homophones).sort.map(&:homophones)
   end
 
   def self.find_and_return_phones(args)
-    sorted_homophones(find(args))
-  end
-
-  def self.sorted_homophones(hom_sets)
-    hom_sets.map(&:homophones).sort
+    find(args).sort.map(&:homophones)
   end
 
   def fill_empty_homophones(num)
