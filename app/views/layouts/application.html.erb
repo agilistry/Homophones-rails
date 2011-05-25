@@ -5,28 +5,18 @@
   <%= render :partial => "layouts/head" %>
   
 <body>
-  <a name="top"></a>
-  <div class='container_24 wrapper'>
-    <%= render :partial => "layouts/banner" %>
-
-    
+  <%=render :partial => "layouts/banner" %>
+  <div id="page_container">
+    <div id='flash_messages'>
+      <% flash.each do |name, msg| %>
+        <div class="flash_notice"><%= msg %></div>
+      <% end %>
+    </div>
     <% if user_signed_in? %>
       <span class='logged_in_user hidden_stash'><%= current_user.email %></span>
     <% end %>
     
-    <div class="grid_14 suffix_2">
-      <div id="primaryContent">
-        <div id='flash_messages'>
-          <% flash.each do |name, msg| %>
-            <div class="flash_notice"><%= msg %></div>
-          <% end %>
-        </div>
-        
-        <%= yield %>
-      </div>
-    </div>
-    <%= render :partial => "homophone_sets/sidebar" %>     
+    <%= yield %>
   </div>
-
 </body>
 </html>
