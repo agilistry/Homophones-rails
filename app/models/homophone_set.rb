@@ -8,7 +8,7 @@ class HomophoneSet < ActiveRecord::Base
   validate :delete_errors_from_homophones_attribute
 
   def self.random(limit)
-    all :order => 'RANDOM()', :limit => 4
+    all :order => 'RANDOM()', :limit => limit 
   end
 
   def self.all_homophones
