@@ -28,11 +28,7 @@ class HomophoneSet < ActiveRecord::Base
   end
 
   def <=>(other)
-    homophones_sorted.first <=> other.homophones_sorted.first
-  end
-
-  def homophones_sorted
-    homophones.sort
+    homophones.sort.first <=> other.homophones.sort.first
   end
 
   protected
