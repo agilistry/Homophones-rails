@@ -17,7 +17,6 @@ Feature: Administrator can create new quiz questions
     And I fill in "Responses" with "air, e'er, err"
     And I fill in "Response size" with ""
     And I press "Save"
-    Then show me the page
     Then I should see "Response size can't be blank"
     And I should be on the create quiz question page
   
