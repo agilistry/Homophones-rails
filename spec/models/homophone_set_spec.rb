@@ -15,7 +15,6 @@ describe HomophoneSet, 'validations' do
   end
 
   it "is valid with 2 homographs" do
-    pending
     set = HomophoneSet.new
     2.times { set.homophones.build :name => 'asdf' }
     set.should be_valid
