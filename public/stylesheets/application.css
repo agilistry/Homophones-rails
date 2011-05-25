@@ -68,6 +68,20 @@ h2 {
 
 
 /* Homophone List */
+
+.homophone_set_list {
+  border: 1px solid #888888;
+  padding: 5px;
+  width: 400px;
+  height: 38em;
+  float: left;
+  overflow-y: scroll;
+}
+
+.homophone {
+  text-indent:-3em;
+  padding-left:3em;
+}
 .homophone_set {
   padding-bottom: 25px;
 }
@@ -83,12 +97,13 @@ h2 {
 
 /* Homophone Index */
 #rolodex {
-	height: 40px;
 	color:#999;
+	padding-right: 10px;
+	float:left;
 }
 
 .rolodex_letter_container {
-	float: left;
+/*  float: left;*/
 	width: 20px;
     text-align: center;
 }
