@@ -1,6 +1,6 @@
 <div class="homophone_set_list">
   <% homophone_sets_list.each do |key_letter, homophone_sets| %>
     <div id="<%= key_letter.downcase %>" class="key_letter"><%=key_letter.upcase %></div>
-    <%= render :partial => 'homophone_sets_list', :locals => {:homophone_sets => homophone_sets } %>
+    <%= render :partial => 'homophone_sets/homophone_sets_list', :locals => {:homophone_sets => homophone_sets } %>
   <% end %>
 </div>
