@@ -31,10 +31,9 @@ When /^I log in as admin with wrong credentials$/ do
 end
 
 When /^I log in with "(.*)" \/ "(.*)"$/ do |email, password|
-  visit new_user_session_path
   When %(I fill in "Email" with "#{email}")
   When %(I fill in "Password" with "#{password}")
-  When %(I press "Login")
+  When %(I press "Sign in")
 end
 
 When /^I should be logged in as "([^"]*)"$/ do |email|

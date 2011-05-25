@@ -12,15 +12,11 @@ class HomophoneSet < ActiveRecord::Base
   end
 
   def self.all_homophones
-    sorted_homophones(all(:include => :homophones))
+    all(:include => :homophones).sort.map(&:homophones)
   end
 
   def self.find_and_return_phones(args)
-    sorted_homophones(find(args))
-  end
-
-  def self.sorted_homophones(hom_sets)
-    hom_sets.map(&:homophones).sort
+    find(args).sort.map(&:homophones)
   end
 
   def fill_empty_homophones(num)
@@ -28,10 +24,21 @@ class HomophoneSet < ActiveRecord::Base
   end
 
   def <=>(other)
-    homophones.sort.first <=> other.homophones.sort.first
+    smallest_homophone <=> other.smallest_homophone
   end
 
+  def from=(words)
+    words.each do |word|
+      homophones.build(:name => word)
+    end
+  end
+  
   protected
+
+  def smallest_homophone
+    homophones.sort.first
+  end
+
   def validate_at_least_2_homophones
     if homophones.size < 2
       errors.add(:base, "Please create at least 2 homophones for a complete set")
