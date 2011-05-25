@@ -54,20 +54,6 @@ describe HomophoneSet, '#fill_empty_homophones(n)' do
   end
 end
 
-describe HomophoneSet, "#homophones_sorted" do
-  it "is ordered by name ascending" do
-    set = HomophoneSet.new
-    %w(erl earl url).each {|name| set.homophones.build :name => name }
-    set.homophones_sorted.map(&:name).should == %w(earl erl url)
-  end
-
-  it "is case-inensitive" do
-    set = HomophoneSet.new
-    %w(erl earl URL).each {|name| set.homophones.build :name => name }
-    set.homophones_sorted.map(&:name).should == %w(earl erl URL)
-  end
-end
-
 describe HomophoneSet, 'comparable' do
   it "is comparable according to its first homophone" do
     smaller = HomophoneSet.new
