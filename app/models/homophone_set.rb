@@ -28,10 +28,15 @@ class HomophoneSet < ActiveRecord::Base
   end
 
   def <=>(other)
-    homophones.sort.first <=> other.homophones.sort.first
+    smallest_homophone <=> other.smallest_homophone
+  end
+  
+  protected
+
+  def smallest_homophone
+    homophones.sort.first
   end
 
-  protected
   def validate_at_least_2_homophones
     if homophones.size < 2
       errors.add(:base, "Please create at least 2 homophones for a complete set")
