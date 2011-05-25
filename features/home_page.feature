@@ -1,10 +1,11 @@
-Feature: View homophone list
+Feature: Home page
+
   Scenario: View homophone list
     Given we have a homophone set:
       | name | definition        |
       | a    | short little word |
       | eh   | interrogative     |
-    When I go to the homophone list page
+    When I go to the home page
     Then I should see "short little word"
 
   Scenario: Navigate by first letter
@@ -12,7 +13,7 @@ Feature: View homophone list
       | name | definition        |
       | a    | short little word |
       | eh   | interrogative     |
-    When I go to the homophone list page
+    When I go to the home page
     Then I should see a link called "A"
     And I should not see a link called "B"
 
@@ -30,7 +31,7 @@ Feature: View homophone list
       | name |
       | a    |
       | eh   |
-    When I go to the homophone list page
+    When I go to the home page
     Then the homophone sets are in order:
       | homophones      |
       | a, eh           |
@@ -40,5 +41,5 @@ Feature: View homophone list
   @slow  
   Scenario: Homophone list is alphabetized by group letter
     Given I have the production data loaded
-    When I go to the homophone list page
+    When I go to the home page
     Then the homophone groups are in order

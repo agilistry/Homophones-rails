@@ -273,15 +273,14 @@ h2 {
   overflow: hidden;
   padding: 5px;
   float: left;
-  width: 200px;
 }
 
 .small {
-  width: 125px;
+  width: 100px;
 }
 
 .large {
-  width: 300px;
+  width: 275px;
 }
 
 .hidden_stash {
