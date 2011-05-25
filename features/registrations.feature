@@ -9,7 +9,7 @@ Feature: Registering
     Then I should see the email delivered from "admin@mrhomophone.com"
     And I should see it is a multi-part email
     When I click the confirmation link in the email
-    Then I log in with "patmaddox@me.com" / "supdawg"
+    And I should be logged in as "patmaddox@me.com"
     
   # Scenario: Attempting to log in before confirming shows unconfirmed error message
   #   Given I sign up with:
@@ -18,3 +18,14 @@ Feature: Registering
   #   When I log in with "someone@example.com" / "password"
   #   Then I should be on the Login page
   #   And I should see "Your account exists, but has not yet been confirmed."
+  
+  Scenario: Entered data persists when problem creating account
+    When I sign up with:
+      | Email            | First name | Last name | Password |
+      | patmaddox@me.com | Pat        | Maddox    | a        |
+    Then I should see "prohibited this user from being saved"
+    And the "First name" field should contain "Pat"
+    And the "Last name" field should contain "Maddox"
+    And the "Email" field should contain "patmaddox@me.com"
+    
+    

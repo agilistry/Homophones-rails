@@ -1,7 +1,6 @@
 Feature: Create homophone set
   Background:
-    Given the administrator user name is "admin" with password "password"
-    And I log in with "admin" / "password"
+    Given I log in as admin
     And there are no homophone sets
 
   Scenario: Creating a new homophone set displays set on main list

@@ -15,7 +15,6 @@ describe HomophoneSet, 'validations' do
   end
 
   it "is valid with 2 homographs" do
-    pending
     set = HomophoneSet.new
     2.times { set.homophones.build :name => 'asdf' }
     set.should be_valid
@@ -52,20 +51,6 @@ describe HomophoneSet, '#fill_empty_homophones(n)' do
     2.times { set.homophones.build }
     set.fill_empty_homophones 8
     set.should have(8).homophones
-  end
-end
-
-describe HomophoneSet, "#homophones_sorted" do
-  it "is ordered by name ascending" do
-    set = HomophoneSet.new
-    %w(erl earl url).each {|name| set.homophones.build :name => name }
-    set.homophones_sorted.map(&:name).should == %w(earl erl url)
-  end
-
-  it "is case-inensitive" do
-    set = HomophoneSet.new
-    %w(erl earl URL).each {|name| set.homophones.build :name => name }
-    set.homophones_sorted.map(&:name).should == %w(earl erl URL)
   end
 end
 

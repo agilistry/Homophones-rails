@@ -20,6 +20,6 @@ class AdminController < ApplicationController
   private
   
   def login_required
-    redirect_to(admin_login_path) unless logged_in?
+    redirect_to(admin_login_path) unless admin_logged_in?
   end
 end

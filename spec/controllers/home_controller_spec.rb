@@ -1,7 +1,8 @@
 require 'spec_helper'
 
 describe HomeController, 'GET home' do
-  integrate_views
+  render_views
+  stub_devise_logged_out
 
   it "is successful" do
     create_homophone_set

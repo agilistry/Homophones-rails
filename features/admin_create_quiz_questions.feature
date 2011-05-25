@@ -1,6 +1,6 @@
 Feature: Administrator can create new quiz questions
   Background:
-    Given I am logged in
+    Given I log in as admin
 
   Scenario: Create a new quiz question with one answer
     When I go to the new quiz question page

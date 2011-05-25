@@ -7,6 +7,15 @@
 <body>
   <%=render :partial => "layouts/banner" %>
   <div id="page_container">
+    <div id='flash_messages'>
+      <% flash.each do |name, msg| %>
+        <div class="flash_notice"><%= msg %></div>
+      <% end %>
+    </div>
+    <% if user_signed_in? %>
+      <span class='logged_in_user hidden_stash'><%= current_user.email %></span>
+    <% end %>
+    
     <%= yield %>
   </div>
 </body>
