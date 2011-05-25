@@ -54,22 +54,30 @@ describe HomophoneSet, '#fill_empty_homophones(n)' do
   end
 end
 
+describe "HomophoneSet", "can be created" do
+  it "from a list of words" do
+    words = %w(ba bah)
+    homophone_set = HomophoneSet.new(:from => words)
+    words.each do |word|
+      homophone_set.homophones.map(&:name).should include(word)
+    end
+  end
+  it "from a single word" do
+    homophone_set = HomophoneSet.new(:from => 'foo')
+    homophone_set.homophones.first.name.should == 'foo'
+  end
+end
+
 describe HomophoneSet, 'comparable' do
   it "is comparable according to its first homophone" do
-    smaller = HomophoneSet.new
-    smaller.homophones.build :name => 'a'
-    bigger = HomophoneSet.new
-    bigger.homophones.build :name => 'zoo'
-    smaller.should < bigger
+    smaller = HomophoneSet.new(:from => 'a')
+    bigger = HomophoneSet.new(:from => 'zoo')
+    [bigger, smaller].sort.should == [smaller, bigger]
   end
 
   it "does not rely on the homophones being previously sorted" do
-    smaller = HomophoneSet.new
-    smaller.homophones.build :name => 'eh'
-    smaller.homophones.build :name => 'a'
-    bigger = HomophoneSet.new
-    bigger.homophones.build :name => 'ba'
-    bigger.homophones.build :name => 'bah'
-    smaller.should < bigger    
+    smaller = HomophoneSet.new(:from => %w(eh a))
+    bigger = HomophoneSet.new(:from => %w(ba bah))
+    [bigger, smaller].sort.should == [smaller, bigger]
   end
 end

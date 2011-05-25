@@ -26,6 +26,12 @@ class HomophoneSet < ActiveRecord::Base
   def <=>(other)
     smallest_homophone <=> other.smallest_homophone
   end
+
+  def from=(words)
+    words.each do |word|
+      homophones.build(:name => word)
+    end
+  end
   
   protected
 
