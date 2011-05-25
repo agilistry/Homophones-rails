@@ -1,4 +1,6 @@
 class Homophone < ActiveRecord::Base
+  alias_method :original_equals_equals, :==
+
   include Comparable
   validates_presence_of :name, :message => 'Please enter the missing word'
   
@@ -7,8 +9,6 @@ class Homophone < ActiveRecord::Base
   end
 
   def ==(comparison_object)
-    comparison_object.equal?(self) ||
-      (comparison_object.instance_of?(self.class) &&
-        comparison_object.id == id && !comparison_object.new_record?)
+    original_equals_equals(comparison_object)
   end
 end
