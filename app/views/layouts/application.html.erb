@@ -5,17 +5,9 @@
   <%= render :partial => "layouts/head" %>
   
 <body>
-  <a name="top"></a>
-  <div class='container_24 wrapper'>
-    <%=render :partial => "layouts/banner" %>
-    
-    <div class="grid_14 suffix_2">
-      <div id="primaryContent">
-        <%= yield %>
-      </div>
-    </div>
-    <%= render :partial => "homophone_sets/sidebar" %>     
+  <%=render :partial => "layouts/banner" %>
+  <div id="page_container">
+    <%= yield %>
   </div>
-
 </body>
 </html>
