@@ -240,3 +240,11 @@ h2 {
 .hidden_stash {
   display: none;
 }
+
+.flash_notice {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: blue;
+  padding: 10px;
+  border: 1px solid blue;
+}
