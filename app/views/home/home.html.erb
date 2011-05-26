@@ -1,3 +1,9 @@
+<% content_for :javascript_head do %>
+  <%= javascript_include_tag "underscore-min.js" %>
+  <%= javascript_include_tag "backbone-min.js" %>
+  <%= javascript_include_tag "search_box.js" %>
+<% end -%>
+
 <%= render :partial => 'layouts/welcome' %>
 
 <div id="page_content_container">
