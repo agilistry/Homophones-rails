@@ -6,6 +6,14 @@ Given /^I am not logged in as an admin$/ do
   visit admin_logout_path
 end
 
+Given /^the confirmed users?:$/ do |table|
+  table.hashes.each do |user_hash|
+    user_hash['password_confirmation'] ||= user_hash['password']
+    user = User.create! user_hash
+    user.confirm!
+  end
+end
+
 module AdminCreationMethods
   def admin_with(username, password)
     Login.create!(:user_name => username, :password => password) unless Login.find_by_user_name(username)
