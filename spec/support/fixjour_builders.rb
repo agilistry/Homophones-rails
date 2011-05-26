@@ -2,8 +2,10 @@ require 'fixjour'
 
 Fixjour do
   define_builder(User) do |klass, overrides|
+    password = overrides[:password] || 'password'
+    password_confirmation = overrides[:password_confirmation] || password
     user = klass.new :first_name => Faker::Name.first_name, :last_name => Faker::Name.last_name,
-              :email => Faker::Internet.email, :password => 'password', :password_confirmation => 'password'
+              :email => Faker::Internet.email, :password => password, :password_confirmation => password_confirmation
     user.confirmed_at = Time.now unless overrides[:confirmed] == false # confirm unless explicitly told not to
     user.admin = overrides[:admin]
     user

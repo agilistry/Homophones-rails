@@ -6,7 +6,7 @@ end
 
 module UserSpecHelpers
   def new_admin_user(properties={})
-    new_user(properties.merge(:confirmed => true)).tap {|user| user.admin = true }
+    new_user(properties).tap {|user| user.admin = true }
   end
 
   def create_admin_user(properties={})

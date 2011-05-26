@@ -2,46 +2,35 @@ Given /^I am not logged in$/ do
   visit destroy_user_session_path
 end
 
-Given /^I am not logged in as an admin$/ do
-  visit admin_logout_path
-end
-
 Given /^the confirmed users?:$/ do |table|
   table.hashes.each do |user_hash|
-    user_hash['password_confirmation'] ||= user_hash['password']
-    user = User.create! user_hash
-    user.confirm!
+    create_user user_hash.symbolize_keys
   end
 end
 
-module AdminCreationMethods
-  def admin_with(username, password)
-    Login.create!(:user_name => username, :password => password) unless Login.find_by_user_name(username)
-  end
-  
-  def admin_login(username, password)
-    visit admin_login_path
-    fill_in 'User name', :with => username
+module UserMethods
+  def sign_in(email, password)
+    fill_in 'Email', :with => email
     fill_in 'Password', :with => password
-    click_button 'Login'    
+    click_button 'Sign in'
   end
 end
-World(AdminCreationMethods)
+World(UserMethods)
 
 When /^I log in as admin$/ do
-  admin_with  'alan', 'supersecret'
-  admin_login 'alan', 'supersecret'
+  visit new_user_session_path
+  create_admin_user :email => 'alan@cooper.com', :password => 'supersecret'
+  sign_in 'alan@cooper.com', 'supersecret'
 end
 
 When /^I log in as admin with wrong credentials$/ do
-  admin_with  'alan', 'supersecret'
-  admin_login 'alan', 'badbadbad'
+  visit new_user_session_path
+  create_admin_user :email => 'alan@cooper.com', :password => 'supersecret'
+  sign_in 'alan@cooper.com', 'badbadbad'
 end
 
 When /^I log in with "(.*)" \/ "(.*)"$/ do |email, password|
-  When %(I fill in "Email" with "#{email}")
-  When %(I fill in "Password" with "#{password}")
-  When %(I press "Sign in")
+  sign_in email, password
 end
 
 When /^I should be logged in as "([^"]*)"$/ do |email|
