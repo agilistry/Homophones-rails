@@ -1,6 +1,14 @@
 require 'fixjour'
 
 Fixjour do
+  define_builder(User) do |klass, overrides|
+    user = klass.new :first_name => Faker::Name.first_name, :last_name => Faker::Name.last_name,
+              :email => Faker::Internet.email, :password => 'password', :password_confirmation => 'password'
+    user.confirmed_at = Time.now if overrides[:confirmed]
+    user.admin = overrides[:admin]
+    user
+  end
+
   define_builder(HomophoneSet) do |klass, overrides|
     klass.new :homophones => [
       Homophone.new(:name => 'a'), Homophone.new(:name => 'eh')

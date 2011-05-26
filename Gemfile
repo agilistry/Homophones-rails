@@ -23,4 +23,5 @@ group :development, :test, :ci, :cucumber do
   gem 'ruby-debug'
   gem 'launchy'
   gem 'email_spec', :git => 'git://github.com/bmabey/email-spec.git'
+  gem 'faker'
 end

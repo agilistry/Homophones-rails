@@ -13,4 +13,5 @@ end
 
 RSpec.configure do |config| 
   config.extend ControllerSpecHelpers, :type => :controller
+  config.include Devise::TestHelpers, :type => :controller
 end
