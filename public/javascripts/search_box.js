@@ -30,11 +30,46 @@ $(function(){
     },
 
     render: function() {
-      if (! this.model.hasTerm()) {
+      if (! this.model.hasTerm() ) {
         this.el.val("");
       }
+    } 
+  });
+
+  window.HomophoneView = Backbone.View.extend({
+    el: $('.homophone_set_list'),
+
+    initialize: function() {
+      _.bindAll(this, 'scrollSearch', 'searchJump');
+      this.model = window.searchTerm;
+      this.model.bind("change", this.scrollSearch);
+    },
+
+    scrollSearch: function() {
+      if (this.model.hasTerm() ) {
+        this.searchJump();
+      } else {
+        this.scrollToTop();
+      }
+    },
+
+    searchJump: function() {
+      var matchedHomSets = this.el.find('.homophone span[data^=' + escape(this.model.get('currentTerm')) + ']').closest('.homophone_set');
+
+      if (matchedHomSets.length === 0) {
+        return;
+      }
+
+      var firstMatch = matchedHomSets.first();
+      this.el.scrollTo(firstMatch);
+    },
+
+    scrollToTop: function() {
+      this.el.scrollTo(0);
     }
   });
+
+  window.homophoneView = new HomophoneView();
 
   window.searchInput = new SearchInput();
 
