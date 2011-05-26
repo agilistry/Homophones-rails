@@ -3,7 +3,6 @@ Given /^I am not authenticated$/ do
 end
 
 When /^I sign up with:$/ do |table|
-  Given "I am on the Registration page"
   user_attributes = table.hashes.first
   user_attributes.each do |field_name, value|
     fill_in field_name, :with => value
