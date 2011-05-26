@@ -140,3 +140,9 @@ Devise.setup do |config|
   #   manager.default_strategies(:scope => :user).unshift :twitter_oauth
   # end
 end
+
+require 'devise/sessions_controller'
+Devise::SessionsController.class_eval do
+  def set_flash_message(key, kind)
+  end
+end
