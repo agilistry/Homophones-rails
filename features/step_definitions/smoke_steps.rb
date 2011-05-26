@@ -23,11 +23,12 @@ When /^I log in with the secret admin credentials$/ do
   # p response
   # 
   agent = Mechanize.new
-  page = agent.get 'http://homophones.heroku.com/admin/login'
+  page = agent.get 'http://mrhomophone.com/users/sign_in'
   login_form = page.forms.first
-  login_form['login[user_name]'] = @admin_username
-  login_form['login[password]'] = @admin_password
-  @response = login_form.submit
+  login_form['user[email]'] = @admin_username
+  login_form['user[password]'] = @admin_password
+  login_response = login_form.submit
+  @response = agent.get '/admin/homophone_sets'
 end
 
 Then /^I should see the admin page$/ do
