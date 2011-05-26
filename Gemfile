@@ -7,8 +7,6 @@ gem 'devise', '1.1.3'
 
 gem 'sqlite3-ruby', '1.2.5', :require => 'sqlite3'
 
-gem 'dynamic_form'
-
 group :development, :test do
   gem 'watchr'
 end

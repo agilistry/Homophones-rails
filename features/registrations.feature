@@ -31,7 +31,7 @@ Feature: Registering
     When I sign up with:
       | Email            | First name | Last name | Password |
       | patmaddox@me.com | Pat        | Maddox    | a        |
-    Then I should see "prohibited this user from being saved"
+    Then show me the page
     And the "First name" field should contain "Pat"
     And the "Last name" field should contain "Maddox"
     And the "Email" field should contain "patmaddox@me.com"
