@@ -33,6 +33,12 @@ h2 {
     height: 35px;
 }
 
+#tabbed_header .logged_in_user {
+  float: right;
+  color: #555;
+  margin-top: 57px;
+}
+
 #tabbed_header ul {
     list-style-type:none;
     margin: 5px 0 0;
@@ -44,6 +50,11 @@ h2 {
     display: block;
     margin: 0;
 }
+
+#tabbed_header li.login_link {
+  float: right;
+}
+
 #tabbed_header ul:first-child {
     padding-left: 0px;
 }
