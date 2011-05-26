@@ -1,7 +1,7 @@
 <%= flash[:notice] %>
 <div id="quiz_question">
 <%= form_for @question, question_path(@question) do |f| %>
-  <%= f.error_messages %>
+  <%= error_messages_for @question %>
   <%= render :partial => "form", :locals => {:f => f} %>
   <%= f.submit "Save" %>
 <% end %>
