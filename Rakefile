@@ -6,4 +6,3 @@ require 'rake'
 
 Homophones::Application.load_tasks
 
-task :default => ["spec:jasmine"]

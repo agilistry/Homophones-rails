@@ -1,7 +1,7 @@
 //fake browser window
 jasmine = require("jasmine-node");
-global.jsdom = require("jquery/node_modules/jsdom");
-global.window = require("jquery/node_modules/jsdom")
+global.jsdom = require("jsdom@0.1.20");
+global.window = jsdom
                 .jsdom()
                 .createWindow();
 global.jQuery = require("jquery");
