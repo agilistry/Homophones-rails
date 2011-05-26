@@ -1,31 +1,17 @@
 require 'spec_helper'
 
 describe Admin::HomophoneSetsController, 'GET new' do
-  stub_admin_logged_in
+  before { sign_in create_admin_user }
+  render_views
 
   it "is successful" do
     get :new
     response.should be_success
   end
-
-  context "integrated" do
-    render_views
-    
-    it "is successful" do
-      get :new
-      response.should be_success
-    end
-  end
-  
-  it "rejects the user if not logged in" do
-    controller.stub(:admin_logged_in?).and_return false
-    get :new
-    response.should redirect_to(admin_login_path)
-  end
 end
 
 describe Admin::HomophoneSetsController, 'POST create' do
-  stub_admin_logged_in
+  before { sign_in create_admin_user }
 
   def do_post
     post :create, :homophone_set => {:homophones => {
@@ -45,7 +31,7 @@ describe Admin::HomophoneSetsController, 'POST create' do
     do_post
     HomophoneSet.first.should have(2).homophones
   end
-  
+
   it "ignores homophones with blank entries" do
     expect {
       post :create, :homophone_set => {:homophones => {
@@ -53,12 +39,6 @@ describe Admin::HomophoneSetsController, 'POST create' do
         '2' => {:name => 'eh', :definition => 'interrogative'},
         '3' => {} }}
     }.to change(Homophone, :count).by(2)
-  end
-
-  it "rejects the user if not logged in" do
-    controller.stub(:admin_logged_in?).and_return false
-    post :create
-    response.should redirect_to(admin_login_path)
   end
 
   context "failure" do
@@ -81,7 +61,7 @@ describe Admin::HomophoneSetsController, 'POST create' do
 end
 
 describe Admin::HomophoneSetsController, 'GET edit' do
-  stub_admin_logged_in
+  before { sign_in create_admin_user }
   
   let(:homophone_set) { create_homophone_set }
   
@@ -102,16 +82,10 @@ describe Admin::HomophoneSetsController, 'GET edit' do
       response.should be_success
     end
   end
-  
-  it "rejects the user if not logged in" do
-    controller.stub(:admin_logged_in?).and_return false
-    do_get
-    response.should redirect_to(admin_login_path)
-  end
 end
 
 describe Admin::HomophoneSetsController, 'PUT update' do
-  stub_admin_logged_in
+  before { sign_in create_admin_user }
   
   let(:homophone_set) do
     create_homophone_set :homophones => [
