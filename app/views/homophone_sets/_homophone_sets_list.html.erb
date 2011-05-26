@@ -2,7 +2,7 @@
     <div class='homophone_set'>
       <% homophone_set.sort.each do |homophone| %>
         <div class='homophone'>
-          <span class='name'><%= homophone.name %></span>
+          <span class='name' data="<%=  CGI.escape homophone.name %>"><%= homophone.name %></span>
           <span class='definition'><%= homophone.definition %></span>
         </div>
       <% end %>
