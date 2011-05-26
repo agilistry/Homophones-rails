@@ -1,10 +1,8 @@
   <% homophone_sets.each do |homophone_set| %>
-    <div class='homophone_set'>
-      <% homophone_set.sort.each do |homophone| %>
-        <div class='homophone'>
-          <span class='name'><%= homophone.name %></span>
-          <span class='definition'><%= homophone.definition %></span>
-        </div>
-      <% end %>
+    <div class="homophone_set_display">
+      <%= render :partial => "homophone_sets/homophone_set_display", :locals => {:homophone_set => homophone_set } %>
+    </div>
+    <div class="homophone_set_edit">
+      <%= render :partial => "homophone_sets/homophone_set_edit" %>
     </div>
   <% end %>
