@@ -11,10 +11,32 @@ $(function(){
 
     hasTerm: function() {
       return this.get("currentTerm").length > 0;
+    },
+
+    clear: function() {
+      this.set({"currentTerm" : ""});
     }
   });
 
   window.searchTerm = new SearchTerm();
+
+  window.SearchInput = Backbone.View.extend({
+    el: $('#search_term'),
+
+    initialize: function() {
+      _.bindAll(this, 'render');
+      this.model = window.searchTerm;
+      this.model.bind("change", this.render);
+    },
+
+    render: function() {
+      if (! this.model.hasTerm()) {
+        this.el.val("");
+      }
+    }
+  });
+
+  window.searchInput = new SearchInput();
 
   window.SearchTermIndicator = Backbone.View.extend({
     el : $('#search_cancel'),
@@ -42,7 +64,6 @@ $(function(){
   });
 
   $('#search_cancel').click(function(){
-    window.searchTerm.updateCurrentTerm("");
+    window.searchTerm.clear();
   });
-
 });
