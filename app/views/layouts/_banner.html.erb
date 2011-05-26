@@ -1,10 +1,22 @@
 <div id='header'>
   <div id="tabbed_header">
-    <%= image_tag 'mrhomophone.png' %><br />
+    <%= image_tag 'mrhomophone.png' %>
+
+    <% if user_signed_in? %>
+      <div class='logged_in_user'><%= current_user.full_name %></div>
+    <% end %>
+
     <div id="nav">
       <ul>
         <li><%= link_to "Home", root_path %></li>
         <li><%= link_to "About", about_homophones_path %></li>
+        <li class='login_link'>
+          <% if user_signed_in? %>
+            <%= link_to "Log out", destroy_user_session_path %>
+          <% else %>
+            <%= link_to "Log in", new_user_session_path %>
+          <% end %>          
+        </li>
       </ul>
       <div class="clearfix"></div>
     </div>

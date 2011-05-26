@@ -2,23 +2,6 @@ Given /^I am not authenticated$/ do
   visit('/users/sign_out')
 end
 
-Given /^I am authenticated$/ do
-  @iam = create_confirmed_user({:email => "me@example.com", :password => "password"})
-  Then %[I can log in with "me@example.com" / "password"]
-end
-
-Given /^users:$/ do |table|
-  table.hashes.each do |options|
-    user = create_confirmed_user(options)
-  end
-end
-
-Given /^unconfirmed users:$/ do |table|
-  table.hashes.each do |options|
-    user = create_unconfirmed_user(options)
-  end
-end
-
 When /^I sign up with:$/ do |table|
   Given "I am on the Registration page"
   user_attributes = table.hashes.first
