@@ -81,3 +81,10 @@ describe HomophoneSet, 'comparable' do
     [bigger, smaller].sort.should == [smaller, bigger]
   end
 end
+
+describe HomophoneSet, 'sorting and grouping' do
+  it "can tell us what letter group it belongs to" do
+    set = HomophoneSet.new(:from => %w(xa ba Bah ma))
+    set.index_letter.should == "b"
+  end
+end

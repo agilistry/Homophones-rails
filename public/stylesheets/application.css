@@ -295,11 +295,11 @@ h2 {
 }
 
 .small {
-  width: 100px;
+  width: 30%;
 }
 
 .large {
-  width: 275px;
+  width: 60%;
 }
 
 .hidden_stash {
@@ -312,4 +312,9 @@ h2 {
   color: blue;
   padding: 10px;
   border: 1px solid blue;
+}
+
+.no_float {
+  float: none;
+  clear: both;
 }

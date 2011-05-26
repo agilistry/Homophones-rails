@@ -11,4 +11,8 @@ class Homophone < ActiveRecord::Base
   def ==(comparison_object)
     original_equals_equals(comparison_object)
   end
+  
+  def index_letter
+    name.first.downcase
+  end
 end

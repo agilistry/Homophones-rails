@@ -1,8 +1,7 @@
-<div class='homophone_set'>
-  <% homophone_set.sort.each do |homophone| %>
+
+  <% homophone_set.homophones.sort.each do |homophone| %>
     <div class='homophone'>
       <span class='name'><%= homophone.name %></span>
       <span class='definition'><%= homophone.definition %></span>
     </div>
   <% end %>
-</div>

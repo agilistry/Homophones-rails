@@ -35,6 +35,17 @@ function displayMatchingHomophoneSets(prefix) {
 }
 
 jQuery(function($) {
+  
+  $(".homophone_set").bind("dblclick", function(event) {
+    var homset = $(event.target).parents('.homophone_set');
+    homset.find('.homophone_set_edit').show();
+    homset.find('.homophone_set_display').hide();
+  });
+  
+  $(document).ready(function() {
+     $(".homophone_set_edit").hide();
+  });
+  
   $(document).ready(function() {
       $("#twitter").getTwitter({
           userName: "mrhomophone",
@@ -60,3 +71,10 @@ jQuery(function($) {
   }
 })(jQuery);
 
+get_keys = function(obj) {
+    var keys = [];
+    for (var key in obj) {
+        keys.push(key);
+    }
+    return keys;
+}

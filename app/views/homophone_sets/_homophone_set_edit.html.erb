@@ -1,0 +1,18 @@
+
+<%= form_for homophone_set do |f| %>
+  <% homophone_set.homophones.each_with_index do |homophone, i| %>
+    <%= fields_for "homophone_set[homophones][#{i}]", homophone do |h| %>
+      <div class="table_like">
+        <div class="small column">
+          <%= h.text_field :name, :class => 'name', :size => 14 %>
+        </div>
+        <div class="large column">
+          <%= h.text_field :definition, :class => 'definition',  :size => 30 %>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+  <div class="no_float">
+    <%= submit_tag "Save" %>
+  </div>
+<% end %>

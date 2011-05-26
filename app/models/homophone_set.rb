@@ -12,7 +12,7 @@ class HomophoneSet < ActiveRecord::Base
   end
 
   def self.all_homophones
-    all(:include => :homophones).sort.map(&:homophones)
+    all(:include => :homophones).sort
   end
 
   def self.find_and_return_phones(args)
@@ -31,6 +31,10 @@ class HomophoneSet < ActiveRecord::Base
     words.each do |word|
       homophones.build(:name => word)
     end
+  end
+  
+  def index_letter
+    smallest_homophone.index_letter
   end
   
   protected
