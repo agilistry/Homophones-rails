@@ -198,6 +198,7 @@ h2 {
 
 #random_riddle {
 /*  float: right;*/
+  margin-top: 20px;
 	padding: 10px;
 	border: 1px solid gray;
 	text-align: center;
