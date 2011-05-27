@@ -1,11 +1,15 @@
 <% @questions.each do |question| %>
-  <div class="quiz question">
-    <%=question.ask %>
+  <div class="question_container">
+    <div class="quiz question">
+      <%=question.ask %>
+    </div>
+    <div class="quiz answer">
+      <p><%=question.riddle_response %></p>
+    </div>
+    <div class="question_details">
+      Accepted responses: <%=question.responses %><br />
+      Response size: <%=question.response_size %>
+    </div>
+    <div><%= link_to "Edit", edit_question_path(question) %> | <%= link_to "Delete", question_path(question), :method => :delete %></div>
   </div>
-  <p><%=question.riddle_response %></p>
-  <div class="question_details">
-    <p>Accepted responses: <%=question.responses %></p>
-    <p>Response size: <%=question.response_size %></p>
-  </div>
-  <p><%= link_to "Edit", edit_question_path(question) %> | <%= button_to "Delete", question_path(question), :method => :delete %></p>
 <% end %>

@@ -378,3 +378,33 @@ h2 {
   float: none;
   clear: both;
 }
+
+.quiz {
+  font-size: 14pt;
+}
+
+.answer {
+  font-style: italic;
+}
+
+.question_details {
+  font-size: 10pt;
+  font-style: italic;
+}
+
+.question_container {
+  border-top: 1px solid gray;
+  margin-top: 20px;
+}
+
+.quiz_prompt {
+  margin-top: 10px;
+  font-size:10pt;
+  font-weight: bold;
+} 
+
+.quiz_field {
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 10pt;
+}
