@@ -36,7 +36,7 @@ function displayMatchingHomophoneSets(prefix) {
 
 jQuery(function($) {
   
-  $(".editable .homophone_set").dblclick(function(event) {
+  $(".editable .homophone_set .display").dblclick(function(event) {
     var homset = $(event.target).parents('.homophone_set');
     $.get('/homophone_sets/' + homset.attr('data') + '/edit', function(data) {
       homset.find('.display').hide();
@@ -48,6 +48,17 @@ jQuery(function($) {
     var homset = $(event.target).parents('.homophone_set');
     homset.find('.edit').remove();
     homset.find('.display').show();
+    return false;
+  });
+
+  $('.edit_homophone_set .submit').live('click', function(event) {
+    var form = $(event.target).parents('form');
+    $.post(form.attr('action'), form.serialize(), function(data){
+      var homset = $(event.target).parents('.homophone_set');
+      homset.find('.display').html(data);
+      homset.find('.edit').remove();
+      homset.find('.display').show();
+    });
     return false;
   });
   

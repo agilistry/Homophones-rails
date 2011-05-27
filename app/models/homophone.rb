@@ -13,6 +13,6 @@ class Homophone < ActiveRecord::Base
   end
   
   def index_letter
-    name.first.downcase
+    name.tr("'", "").first.downcase
   end
 end

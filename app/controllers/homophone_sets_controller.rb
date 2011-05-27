@@ -18,9 +18,8 @@ class HomophoneSetsController < ApplicationController
         end
         @homophone_set.save!
       end
-      redirect_to root_path
+      render :partial => "display", :locals => { :homophone_set => @homophone_set }
     rescue ActiveRecord::RecordInvalid
-      render :action => 'edit'
     end
   end
 
