@@ -9,7 +9,7 @@ Feature: Create homophone set
       | to   | a short little word |
       | two  | one more than one   |
       | too  | also                |
-    And I go to the homophone list page
+    And I go to the home page
     Then I see 1 set of 3 homophones each
     And the homophones are in order: "to, too, two"
     And each word has a definition
@@ -56,7 +56,7 @@ Feature: Create homophone set
       | name   | definition                                     |
       | men's  | not women's                                    |
       | mends  | fixes                                          |
-    And I go to the homophone list page
+    And I go to the home page
     And the homophones are in order: "mends, men's"
     
   Scenario: Words with caps within homsets are in the correct order
@@ -65,7 +65,7 @@ Feature: Create homophone set
       | URL  | fixes                                          |
       | e'er  | not women's                                    |
       | earl  | belonging to more than one guy                 |
-    And I go to the homophone list page
+    And I go to the home page
     And the homophones are in order: "earl, e'er, URL"
     
     

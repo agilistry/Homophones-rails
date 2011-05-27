@@ -12,7 +12,7 @@ Feature: Edit homophone set
       | a    | short little word       |
       | eh   | something Canadians say |
       | ay   | New Jersey greeting     |
-    And I go to the homophone list page
+    And I go to the home page
     Then the homophones are in order: "a, ay, eh"
     And each word has a definition
     And I should see "something Canadians say"
@@ -26,7 +26,7 @@ Feature: Edit homophone set
     When I edit the homophone set containing "eh" to be:
       | name | definition        |
       | a    | short little word |
-    And I go to the homophone list page
+    And I go to the home page
     Then the homophones are in order: "a, eh"
 
   Scenario: Fails with word name missing
@@ -38,5 +38,5 @@ Feature: Edit homophone set
       | name | definition              |
       | a    | short little word       |
       |      | something Canadians say |
-    And I go to the homophone list page
+    And I go to the home page
     Then the homophones are in order: "a, eh"
