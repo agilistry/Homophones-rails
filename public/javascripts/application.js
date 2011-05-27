@@ -50,10 +50,6 @@ jQuery(function($) {
   });
   
   $(document).ready(function() {
-     $(".homophone_set .edit").hide();
-  });
-  
-  $(document).ready(function() {
       $("#twitter").getTwitter({
           userName: "mrhomophone",
           numTweets: 5,
