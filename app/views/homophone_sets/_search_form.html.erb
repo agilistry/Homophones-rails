@@ -1,5 +1,10 @@
   <h1>Homophone List</h1>
-  <div class="search_field_container">
+  <div class="search_field_container">  
     <span class="search_label">Find:</span><input id="search_term" type="text" name="search_term" placeholder="enter word..." value="<%= params[:search_term] %>" />
     <span id="search_cancel"><%= image_tag "cancel_grey.png" %></span>
+    <div id='matching_hom_sets'>
+      <span id='num_matches'>&nbsp;</span>
+      <a href='#'>Add a new homophone set?</a>
+    </div>
+    <p></p>
   </div>

@@ -40,15 +40,17 @@ $(function(){
     el: $('.homophone_set_list'),
 
     initialize: function() {
-      _.bindAll(this, 'scrollSearch', 'searchJump');
+      _.bindAll(this, 'scrollSearch', 'searchJump', 'checkAddLinkForRemoval');
       this.model = window.searchTerm;
       this.model.bind("change", this.scrollSearch);
+      this.model.bind("change", this.checkAddLinkForRemoval)
     },
 
     scrollSearch: function() {
       if (this.model.hasTerm() ) {
         this.findMatchedHomSets();
         this.highlightHomSets();
+        this.reportNumberOfMatchingHomeSets();
         this.searchJump();
       } else {
         this.clearHighlighting();
@@ -64,6 +66,12 @@ $(function(){
       var firstMatch = this.matchedHomSets.first();
       this.el.scrollTo(firstMatch);
     },
+    
+    checkAddLinkForRemoval: function() {
+      if(! this.model.hasTerm()) {
+        $('#matching_hom_sets a').hide();
+      }
+    },
 
     clearHighlighting: function() {
       _.map(this.el.find('.homophone_set'), function(el) {
@@ -72,6 +80,7 @@ $(function(){
           $(el).removeClass("highlighted");
         });
       });
+      $('#matching_hom_sets #num_matches').html('&nbsp;');
     },
 
     highlightHomSets: function(){
@@ -93,6 +102,17 @@ $(function(){
     findMatchedHomSets: function() {
       this.matchedHomophones = this.el.find('.homophone span[data^=' + escape(this.model.get('currentTerm')) + ']');
       this.matchedHomSets = this.matchedHomophones.closest('.homophone_set');
+    },
+    
+    reportNumberOfMatchingHomeSets: function() {
+      this.numPotentialMatches = this.matchedHomSets.length;
+      $('#matching_hom_sets #num_matches').text(this.numPotentialMatches + ' potential matches.');
+      if(this.numPotentialMatches == 0) {
+        $('#matching_hom_sets a').show();
+      }
+      else {
+        $('#matching_hom_sets a').hide();
+      }
     }
   });
 

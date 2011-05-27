@@ -206,6 +206,10 @@ h2 {
     line-height: 1.2em;
 }
 
+#matching_hom_sets a {
+  display: none;
+}
+
 /* Riddles */
 
 #random_riddle {
