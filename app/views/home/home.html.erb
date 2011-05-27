@@ -1,3 +1,12 @@
+<% @grouped_hom_list = grouped_by_first_letter(@all_homophones) %>
+
+<% content_for :javascript_head do %>
+  <%= javascript_include_tag "jquery.scrollTo-1.4.2-min" %>
+  <%= javascript_include_tag "underscore-min" %>
+  <%= javascript_include_tag "backbone-min" %>
+  <%= javascript_include_tag "search_box" %>
+<% end -%>
+
 <%= render :partial => 'layouts/welcome' %>
 
 <div id="page_content_container">
@@ -8,7 +17,6 @@
       </form>
     </div>
 
-    <% @grouped_hom_list = grouped_by_first_letter(HomophoneSet.all_homophones) %>
     <div id="rolodex">
           <% ('A'..'Z').to_a.each do |index_letter| %>
           <div class="rolodex_letter_container">
