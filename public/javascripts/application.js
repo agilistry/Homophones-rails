@@ -34,30 +34,56 @@ function displayMatchingHomophoneSets(prefix) {
   }
 }
 
+var HomsetView = function(event) {
+  this.homset = $(event.target).parents('.homophone_set');
+};
+HomsetView.prototype.edit = function(form) {
+  this.homset.find('.display').hide();
+  this.homset.append(form);
+}
+HomsetView.prototype.id = function() {
+  return this.homset.attr('data');
+};
+HomsetView.prototype.editUrl = function() {
+  return '/homophone_sets/' + this.id() + '/edit'
+};
+HomsetView.prototype.display = function() {
+  this.homset.find('.edit').remove();
+  this.homset.find('.display').show();
+};
+HomsetView.prototype.editForm = function() {
+  return $(event.target).parents('form');
+};
+HomsetView.prototype.updateUrl = function() {
+  return this.editForm().attr('action');
+};
+HomsetView.prototype.updateData = function() {
+  return this.editForm().serialize();
+};
+HomsetView.prototype.finishEditing = function(data) {
+  this.homset.find('.display').html(data);
+  this.display();
+};
+
+
 jQuery(function($) {
   
   $(".editable .homophone_set .display").dblclick(function(event) {
-    var homset = $(event.target).parents('.homophone_set');
-    $.get('/homophone_sets/' + homset.attr('data') + '/edit', function(data) {
-      homset.find('.display').hide();
-      homset.append(data);
+    var homset = new HomsetView(event);
+    $.get(homset.editUrl(), function(form) {
+      homset.edit(form);
     });
   });
 
   $('.cancel').live('click', function(event) {
-    var homset = $(event.target).parents('.homophone_set');
-    homset.find('.edit').remove();
-    homset.find('.display').show();
+    new HomsetView(event).display();
     return false;
   });
 
   $('.edit_homophone_set .submit').live('click', function(event) {
-    var form = $(event.target).parents('form');
-    $.post(form.attr('action'), form.serialize(), function(data){
-      var homset = $(event.target).parents('.homophone_set');
-      homset.find('.display').html(data);
-      homset.find('.edit').remove();
-      homset.find('.display').show();
+    var homset = new HomsetView(event);
+    $.post(homset.updateUrl(), homset.updateData(), function(data){
+      homset.finishEditing(data);
     });
     return false;
   });
