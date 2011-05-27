@@ -239,10 +239,15 @@ h2 {
 /* Sidebar */
 
 #sidebar {
+  float: left;
   width: 300px;
   padding-left: 20px;
-  display: inline-block;
-  font-size: .7em;    
+}
+
+#main {
+  float: left;
+  width: 600px;
+  padding-left: 50px;
 }
 
 #sidebar h4 {
@@ -329,6 +334,10 @@ h2 {
 
 .large {
   width: 60%;
+}
+
+.hidden {
+  display: none;
 }
 
 .hidden_stash {
