@@ -36,21 +36,21 @@ function displayMatchingHomophoneSets(prefix) {
 
 jQuery(function($) {
   
-  $(".homophone_set").bind("dblclick", function(event) {
+  $(".homophone_set").dblclick(function(event) {
     var homset = $(event.target).parents('.homophone_set');
-    homset.find('.homophone_set_edit').show();
-    homset.find('.homophone_set_display').hide();
+    homset.find('.edit').show();
+    homset.find('.display').hide();
   });
 
-  $('.cancel').click(function() {
+  $('.cancel').click(function(event) {
     var homset = $(event.target).parents('.homophone_set');
-    homset.find('.homophone_set_edit').hide();
-    homset.find('.homophone_set_display').show();
+    homset.find('.edit').hide();
+    homset.find('.display').show();
     return false;
   });
   
   $(document).ready(function() {
-     $(".homophone_set_edit").hide();
+     $(".homophone_set .edit").hide();
   });
   
   $(document).ready(function() {

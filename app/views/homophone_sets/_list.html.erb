@@ -1,9 +1,9 @@
 <% list.each do |homophone_set| %>
   <div class='homophone_set'>
-    <div class="homophone_set_display">
+    <div class="display">
       <%= render :partial => "homophone_sets/display", :locals => {:homophone_set => homophone_set } %>
     </div>
-    <div class="homophone_set_edit">
+    <div class="edit">
       <%= render :partial => "homophone_sets/edit", :locals => {:homophone_set => homophone_set } %>
     </div>
   </div>

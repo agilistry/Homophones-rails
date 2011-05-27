@@ -127,7 +127,7 @@ h2 {
   padding-left: 5px;
 }
 
-.homophone_set_display .highlighted {
+.homophone_set .display .highlighted {
   background-color: yellow;
 }
 
