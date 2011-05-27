@@ -6,7 +6,7 @@ $(function(){
 
     updateCurrentTerm: function(term) {
       if (_.isUndefined(term)) { term = ''; }
-      this.set({"currentTerm" : $.trim(term)});
+      this.set({"currentTerm" : $.trim(term).toLowerCase()});
     },
 
     hasTerm: function() {
@@ -51,6 +51,7 @@ $(function(){
         this.highlightHomSets();
         this.searchJump();
       } else {
+        this.clearHighlighting();
         this.scrollToTop();
       }
     },
@@ -64,13 +65,17 @@ $(function(){
       this.el.scrollTo(firstMatch);
     },
 
-    highlightHomSets: function(){
+    clearHighlighting: function() {
       _.map(this.el.find('.homophone_set'), function(el) {
         $(el).removeClass("highlighted");
         _.map($(el).find('span.name'), function(el) {
           $(el).removeClass("highlighted");
         });
       });
+    },
+
+    highlightHomSets: function(){
+      this.clearHighlighting();
 
       _.map(this.matchedHomophones, function(el) {
         $(el).addClass("highlighted");
