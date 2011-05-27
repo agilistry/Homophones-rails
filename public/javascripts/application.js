@@ -36,7 +36,7 @@ function displayMatchingHomophoneSets(prefix) {
 
 jQuery(function($) {
   
-  $(".editable .homophone_set").dblclick(function(event) {
+  $(".editable .homophone_set .display").dblclick(function(event) {
     var homset = $(event.target).parents('.homophone_set');
     $.get('/homophone_sets/' + homset.attr('data') + '/edit', function(data) {
       homset.find('.display').hide();
