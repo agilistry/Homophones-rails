@@ -1,6 +1,6 @@
 class QuestionsController < AdminController
   skip_before_filter :authenticate_user!, :only => [:random]
-  skip_before_filter :check_for_admin, :only => [:random]
+  skip_before_filter :admin_required, :only => [:random]
 
   def new
     @question = Question.new

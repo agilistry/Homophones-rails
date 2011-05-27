@@ -1,5 +1,5 @@
 <div id="homophone_entry">
-  <%= form_for @homophone_set do |f| %>
+  <%= form_for @homophone_set, :url => @homophone_set.new_record?? admin_homophone_sets_path : admin_homophone_set_path(@homophone_set) do |f| %>
     <%= submit_tag "Publish" %>
     
     <% @homophone_set.errors.full_messages.each do |msg| %>
