@@ -4,6 +4,6 @@ class HomeController < ApplicationController
   
   def home
     @riddle = Question.random_riddle
-    @all_homophones = HomophoneSet.all_homophones
+    @grouped_homophone_sets = HomophoneSet.all_including_homophones.sort.group_by(&:index_letter)
   end
 end

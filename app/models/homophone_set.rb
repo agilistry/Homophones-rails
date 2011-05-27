@@ -11,8 +11,8 @@ class HomophoneSet < ActiveRecord::Base
     all :order => 'RANDOM()', :limit => limit 
   end
 
-  def self.all_homophones
-    all(:include => :homophones).sort
+  def self.all_including_homophones
+    all(:include => :homophones)
   end
 
   def self.find_and_return_phones(args)
