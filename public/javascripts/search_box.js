@@ -40,9 +40,10 @@ $(function(){
     el: $('.homophone_set_list'),
 
     initialize: function() {
-      _.bindAll(this, 'scrollSearch', 'searchJump');
+      _.bindAll(this, 'scrollSearch', 'searchJump', 'checkAddLinkForRemoval');
       this.model = window.searchTerm;
       this.model.bind("change", this.scrollSearch);
+      this.model.bind("change", this.checkAddLinkForRemoval)
     },
 
     scrollSearch: function() {
@@ -64,6 +65,12 @@ $(function(){
 
       var firstMatch = this.matchedHomSets.first();
       this.el.scrollTo(firstMatch);
+    },
+    
+    checkAddLinkForRemoval: function() {
+      if(! this.model.hasTerm()) {
+        $('#matching_hom_sets a').hide();
+      }
     },
 
     clearHighlighting: function() {
@@ -98,9 +105,9 @@ $(function(){
     },
     
     reportNumberOfMatchingHomeSets: function() {
-      var numPotentialMatches = this.matchedHomSets.length;
-      $('#matching_hom_sets #num_matches').text(numPotentialMatches + ' potential matches.');
-      if(numPotentialMatches == 0) {
+      this.numPotentialMatches = this.matchedHomSets.length;
+      $('#matching_hom_sets #num_matches').text(this.numPotentialMatches + ' potential matches.');
+      if(this.numPotentialMatches == 0) {
         $('#matching_hom_sets a').show();
       }
       else {
