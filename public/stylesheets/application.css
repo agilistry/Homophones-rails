@@ -131,10 +131,6 @@ h2 {
   background-color: yellow;
 }
 
-.homophone_set .edit {
-  display: none;
-}
-
 .homophone .name {
   font-weight: bold;
   padding-right: 5px;

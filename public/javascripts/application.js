@@ -38,13 +38,15 @@ jQuery(function($) {
   
   $(".homophone_set").dblclick(function(event) {
     var homset = $(event.target).parents('.homophone_set');
-    homset.find('.edit').show();
-    homset.find('.display').hide();
+    $.get('/homophone_sets/' + homset.attr('data') + '/edit', function(data) {
+      homset.find('.display').hide();
+      homset.append(data);
+    });
   });
 
-  $('.cancel').click(function(event) {
+  $('.cancel').live('click', function(event) {
     var homset = $(event.target).parents('.homophone_set');
-    homset.find('.edit').hide();
+    homset.find('.edit').remove();
     homset.find('.display').show();
     return false;
   });
