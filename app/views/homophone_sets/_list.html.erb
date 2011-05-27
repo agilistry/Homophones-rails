@@ -2,12 +2,7 @@
   <div class='homophone_set' data='<%= homophone_set.id %>'>
 
     <div class="display">
-      <% homophone_set.homophones.sort.each do |homophone| %>
-        <div class='homophone'>
-          <span class='name' data="<%=  CGI.escape homophone.name.downcase %>"><%= homophone.name %></span>
-          <span class='definition'><%= homophone.definition %></span>
-        </div>
-      <% end %>
+      <%= render :partial => "homophone_sets/display", :locals => { :homophone_set => homophone_set } %>
     </div>
 
   </div>

@@ -50,6 +50,17 @@ jQuery(function($) {
     homset.find('.display').show();
     return false;
   });
+
+  $('.edit_homophone_set .submit').live('click', function(event) {
+    var form = $(event.target).parents('form');
+    $.post(form.attr('action'), form.serialize(), function(data){
+      var homset = $(event.target).parents('.homophone_set');
+      homset.find('.display').html(data);
+      homset.find('.edit').remove();
+      homset.find('.display').show();
+    });
+    return false;
+  });
   
   $(document).ready(function() {
       $("#twitter").getTwitter({
