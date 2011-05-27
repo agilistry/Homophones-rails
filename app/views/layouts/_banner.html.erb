@@ -10,14 +10,12 @@
       <ul>
         <li><%= link_to "Home", root_path %></li>
         <li><%= link_to "About", about_homophones_path %></li>
-        <li class='login_link'>
-          <% if user_signed_in? %>
-            <%= link_to "Log out", destroy_user_session_path %>
-          <% else %>
-            <%= link_to "Register", new_user_registration_path %>
-            <%= link_to "Log in", new_user_session_path %>
-          <% end %>          
-        </li>
+        <% if user_signed_in? %>
+          <li class='login_link'><%= link_to "Log out", destroy_user_session_path %></li>
+        <% else %>
+          <li class='login_link'><%= link_to "Log in", new_user_session_path %></li>
+          <li class='login_link'><%= link_to "Register", new_user_registration_path %></li>
+        <% end %>          
       </ul>
       <div class="clearfix"></div>
     </div>
