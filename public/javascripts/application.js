@@ -41,6 +41,13 @@ jQuery(function($) {
     homset.find('.homophone_set_edit').show();
     homset.find('.homophone_set_display').hide();
   });
+
+  $('.cancel').click(function() {
+    var homset = $(event.target).parents('.homophone_set');
+    homset.find('.homophone_set_edit').hide();
+    homset.find('.homophone_set_display').show();
+    return false;
+  });
   
   $(document).ready(function() {
      $(".homophone_set_edit").hide();
