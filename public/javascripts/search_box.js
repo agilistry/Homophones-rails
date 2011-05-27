@@ -47,6 +47,8 @@ $(function(){
 
     scrollSearch: function() {
       if (this.model.hasTerm() ) {
+        this.findMatchedHomSets();
+        this.highlightHomSets();
         this.searchJump();
       } else {
         this.scrollToTop();
@@ -54,18 +56,38 @@ $(function(){
     },
 
     searchJump: function() {
-      var matchedHomSets = this.el.find('.homophone span[data^=' + escape(this.model.get('currentTerm')) + ']').closest('.homophone_set');
-
-      if (matchedHomSets.length === 0) {
+      if (this.matchedHomSets.length === 0) {
         return;
       }
 
-      var firstMatch = matchedHomSets.first();
+      var firstMatch = this.matchedHomSets.first();
       this.el.scrollTo(firstMatch);
+    },
+
+    highlightHomSets: function(){
+      _.map(this.el.find('.homophone_set'), function(el) {
+        $(el).removeClass("highlighted");
+        _.map($(el).find('span.name'), function(el) {
+          $(el).removeClass("highlighted");
+        });
+      });
+
+      _.map(this.matchedHomophones, function(el) {
+        $(el).addClass("highlighted");
+      });
+
+      _.map(this.matchedHomSets, function(el) {
+        $(el).addClass("highlighted");
+      });
     },
 
     scrollToTop: function() {
       this.el.scrollTo(0);
+    },
+
+    findMatchedHomSets: function() {
+      this.matchedHomophones = this.el.find('.homophone span[data^=' + escape(this.model.get('currentTerm')) + ']');
+      this.matchedHomSets = this.matchedHomophones.closest('.homophone_set');
     }
   });
 

@@ -107,6 +107,7 @@ h2 {
 
 /* Homophone List */
 
+
 .homophone_set_list {
   border: 1px solid #888888;
   padding: 5px;
@@ -120,8 +121,14 @@ h2 {
   text-indent:-3em;
   padding-left:3em;
 }
+
 .homophone_set {
-  padding-bottom: 25px;
+  margin-bottom: 25px;
+  padding-left: 5px;
+}
+
+.homophone_set_display .highlighted {
+  background-color: yellow;
 }
 
 .homophone .name {
@@ -131,6 +138,10 @@ h2 {
 
 .homophone .definition {
   font-style: italic;
+}
+
+.homophone .highlighted {
+  color: blue;
 }
 
 /* Homophone Index */
