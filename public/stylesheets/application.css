@@ -70,40 +70,12 @@ h2 {
 }
 
 
-/* basic layout */
-#page_container {
-  margin: 10px 10px 0 10px;
-  width: 960px;
-}
+
 
 #welcome_banner {
   width: 940px;
 }
 
-#welcome_text {
-  vertical-align: top;
-  width: 400px;
-  padding-right: 210px;
-  display: inline-block;
-}
-
-#about_video {
-  width: 300px;
-  height: 220px;
-  padding-left: 20px;
-  display: inline-block;
-}
-
-#page_content_container {
-  width: 940px;
-}
-
-#page_content {
-  vertical-align: top;
-  width: 450px;
-  padding-right: 160px;
-  display: inline-block;
-}
 
 /* Homophone List */
 
@@ -111,7 +83,6 @@ h2 {
 .homophone_set_list {
   border: 1px solid #888888;
   padding: 5px;
-  width: 400px;
   height: 38em;
   float: left;
   overflow-y: scroll;
@@ -210,7 +181,6 @@ h2 {
 #search_box input#search_term {
   margin-left: 30px;
   font-size: 12pt;
-  width: 405px;
 }
 
 #search_box #search_cancel {
@@ -228,17 +198,61 @@ h2 {
 
 #random_riddle {
 /*  float: right;*/
+  margin-top: 20px;
 	padding: 10px;
 	border: 1px solid gray;
 	text-align: center;
 }
+
+/* basic layout */
+#page_container {
+  margin: 10px 10px 0 10px;
+  width: 960px;
+}
+
 /* Sidebar */
 
 #sidebar {
+  float: left;
+  width: 360px;
+  overflow: hidden;
+  margin: 0 10px 0 10px;
+}
+
+#welcome_text {
+  vertical-align: top;
+  width: 400px;
+  padding-right: 210px;
+  display: inline-block;
+}
+
+#about_video {
   width: 300px;
+  height: 220px;
   padding-left: 20px;
   display: inline-block;
-  font-size: .7em;    
+}
+
+#homophone_sets_container {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.homophone_box {
+  width: 450px;
+}
+
+#page_content {
+  vertical-align: top;
+  display: inline-block;
+  width: 450px; 
+}
+
+#main {
+  float: right;
+  width: 520px;
+  overflow: hidden;
+  margin: 0 10px 0 10px;
 }
 
 #sidebar h4 {
@@ -250,6 +264,11 @@ h2 {
 #sidebar span.note_date {
     color: gray;
     padding-right: 10px;
+}
+
+#twitter {
+  margin-top: 20px;
+  font-size: 0.8em;
 }
 
 .not_done {
@@ -325,6 +344,10 @@ h2 {
 
 .large {
   width: 60%;
+}
+
+.hidden {
+  display: none;
 }
 
 .hidden_stash {

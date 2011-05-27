@@ -5,10 +5,51 @@
   <%= javascript_include_tag "search_box" %>
 <% end -%>
 
-<%= render :partial => 'layouts/welcome' %>
+<div id='sidebar'>
+  <div id='welcome' class='sidebar_element'>
+    <div id='about_text'>
+      <h1>Welcome</h1>
+      <p>
+      Homophones are words, like "to," "too," and "two" that are pronounced the same,
+      spelled differently, and have different meanings.
+      In addition to the comprehensive list of homophones on this site,
+      we are planning to add lots of related word-play stuff,
+      including helpful information for school teachers.
+      Thanks for visiting, and I hope you have as much fun using this site as I did creating it.
+      </p>
+      <p>&mdash;<i>Alan Cooper (aka Mr. Homophone)</i></p>
+    </div>
+  
+    <div id='about_video' class='sidebar_element'>
+      <object>
+        <param name="movie" value="http://www.youtube.com/v/t4V2O0ifuMg&hl=en_US&fs=1&"></param>
+        <param name="allowFullScreen" value="true"></param>
+        <param name="allowscriptaccess" value="always"></param>
+        <embed src="http://www.youtube.com/v/t4V2O0ifuMg&hl=en_US&fs=1&"
+            type="application/x-shockwave-flash" allowscriptaccess="always"
+            allowfullscreen="true" width="300" height="220">
+        </embed>
+      </object>
+    </div>
+  </div>
+    
+  <% if @riddle %>
+    <div id="random_riddle" class='sidebar_element'>
+      <h2>Riddle</h2>
+      <p class='question'><%=@riddle.ask %></p>
+      <p>
+        <a href='#' class='riddle_response' onclick="jQuery(this).hide().siblings('.answer').show()">Click here for answer</a>
+        <span class='answer hidden'><%=@riddle.riddle_response %></span>
+      </p>
+    </div>   
+  <% end %>
+    
+  <div id="twitter" class="sidebar_element"></div>
 
-<div id="page_content_container">
-  <div id="page_content">
+</div>
+
+<div id='main'>
+  <div id="homophone_sets">
     <div id="search_box">
       <%= render :partial => 'homophone_sets/search_form' %>
     </div>
@@ -28,6 +69,5 @@
     <%= render :partial => 'homophone_sets/grouped_list', :object => @grouped_homophone_sets  %>
     
   </div>
-
-  <%= render :partial => "homophone_sets/sidebar" %>     
+  
 </div>
