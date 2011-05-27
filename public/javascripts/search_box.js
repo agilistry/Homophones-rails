@@ -49,6 +49,7 @@ $(function(){
       if (this.model.hasTerm() ) {
         this.findMatchedHomSets();
         this.highlightHomSets();
+        this.reportNumberOfMatchingHomeSets();
         this.searchJump();
       } else {
         this.clearHighlighting();
@@ -72,6 +73,7 @@ $(function(){
           $(el).removeClass("highlighted");
         });
       });
+      $('#num_matching_hom_sets').html('&nbsp;');
     },
 
     highlightHomSets: function(){
@@ -93,6 +95,10 @@ $(function(){
     findMatchedHomSets: function() {
       this.matchedHomophones = this.el.find('.homophone span[data^=' + escape(this.model.get('currentTerm')) + ']');
       this.matchedHomSets = this.matchedHomophones.closest('.homophone_set');
+    },
+    
+    reportNumberOfMatchingHomeSets: function() {
+      $('#num_matching_hom_sets').text(this.matchedHomSets.length + ' potential matches.');
     }
   });
 
