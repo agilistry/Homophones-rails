@@ -73,7 +73,7 @@ $(function(){
           $(el).removeClass("highlighted");
         });
       });
-      $('#num_matching_hom_sets').html('&nbsp;');
+      $('#matching_hom_sets #num_matches').html('&nbsp;');
     },
 
     highlightHomSets: function(){
@@ -98,7 +98,14 @@ $(function(){
     },
     
     reportNumberOfMatchingHomeSets: function() {
-      $('#num_matching_hom_sets').text(this.matchedHomSets.length + ' potential matches.');
+      var numPotentialMatches = this.matchedHomSets.length;
+      $('#matching_hom_sets #num_matches').text(numPotentialMatches + ' potential matches.');
+      if(numPotentialMatches == 0) {
+        $('#matching_hom_sets a').show();
+      }
+      else {
+        $('#matching_hom_sets a').hide();
+      }
     }
   });
 
