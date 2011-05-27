@@ -83,8 +83,18 @@ describe HomophoneSet, 'comparable' do
 end
 
 describe HomophoneSet, 'sorting and grouping' do
-  it "can tell us what letter group it belongs to" do
-    set = HomophoneSet.new(:from => %w(xa ba Bah ma))
+  it "indexes by the 1st letter of the 1st alphabetical word in the list" do
+    set = HomophoneSet.new(:from => %w(ewe you Yew))
+    set.index_letter.should == "e"
+  end
+  
+  it "downcases the index letter" do
+    set = HomophoneSet.new(:from => %w(xa Bah ma))
     set.index_letter.should == "b"
+  end
+  
+  it "can handle punctuation" do
+    set = HomophoneSet.new(:from => %w('cause caws))
+    set.index_letter.should == "c"
   end
 end

@@ -178,9 +178,21 @@ h2 {
     font-weight: bold;
 }
 
-#search_box input#search_term {
+.search_field_container {
   margin-left: 30px;
+  width: 470px;
+}
+
+.search_label {
   font-size: 12pt;
+  font-weight: bold;
+  width: 15%;
+}
+
+#search_box input#search_term {
+  margin-left: 10px;
+  font-size: 12pt;
+  width: 85%;
 }
 
 #search_box #search_cancel {
