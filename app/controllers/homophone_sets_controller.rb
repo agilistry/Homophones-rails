@@ -1,5 +1,10 @@
 class HomophoneSetsController < ApplicationController
-  before_filter :admin_required
+  before_filter :admin_required, :except => :edit
+
+  def edit
+    @homophone_set = HomophoneSet.find params[:id]
+    render :partial => 'edit', :locals => {:homophone_set => @homophone_set}
+  end
 
   def update
     @homophone_set = HomophoneSet.find params[:id]
@@ -18,4 +23,5 @@ class HomophoneSetsController < ApplicationController
       render :action => 'edit'
     end
   end
+
 end
