@@ -1,8 +1,5 @@
 <head>
-  <link rel="stylesheet" type="text/css" media="all" href="/stylesheets/reset.css" />
-  <link rel="stylesheet" type="text/css" media="all" href="/stylesheets/text.css" />
-  <link rel="stylesheet" type="text/css" media="all" href="/stylesheets/application.css" />
-  <link rel="stylesheet" type="text/css" media="all" href="/stylesheets/jquery.twitter.css" />
+  <%= stylesheet_link_tag 'reset', 'text', 'application', 'jquery.twitter', :cache => true %>
 
   <%= javascript_include_tag "jquery" %>
   <%= javascript_include_tag "jquery.twitter" %>
@@ -10,5 +7,5 @@
 
   <%= yield :javascript_head %>
 
-  <title>Mr. Homophone's Homophones</title>
+  <title>Mr. Homophone’s Homophones</title>
 </head>

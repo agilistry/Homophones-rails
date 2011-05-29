@@ -1,12 +1,7 @@
-# Rails cheat sheet
 
-## Managing gems
+# CSS tech debt
 
-We're using Rails' built-in gem management.  You define gem dependencies in config/environment.rb if the gem should be accessible in development/production/test environments (i.e. the application code calls some library), or in config/environments/*.rb if it applies to only one environment (i.e. a library for testing)
-
-To install gems, run
-RAILS_ENV=test rake gems:install
-to install all gems needed for development and testing.
+The order in which stylesheets are loaded matters.
 
 
 # Javascript testing
