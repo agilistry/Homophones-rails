@@ -1,6 +1,12 @@
 <div class='quiz'>
- <%= f.label :ask %> <%= f.text_field :ask %><br />
- <%= f.label :responses %><%= f.text_field :responses %><br />
- <%= f.label :response_size %><%= f.text_field :response_size %><br/>
- <%= f.label :riddle_response %><%= f.text_field :riddle_response %>
+ <div>
+   <div class="quiz_prompt">Enter the riddle</div>
+   <div class="quiz_field">Question: <%= f.text_field :ask %></div>
+   <div class="quiz_field">Answer: <%= f.text_field :riddle_response %></div>
+ </div>
+ <div>
+   <div class="quiz_prompt">Enter the details to turn the riddle into an online quiz question</div>
+   <div class="quiz_field">Accepted words <%= f.text_field :responses %></div>
+   <div class="quiz_field">The number of accepted words required: <%= f.text_field :response_size %> </div>
+ </div>
 </div>
