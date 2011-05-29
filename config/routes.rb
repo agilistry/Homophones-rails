@@ -7,7 +7,6 @@ Homophones::Application.routes.draw do
     match 'index'
     match 'login'
     match 'logout'
-    match 'homophones' => 'Admin::HomophoneSets', :action => 'index'
     resources :homophone_sets
   end
 
