@@ -148,4 +148,20 @@ $(function(){
   $('#search_cancel').click(function(){
     window.searchTerm.clear();
   });
+
+  $('#matching_hom_sets a').click(function() {
+    $.get('/homophone_sets/new', function(form) {
+      $('#search_box').append(form);
+      $('#matching_hom_sets a').hide();
+    });
+  });
+
+  $('#new_homophone_set').live('submit', function() {
+    new_homset_form = $(this);
+    $.post(new_homset_form.attr('action'), new_homset_form.serialize(), function(data) {
+      console.log(data);
+    });
+    return false;
+  });
+
 });
